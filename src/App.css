@@ -45,7 +45,9 @@ body {
   padding: 20px;
   background-color: #D2D2D2;
   border-radius: 20px;
-  background-color: #121F31;
+  /* background-color: #121F31; */
+  background: linear-gradient(45deg, #121F31, #354E7C, #121F31);
+
 }
 
 #about-page .page-main .picture {
