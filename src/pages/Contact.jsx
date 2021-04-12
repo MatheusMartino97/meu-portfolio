@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar'
 class Contact extends Component {
   render() {
     return (
-      <div id="contact-page">
+      <div id="contact-page" className="page-content">
         <NavBar />
         <header className="page-header">
           <h1>Contato</h1>
@@ -35,7 +35,7 @@ class Contact extends Component {
               <div className="info">
                 <em>+55 15 99130-9506</em>
                 <a href="https://api.whatsapp.com/send?phone=5515991309506&text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio...">
-                  Mande-me uma mensagem
+                  Envie-me uma mensagem
                 </a>
               </div>
             </div>
@@ -53,7 +53,7 @@ class Contact extends Component {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Visite meu instagram
+                  Visite meu Instagram
                 </a>
               </div>
             </div>
@@ -71,7 +71,7 @@ class Contact extends Component {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Visite meu instagram
+                  Acesse meu LinkedIn
                 </a>
               </div>
             </div>

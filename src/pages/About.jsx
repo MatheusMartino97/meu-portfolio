@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar'
 class About extends Component {
   render() {
     return (
-      <div id="about-page">
+      <div id="about-page" className="page-content">
         <NavBar />
         <header className="page-header">
           <h1>Sobre</h1>

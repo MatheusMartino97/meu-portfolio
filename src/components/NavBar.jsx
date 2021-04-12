@@ -23,7 +23,6 @@ class NavBar extends Component {
           <Link to="/services">Serviços</Link>
           <Link to="/contact">Contato</Link>
           <Link to="/about">Sobre</Link>
-
         </div>
       </nav>
     );
