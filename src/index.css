@@ -41,6 +41,10 @@
   margin: 5px;
 }
 
+#home-page #nav-bar {
+  background-color: transparent;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
