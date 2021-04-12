@@ -5,7 +5,7 @@ class ProjectCard extends Component {
   render() {
     const { projectInfo } = this.props;
 
-    const { name, translation, description, miniature, path } = projectInfo;
+    const { name, translation, descriptions, miniature, path } = projectInfo;
 
     return (
       <div className="project-card">
@@ -15,7 +15,7 @@ class ProjectCard extends Component {
         <div className="card-infos">
           <h3>{name}</h3>
           <h4>{translation}</h4>
-          <p>{description}</p>
+          <p>{descriptions.short}</p>
         </div>
         <div className="card-links">
           <Link

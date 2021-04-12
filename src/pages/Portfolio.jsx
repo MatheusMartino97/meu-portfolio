@@ -16,9 +16,20 @@ class Portfolio extends Component {
           <h1>Portfólio</h1>
         </header>
         <main className="page-main">
-          <ProjectCard projectInfo={pixelsArt} />
-          <ProjectCard projectInfo={toDoList} />
-          <ProjectCard projectInfo={shoppingCard} />
+          <section>
+            <h2>React</h2>
+            <div className="projects-grid">
+              
+            </div>
+          </section>
+          <section>
+            <h2>HTML, JavaScript, CSS</h2>
+            <div className="projects-grid">
+              <ProjectCard projectInfo={pixelsArt} />
+              <ProjectCard projectInfo={toDoList} />
+              <ProjectCard projectInfo={shoppingCard} />
+            </div>
+          </section>
         </main>
       </div>
     );

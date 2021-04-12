@@ -28,7 +28,7 @@ body {
   display: inline-block;
   padding: 20px;
   border: 1px solid #D2D2D2;
-  border-radius: 20px;
+  border-radius: 5px;
   background-color: #67D3F3;
   color: #D2D2D2;
   text-shadow: 0 0 10px black;
@@ -49,7 +49,7 @@ body {
   justify-content: space-between;
   padding: 20px;
   background-color: #D2D2D2;
-  border-radius: 20px;
+  border-radius: 5px;
   background-color: #121F31;
   /* background: linear-gradient(45deg, #121F31, #354E7C, #121F31); */
 }
@@ -69,13 +69,13 @@ body {
   background-image: url("./images/profile_picture.jpeg");
   box-sizing: border-box;
   width: 100%;
-  border-radius: 20px 0 0 20px;
+  border-radius: 5px 0 0 5px;
   height: 100%;
   background-size: cover;
 }
 
 #about-page .page-main .text {
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 5px 5px 0;
   background-color: #354E7C;
   padding: 20px;
   width: 66%;
@@ -110,7 +110,7 @@ body {
 }
 
 #contact-page .page-main .contact-list {
-  border-radius: 20px;
+  border-radius: 5px;
   background-color: #354E7C;
   padding: 20px;
   height: 10%;
@@ -123,7 +123,7 @@ body {
   flex-direction: column;
   width: 25%;
   border: 1px solid #D2D2D2;
-  border-radius: 20px;
+  border-radius: 5px;
   background-color: #354E7C;
   margin-top: 20px;
   min-width: 256px;
@@ -142,7 +142,7 @@ body {
   padding: 20px;
   text-align: center;
   background-color: #d2d2d2;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 5px 5px;
   width: 100%;
   cursor: pointer;
   border-style: none;
@@ -155,14 +155,100 @@ body {
 
 .project-card img {
   width: 100%;
-  border-radius: 20px 20px 0 0 ;
+  border-radius: 5px 5px 0 0 ;
 }
 
 /* Portfolio page */
 
 #portfolio-page .page-main {
-  width: 90%;
+  width: 80%;
   flex-wrap: wrap;
   padding-top: 0;
   justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#portfolio-page .projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#portfolio-page section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Project page */
+#project-page .page-main {
+  width: 80%;
+}
+
+#project-page .page-main {
+  display: flex;
+  flex-direction: column;
+}
+
+#project-page .project-demonstrations {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#project-page .project-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+#project-page .project-info p {
+  text-align: justify;
+}
+
+#project-page .project-demonstrations div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#project-page .coments {
+  width: 60%;
+}
+
+#project-page .links-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+#project-page .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  height: calc(100% - 67.84px);
+}
+
+#project-page .links a {
+  width: 100%;
+  height: 25%;
+}
+
+#project-page .links button {
+  width: 100%;
+  height: 100%;
+  background-color: #d2d2d2;
+  border-radius: 5px;
+  cursor: pointer;
+  border-style: none;
+  transition: 0.5s;
+  outline: none;
+}
+
+#project-page button:hover {
+  background-color: #67D3F3;
+}
+
+#project-page .gif-mobile img, #project-page .gif-desktop img {
+  height: 50vh;
+  border-radius: 5px;
+  border: 1px solid #D2D2D2;
 }

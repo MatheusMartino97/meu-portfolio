@@ -14,7 +14,7 @@ class About extends Component {
             <div className="profile-picture"></div>
           </section>
           <section className="text">
-            <h2>Matheus Martino do Amaral</h2>
+            <h2>Um pouco sobre mim...</h2>
             <p>
               Gosto muito de me comunicar e trabalhar em equipe. Sou apaixonado
               por desenvolvimento de software e por empresas que usam tecnologia
