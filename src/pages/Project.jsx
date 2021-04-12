@@ -16,10 +16,12 @@ class Project extends Component {
         </header>
         <main className="page-main">
           <section className="project-demonstrations">
-            <div className="gif-mobile">
-              <h2>Mobile</h2>
-              <img src={gifs.mobile} alt="Mobile demonstration" />
-            </div>
+            {gifs.mobile ? (
+              <div className="gif-mobile">
+                <h2>Mobile</h2>
+                <img src={gifs.mobile} alt="Mobile demonstration" />
+              </div>
+            ) : null}
             <div className="gif-desktop">
               <h2>Desktop</h2>
               <img src={gifs.desktop} alt="Desktop demonstration" />
