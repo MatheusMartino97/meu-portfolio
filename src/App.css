@@ -43,7 +43,8 @@ body {
   padding: 20px;
   background-color: #D2D2D2;
   border-radius: 20px;
-  background: linear-gradient(45deg, #121F31, #354E7C, #121F31);
+  background-color: #121F31;
+  /* background: linear-gradient(45deg, #121F31, #354E7C, #121F31); */
 }
 
 /* About page */
@@ -80,17 +81,6 @@ body {
 
 /* Contact page */
 
-#contact-page .page-main {
-  border: 1px solid white;
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #D2D2D2;
-  border-radius: 20px;
-  background: linear-gradient(45deg, #121F31, #354E7C, #121F31);
-}
-
 #contact-page .contact {
   display: flex;
   align-items: center;
@@ -110,4 +100,11 @@ body {
 
 #contact-page .contact .info a {
   color: #67D3F3;
+}
+
+#contact-page .page-main .contact-list {
+  border-radius: 20px;
+  background-color: #354E7C;
+  padding: 20px;
+  height: 10%;
 }
