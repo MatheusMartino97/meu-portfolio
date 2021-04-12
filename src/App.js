@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import NavBar from './components/NavBar';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="/portfolio" />
         <Route path="/curriculum" />
         <Route path="/services" />
-        <Route path="/contact" />
+        <Route path="/contact" component={ Contact }/>
         <Route path="/about" component={ About } />
       </Switch>
     </>
