@@ -7,7 +7,7 @@ import projectsList from '../data';
 
 class Portfolio extends Component {
   render() {
-    const { toDoList, pixelsArt, shoppingCard } = projectsList;
+    const { toDoList, pixelsArt, shoppingCard, colorGuess } = projectsList;
 
     return (
       <div id="portfolio-page" className="page-content">
@@ -28,6 +28,7 @@ class Portfolio extends Component {
               <ProjectCard projectInfo={pixelsArt} />
               <ProjectCard projectInfo={toDoList} />
               <ProjectCard projectInfo={shoppingCard} />
+              <ProjectCard projectInfo={colorGuess} />
             </div>
           </section>
         </main>

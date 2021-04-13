@@ -11,9 +11,7 @@ class ProjectCard extends Component {
   }
 
   handleClick(projectInfo) {
-    if (!localStorage.getItem('projectInfo')) {
-      localStorage.setItem('projectInfo', JSON.stringify(projectInfo));
-    }
+    localStorage.setItem('projectInfo', JSON.stringify(projectInfo));
 
     this.setState({
       shouldRedirect: true,
