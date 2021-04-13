@@ -54,6 +54,46 @@ body {
   /* background: linear-gradient(45deg, #121F31, #354E7C, #121F31); */
 }
 
+/* Home page */
+
+#home-page .home-main {
+  display: flex;
+  height: calc(90vh - 86.813px);
+  align-items: center;
+}
+
+#home-page .home-main section {
+  background: linear-gradient(transparent, #040A25, #040a25a2) ;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#home-page .home-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+#home-page .home-links button {
+  padding: 20px;
+  text-align: center;
+  /* background-color: #D2D2D2; */
+  background-color: #67D3F3;
+
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  border-style: none;
+  transition: 0.5s;
+}
+
+#home-page .home-links button:hover {
+  /* background-color: #67D3F3; */
+  background-color: #040A25;
+  color: #67D3F3;
+
+}
+
 /* About page */
 
 #about-page .page-main {
@@ -147,10 +187,12 @@ body {
   cursor: pointer;
   border-style: none;
   transition: 0.5s;
+  background-color: #67D3F3;
 }
 
 .project-card button:hover {
-  background-color: #67D3F3;
+  background-color: #040A25;
+  color: #67D3F3;
 }
 
 .project-card img {
@@ -235,7 +277,7 @@ body {
 #project-page .links button {
   width: 100%;
   height: 100%;
-  background-color: #d2d2d2;
+  background-color: #67D3F3;
   border-radius: 5px;
   cursor: pointer;
   border-style: none;
@@ -244,7 +286,8 @@ body {
 }
 
 #project-page button:hover {
-  background-color: #67D3F3;
+  background-color: #040A25;
+  color: #67D3F3;
 }
 
 #project-page .gif-mobile img, #project-page .gif-desktop img {

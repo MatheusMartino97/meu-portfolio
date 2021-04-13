@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
 
@@ -7,18 +8,20 @@ import Contact from './pages/Contact';
 import Project from './pages/Project';
 import Portfolio from './pages/Portfolio';
 
-function App() {
-  return (
-      <Switch>
-        <Route exact path="/" component={ Home } />
-        <Route path="/portfolio" component={ Portfolio }/>
-        <Route path="/project/:project" render={ (props) => <Project { ...props } /> } />
-        <Route path="/curriculum" />
-        <Route path="/services" />
-        <Route path="/contact" component={ Contact }/>
-        <Route path="/about" component={ About } />
-      </Switch>
-  );
+class App extends Component {
+  render() {
+    return (
+        <Switch>
+          <Route exact path="/" component={ Home } />
+          <Route path="/portfolio" component={ Portfolio }/>
+          <Route path="/project/:project" render={ (props) => <Project { ...props } /> } />
+          <Route path="/curriculum" />
+          <Route path="/services" />
+          <Route path="/contact" component={ Contact }/>
+          <Route path="/about" component={ About } />
+        </Switch>
+    );
+  }
 }
 
 export default App;
