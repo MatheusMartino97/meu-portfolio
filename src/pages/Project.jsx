@@ -3,10 +3,9 @@ import React, { Component } from 'react';
 import NavBar from '../components/NavBar';
 class Project extends Component {
   render() {
-    const { location } = this.props;
-    const { state } = location;
-    const { projectInfo } = state;
-    const { name, gifs, repository, url } = projectInfo;
+    const { name, gifs, repository, url, descriptions } = JSON.parse(
+      localStorage.getItem('projectInfo')
+    );
 
     return (
       <div id="project-page" className="page-content">
@@ -30,7 +29,7 @@ class Project extends Component {
           <section className="project-info">
             <div className="coments">
               <h2>Sobre o projeto</h2>
-              {Object.values(projectInfo.descriptions.long).map((paragraph) => (
+              {Object.values(descriptions.long).map((paragraph) => (
                 <p>{paragraph}</p>
               ))}
             </div>

@@ -1,8 +1,27 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 class ProjectCard extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      shouldRedirect: false,
+    };
+  }
+
+  handleClick(projectInfo) {
+    if (!localStorage.getItem('projectInfo')) {
+      localStorage.setItem('projectInfo', JSON.stringify(projectInfo));
+    }
+
+    this.setState({
+      shouldRedirect: true,
+    });
+  }
+
   render() {
+    const { shouldRedirect } = this.state;
     const { projectInfo } = this.props;
 
     const { name, translation, descriptions, miniature, path } = projectInfo;
@@ -18,17 +37,11 @@ class ProjectCard extends Component {
           <p>{descriptions.short}</p>
         </div>
         <div className="card-links">
-          <Link
-            to={{
-              pathname: `/project/${path}`,
-              state: {
-                projectInfo,
-              },
-            }}
-          >
-            <button type="button">Mais Informações</button>
-          </Link>
+          <button type="button" onClick={() => this.handleClick(projectInfo)}>
+            Mais Informações
+          </button>
         </div>
+        {shouldRedirect ? <Redirect to={ `/project/${path}` } /> : null}
       </div>
     );
   }

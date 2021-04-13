@@ -63,6 +63,7 @@ class Contact extends Component {
                 alt="Gmail logo"
                 width="48px"
                 height="48px"
+                id="linkedin-logo"
               />
               <div className="info">
                 <em>Matheus Martino</em>

@@ -9,7 +9,7 @@ class Home extends Component {
 
     this.state = {
       pipeVisibility: 'hidden',
-    }
+    };
   }
 
   render() {

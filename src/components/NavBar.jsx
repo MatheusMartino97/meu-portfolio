@@ -20,7 +20,7 @@ class NavBar extends Component {
           <Link to="/">Home</Link>
           <Link to="/portfolio">Portfólio</Link>
           <Link to="/curriculum">Currículo</Link>
-          <Link to="/services">Serviços</Link>
+          <Link to="/services">Tecnologias</Link>
           <Link to="/contact">Contato</Link>
           <Link to="/about">Sobre</Link>
         </div>

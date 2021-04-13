@@ -16,7 +16,7 @@ class App extends Component {
           <Route path="/portfolio" component={ Portfolio }/>
           <Route path="/project/:project" render={ (props) => <Project { ...props } /> } />
           <Route path="/curriculum" />
-          <Route path="/services" />
+          <Route path="/technologies" />
           <Route path="/contact" component={ Contact }/>
           <Route path="/about" component={ About } />
         </Switch>
