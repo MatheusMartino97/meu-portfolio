@@ -16,7 +16,7 @@ class About extends Component {
           <section className="text">
             <h2>Um pouco sobre mim...</h2>
             <p>
-              Gosto muito de me comunicar e trabalhar em equipe. Sou apaixonado
+              Gosto muito de comunicação e trabalhar em equipe. Sou apaixonado
               por desenvolvimento de software e por empresas que usam tecnologia
               para desenvolver serviços que facilitam a vida das pessoas.
             </p>

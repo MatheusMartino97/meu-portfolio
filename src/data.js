@@ -166,6 +166,32 @@ const projectsList = {
   },
 
   react: {
+    triviaGame: {
+      name: 'Trivia Game',
+      translation: 'Jogo de Trivia',
+      path: 'trivia game',
+      url: 'https://matheusmartino97.github.io/20_sd-09-project-trivia-react-redux/#/',
+      repository: 'https://github.com/MatheusMartino97/20_sd-09-project-trivia-react-redux',
+      miniature: 'https://i.ibb.co/x8QTCct/trivia-game-miniature.jpg',
+      gifs: {
+        desktop: 'https://i.ibb.co/XYxjD6S/trivia-game-desktop.gif',
+        mobile: 'https://i.ibb.co/Ws5dbnB/trivia-game-mobile.gif',
+      },
+      descriptions: {
+        short: 'Jogo de trivia desenvolvido com React e Redux.',
+        long: {
+          paragraphs: {
+            1: 'O Trivia Game foi desenvolvido em grupo durante a minha formação na Trybe.',
+            2: 'Este projeto nos proporcionou bastante desenvoltura quando se trata de desenvolver com React e Redux. Além disso, também praticamos nossas soft-skills com nossos cologas de grupo.',
+            3: 'Utilizamos o Kanban para nos organizarmos e para tornar ágil a divisão de tarefas.'
+          },
+        },
+      },
+      technologies: ['React', 'Redux'],
+      libraries: ['react', 'react-router-dom', 'react-redux', 'redux', 'redux-thunk', 'crypto-js', 'emoji-dictionary'],
+      apis: ['https://opentdb.com/api_token.php?command=request', 'https://opentdb.com/api.php?amount=$QUANTITY&token=$TOKEN'],
+    },
+
     trybeWallet: {
       name: 'Trybe Wallet',
       translation: 'Carteira da Trybe',
@@ -196,63 +222,7 @@ const projectsList = {
         'redux-thunk',
         'validator',
       ],
-      apis: [],
-    },
-
-    catsVsDogs: {
-      name: 'Cats vs Dogs',
-      translation: 'Gatos vs Gatos',
-      path: 'cats-vs-dogs',
-      url: 'https://matheusmartino97.github.io/cat-vs-dog-customer-register/#/',
-      repository:
-        'https://github.com/MatheusMartino97/cat-vs-dog-customer-register',
-      miniature: 'https://i.ibb.co/Q9QkcQy/cats-vs-dogs-miniature.jpg',
-      gifs: {
-        desktop: 'https://i.ibb.co/hDMNSC7/cats-vs-dogs-desktop.gif',
-        mobile: 'https://i.ibb.co/hcmBv01/cats-vs-dogs-mobile.gif',
-      },
-      descriptions: {
-        short:
-          'Uma aplicação que se comporta de acordo com as informações do cliente cadastrado.',
-        long: {
-          paragraphs: {
-            1: 'Este foi um projeto que fiz por conta própria para treinar minhas habilidades com React e Redux. Tentei utilizar tudo o que eu vinha aprendendo na graduação da Trybe até então.',
-            2: 'Neste site, o usuário pode se cadastrar e informar se gosta de gatos ou cachorros. Quando fizer login, iram aparecer fotos aletórias do animal escolhido.',
-          },
-        },
-      },
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      libraries: ['react', 'react-router-dom', 'redux', 'react-redux'],
-      apis: [
-        'https://aws.random.cat/meow',
-        'https://dog.ceo/api/breeds/image/random',
-      ],
-    },
-
-    pokedex: {
-      name: 'Pokedex',
-      translation: 'Pokedex',
-      path: 'pokedex',
-      url: 'https://matheusmartino97.github.io/pokedex-react/',
-      repository: 'https://github.com/MatheusMartino97/pokedex-react',
-      miniature: 'https://i.ibb.co/FbKndcj/pokedex-miniature.jpg',
-      gifs: {
-        desktop: 'https://i.ibb.co/GcJQqGk/pokedex-desktop.gif',
-        mobile: 'https://i.ibb.co/175hqYn/pokedex-mobile.gif',
-      },
-      descriptions: {
-        short: 'Um pokedex simples feito com react',
-        long: {
-          paragraphs: {
-            1: 'Este projeto foi um exercício da Trybe para os alunos praticarem a sintaxe do React.',
-            2: 'O pokedex percorre um objeto de pokemons e mostra na tela cada pokemon com suas informações.',
-            3: 'Uma ideia interessante é a possível implementação de consumo de uma API que nos disponibiliza, não só alguns, mas todos os pokemons, assim como suas informações.',
-          },
-        },
-      },
-      technologies: ['React'],
-      libraries: ['react'],
-      apis: [],
+      apis: ['https://economia.awesomeapi.com.br/json/all'],
     },
 
     jobSearch: {
@@ -280,6 +250,36 @@ const projectsList = {
       apis: ['https://documenter.getpostman.com/view/7929631/TWDZGFKK'],
     },
 
+    catsVsDogs: {
+      name: 'Cats vs Dogs',
+      translation: 'Gatos vs Gatos',
+      path: 'cats-vs-dogs',
+      url: 'https://matheusmartino97.github.io/cat-vs-dog-customer-register/#/',
+      repository:
+        'https://github.com/MatheusMartino97/cat-vs-dog-customer-register',
+      miniature: 'https://i.ibb.co/Q9QkcQy/cats-vs-dogs-miniature.jpg',
+      gifs: {
+        desktop: 'https://i.ibb.co/hDMNSC7/cats-vs-dogs-desktop.gif',
+        mobile: 'https://i.ibb.co/hcmBv01/cats-vs-dogs-mobile.gif',
+      },
+      descriptions: {
+        short:
+          'Uma aplicação que se comporta de acordo com as informações do cliente cadastrado.',
+        long: {
+          paragraphs: {
+            1: 'Este foi um projeto que fiz por conta própria para treinar minhas habilidades com React e Redux. Tentei utilizar tudo o que eu vinha aprendendo na graduação da Trybe até então.',
+            2: 'Neste site, o usuário pode se cadastrar e informar se gosta de gatos ou cachorros. Quando fizer login, iram aparecer fotos aletórias do animal escolhido.',
+          },
+        },
+      },
+      technologies: ['React', 'Redux'],
+      libraries: ['react', 'react-router-dom', 'redux', 'react-redux'],
+      apis: [
+        'https://dog.ceo/api/breeds/image/random',
+        'https://aws.random.cat/meow',
+      ],
+    },
+
     testedPokedex: {
       name: 'Tested Pokedex',
       translation: 'Pokedex Testado',
@@ -304,6 +304,32 @@ const projectsList = {
       },
       technologies: ['React Testing Library', 'Jest'],
       libraries: ['@testing-library/jest-dom', '@testing-library/react', '@testing-library/user-event'],
+      apis: [],
+    },
+
+    pokedex: {
+      name: 'Pokedex',
+      translation: 'Pokedex',
+      path: 'pokedex',
+      url: 'https://matheusmartino97.github.io/pokedex-react/',
+      repository: 'https://github.com/MatheusMartino97/pokedex-react',
+      miniature: 'https://i.ibb.co/FbKndcj/pokedex-miniature.jpg',
+      gifs: {
+        desktop: 'https://i.ibb.co/GcJQqGk/pokedex-desktop.gif',
+        mobile: 'https://i.ibb.co/175hqYn/pokedex-mobile.gif',
+      },
+      descriptions: {
+        short: 'Um pokedex simples feito com react',
+        long: {
+          paragraphs: {
+            1: 'Este projeto foi um exercício da Trybe para os alunos praticarem a sintaxe do React.',
+            2: 'O pokedex percorre um objeto de pokemons e mostra na tela cada pokemon com suas informações.',
+            3: 'Uma ideia interessante é a possível implementação de consumo de uma API que nos disponibiliza, não só alguns, mas todos os pokemons, assim como suas informações.',
+          },
+        },
+      },
+      technologies: ['React'],
+      libraries: ['react'],
       apis: [],
     },
   },

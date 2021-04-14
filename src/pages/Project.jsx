@@ -42,26 +42,26 @@ class Project extends Component {
               ))}
               <div>
                 <p>
-                  <strong>Tecnologias utilizadas:</strong>
+                  <strong>Tecnologias:</strong>
                   {technologies.map((technologie) => (
                     <em>{` ${technologie};`}</em>
                   ))}
                 </p>
                 {libraries.length !== 0 ? (
                   <p>
-                    <strong>Bibliotecas utilizadas:</strong>
+                    <strong>Bibliotecas:</strong>
                     {libraries.map((library) => (
                       <em>{` ${library};`}</em>
                     ))}
                   </p>
                 ) : null}
                 {apis.length !== 0 ? (
-                  <p>
-                    <strong>APIs utilizadas:</strong>
+                  <ul>
+                    <strong>APIs:</strong>
                     {apis.map((api) => (
-                      <em>{` ${api};`}</em>
+                      <li>{`* ${api};`}</li>
                     ))}
-                  </p>
+                  </ul>
                 ) : null}
               </div>
               <Link to="/portfolio">
