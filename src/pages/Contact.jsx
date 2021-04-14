@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import NavBar from '../components/NavBar'
+import NavBar from '../components/NavBar';
 
 class Contact extends Component {
   render() {
@@ -33,8 +33,8 @@ class Contact extends Component {
                 height="48px"
               />
               <div className="info">
-                <em>+55 15 99130-9506</em>
-                <a href="https://api.whatsapp.com/send?phone=5515991309506&text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio...">
+                <em>+55 15 99130-9506</em>                  
+                <a href="https://api.whatsapp.com/send?phone=5515991309506&text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio..." target="_blank" rel="noreferrer">
                   Envie-me uma mensagem
                 </a>
               </div>

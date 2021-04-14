@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import NavBar from '../components/NavBar';
 class Project extends Component {
   render() {
-    const { name, gifs, repository, url, descriptions } = JSON.parse(
-      localStorage.getItem('projectInfo')
-    );
+    const {
+      name,
+      gifs,
+      repository,
+      url,
+      descriptions,
+      technologies,
+      libraries,
+      apis,
+    } = JSON.parse(localStorage.getItem('projectInfo'));
 
     return (
       <div id="project-page" className="page-content">
@@ -29,12 +37,39 @@ class Project extends Component {
           <section className="project-info">
             <div className="coments">
               <h2>Sobre o projeto</h2>
-              {Object.values(descriptions.long).map((paragraph) => (
+              {Object.values(descriptions.long.paragraphs).map((paragraph) => (
                 <p>{paragraph}</p>
               ))}
+              <div>
+                <p>
+                  <strong>Tecnologias utilizadas:</strong>
+                  {technologies.map((technologie) => (
+                    <em>{` ${technologie};`}</em>
+                  ))}
+                </p>
+                {libraries.length !== 0 ? (
+                  <p>
+                    <strong>Bibliotecas utilizadas:</strong>
+                    {libraries.map((library) => (
+                      <em>{` ${library};`}</em>
+                    ))}
+                  </p>
+                ) : null}
+                {apis.length !== 0 ? (
+                  <p>
+                    <strong>APIs utilizadas:</strong>
+                    {apis.map((api) => (
+                      <em>{` ${api};`}</em>
+                    ))}
+                  </p>
+                ) : null}
+              </div>
+              <Link to="/portfolio">
+                <button type="button">Voltar para o portfólio</button>
+              </Link>
             </div>
             <div className="links-container">
-              <h2>Links</h2>
+              {/* <h2>Links</h2> */}
               <div className="links">
                 <a href={url} target="_blank" rel="noreferrer">
                   <button type="button">Acesse o site!</button>
@@ -42,6 +77,9 @@ class Project extends Component {
                 <a href={repository} target="_blank" rel="noreferrer">
                   <button type="button">Veja o repositório!</button>
                 </a>
+                {/* <Link to="/portfolio">
+                  <button type="button">Voltar para o portfólio</button>
+                </Link> */}
               </div>
             </div>
           </section>

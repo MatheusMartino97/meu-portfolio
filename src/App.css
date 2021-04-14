@@ -153,9 +153,9 @@ body {
 }
 
 #contact-page #linkedin-logo {
-  background-color: #D2D2D2;
+  background-color: #d2d2d2;
   border-radius: 5px;
-  border: 1px solid #67D3F3;
+  border: 1px solid #67d3f3;
 }
 
 /* Project card */
@@ -224,7 +224,21 @@ body {
   align-items: center;
 }
 
+#portfolio-page h2 {
+  /* border-left: 1px solid #D2D2D2;
+  border-bottom: 1px solid #D2D2D2; */
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 1px 1px 10px #d2d2d2;
+}
+
+#portfolio-page section.projects-container {
+  padding: 20px;
+}
+
 /* Project page */
+
 #project-page .page-main {
   width: 80%;
 }
@@ -270,16 +284,19 @@ body {
   justify-content: space-evenly;
   align-items: stretch;
   height: calc(100% - 67.84px);
+  height: 100%;
 }
 
 #project-page .links a {
   width: 100%;
-  height: 25%;
 }
 
 #project-page .links button {
   width: 100%;
   height: 100%;
+}
+
+#project-page button {
   border-radius: 5px;
   cursor: pointer;
   border-style: none;
@@ -288,11 +305,12 @@ body {
   background-color: #0177d9;
   color: #d2d2d2;
   font-size: large;
+  padding: 20px;
 }
 
 #project-page button:hover {
-  background-color: #67D3F3;
-  color: #040A25;
+  background-color: #67d3f3;
+  color: #040a25;
 }
 
 #project-page .gif-mobile img,
