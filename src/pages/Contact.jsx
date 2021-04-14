@@ -28,7 +28,7 @@ class Contact extends Component {
             <div className="contact">
               <img
                 src="https://www.flaticon.com/svg/vstatic/svg/733/733585.svg?token=exp=1618188251~hmac=9887a3f7ceac0212b0953d55e440e5ce"
-                alt="Gmail logo"
+                alt="Whatsapp logo"
                 width="48px"
                 height="48px"
               />
