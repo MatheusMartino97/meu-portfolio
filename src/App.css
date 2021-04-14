@@ -61,10 +61,11 @@ body {
 }
 
 #home-page .home-main section {
-  background: linear-gradient(transparent, #040a25, #040a25, #040a25);
+  background-color: #040a25;
   padding: 20px;
   border-radius: 5px;
   position: relative;
+  box-shadow: 0 0 10px #67d3f3;
 }
 
 #home-page .home-links {

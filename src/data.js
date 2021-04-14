@@ -86,7 +86,7 @@ const projectsList = {
       translation: 'Arte com Pixels',
       path: 'pixels-art',
       miniature: 'https://i.ibb.co/5r6wCCZ/pixel-art-miniature.jpg',
-      url: 'https://matheusmartino97.github.io/04_sd-09-project-todo-list/',
+      url: 'https://matheusmartino97.github.io/03_sd-09-project-pixels-art/',
       repository:
         'https://github.com/MatheusMartino97/03_sd-09-project-pixels-art',
       gifs: {
@@ -141,18 +141,21 @@ const projectsList = {
       translation: 'Carta Misteriosa',
       path: 'mistery-letter',
       miniature: 'https://i.ibb.co/GCQp96M/mistery-letter-miniature.jpg',
-      url: 'https://matheusmartino97.github.io/07_sd-09-project-mistery-letter/',
-      repository: 'https://github.com/MatheusMartino97/07_sd-09-project-mistery-letter',
+      url:
+        'https://matheusmartino97.github.io/07_sd-09-project-mistery-letter/',
+      repository:
+        'https://github.com/MatheusMartino97/07_sd-09-project-mistery-letter',
       gifs: {
         desktop: 'https://i.ibb.co/JnxC7Cb/mistery-letter-desktop.gif',
         mobile: '',
       },
       descriptions: {
-        short: 'O objetivo desta aplicação é estilizar aleatoriamente cada palavra da frase que o usuário escrever.',
+        short:
+          'O objetivo desta aplicação é estilizar aleatoriamente cada palavra da frase que o usuário escrever.',
         long: {
           paragraphs: {
             1: 'O objetivo deste projeto da Trybe, ao meu ver, foi fazer com que os alunos treinassem e se familiarizassem com a manipulação de classes CSS.',
-            2: 'Durante o desenvolvimento deste projeto pude entender melhor como os objetos JavaScript são úteis para encapsular, e facilitar o acesso de elementos de mesmo contexto.'
+            2: 'Durante o desenvolvimento deste projeto pude entender melhor como os objetos JavaScript são úteis para encapsular, e facilitar o acesso de elementos de mesmo contexto.',
           },
         },
       },
@@ -167,10 +170,10 @@ const projectsList = {
       name: 'Trybe Wallet',
       translation: 'Carteira da Trybe',
       path: 'trybe-wallet',
-      miniature: 'https://i.ibb.co/ccbL5Ft/trybe-wallet-miniature.jpg',
       url: 'https://matheusmartino97.github.io/19_sd-09-project-trybewallet/#/',
       repository:
         'https://github.com/MatheusMartino97/19_sd-09-project-trybewallet',
+      miniature: 'https://i.ibb.co/ccbL5Ft/trybe-wallet-miniature.jpg',
       gifs: {
         desktop: 'https://i.ibb.co/TrxfBGh/trybe-wallet-desktop.gif',
         mobile: '',
@@ -200,10 +203,10 @@ const projectsList = {
       name: 'Cats vs Dogs',
       translation: 'Gatos vs Gatos',
       path: 'cats-vs-dogs',
-      miniature: 'https://i.ibb.co/Q9QkcQy/cats-vs-dogs-miniature.jpg',
       url: 'https://matheusmartino97.github.io/cat-vs-dog-customer-register/#/',
       repository:
         'https://github.com/MatheusMartino97/cat-vs-dog-customer-register',
+      miniature: 'https://i.ibb.co/Q9QkcQy/cats-vs-dogs-miniature.jpg',
       gifs: {
         desktop: 'https://i.ibb.co/hDMNSC7/cats-vs-dogs-desktop.gif',
         mobile: 'https://i.ibb.co/hcmBv01/cats-vs-dogs-mobile.gif',
@@ -226,41 +229,92 @@ const projectsList = {
       ],
     },
 
-
-  pokedex: {
-    name: 'Pokedex',
-    translation: 'Pokedex',
-    path: 'pokedex',
-    miniature: 'https://i.ibb.co/FbKndcj/pokedex-miniature.jpg',
-    url: 'https://matheusmartino97.github.io/pokedex-react/',
-    repository: 'https://github.com/MatheusMartino97/pokedex-react',
-    gifs: {
-      desktop: 'https://i.ibb.co/GcJQqGk/pokedex-desktop.gif',
-      mobile: 'https://i.ibb.co/175hqYn/pokedex-mobile.gif',
-    },
-    descriptions: {
-      short: 'Um pokedex simples feito com react',
-      long: {
-        paragraphs: {
-          1: 'Este projeto foi um exercício da Trybe para os alunos praticarem a sintaxe do React.',
-          2: 'O pokedex percorre um objeto de pokemons e mostra na tela cada pokemon com suas informações.',
-          3: 'Uma ideia interessante é a possível implementação de consumo de uma API que nos disponibiliza, não só alguns, mas todos os pokemons, assim como suas informações.',
+    pokedex: {
+      name: 'Pokedex',
+      translation: 'Pokedex',
+      path: 'pokedex',
+      url: 'https://matheusmartino97.github.io/pokedex-react/',
+      repository: 'https://github.com/MatheusMartino97/pokedex-react',
+      miniature: 'https://i.ibb.co/FbKndcj/pokedex-miniature.jpg',
+      gifs: {
+        desktop: 'https://i.ibb.co/GcJQqGk/pokedex-desktop.gif',
+        mobile: 'https://i.ibb.co/175hqYn/pokedex-mobile.gif',
+      },
+      descriptions: {
+        short: 'Um pokedex simples feito com react',
+        long: {
+          paragraphs: {
+            1: 'Este projeto foi um exercício da Trybe para os alunos praticarem a sintaxe do React.',
+            2: 'O pokedex percorre um objeto de pokemons e mostra na tela cada pokemon com suas informações.',
+            3: 'Uma ideia interessante é a possível implementação de consumo de uma API que nos disponibiliza, não só alguns, mas todos os pokemons, assim como suas informações.',
+          },
         },
       },
+      technologies: ['React'],
+      libraries: ['react'],
+      apis: [],
     },
-    technologies: ['React'],
-    libraries: ['react'],
-    apis: [],
-  },
+
+    jobSearch: {
+      name: 'Job Search',
+      translation: 'Busca de Empregos',
+      path: 'job-search',
+      url: 'https://matheusmartino97.github.io/job-search-react-redux/#/',
+      repository: 'https://github.com/MatheusMartino97/job-search-react-redux',
+      miniature: 'https://i.ibb.co/KxZh9TM/job-search-miniature.jpg',
+      gifs: {
+        desktop: 'https://i.ibb.co/6JDvV45/job-search-desktop.gif',
+        mobile: 'https://i.ibb.co/KDc5Nc1/job-search-mobile.gif',
+      },
+      descriptions: {
+        short: 'Buscador de vagas de emprego por localização.',
+        long: {
+          paragraphs: {
+            1: 'Esta é mais um projeto que fiz por conta própria para treinar minhas habilidades com React e Redux.',
+            2: 'A aplicação usa a localização que o usuário informa para buscar cargos disponíveis na região. Quando um desses cargos é selecionado, as instituições que fornecem tal cargo são apresentadas e ao serem clicadas, uma busca no Google é feita com o nome da instituição e a cidade que foi informada pelo usuário.',
+          },
+        },
+      },
+      technologies: ['React', 'Redux'],
+      libraries: ['react', 'react-router-dom', 'redux', 'react-redux'],
+      apis: ['https://documenter.getpostman.com/view/7929631/TWDZGFKK'],
+    },
+
+    testedPokedex: {
+      name: 'Tested Pokedex',
+      translation: 'Pokedex Testado',
+      path: 'tested-pokedex',
+      url:
+        'https://matheusmartino97.github.io/18_sd-09-project-react-testing-library/#/',
+      repository:
+        'https://github.com/MatheusMartino97/18_sd-09-project-react-testing-library',
+      miniature: 'https://i.ibb.co/w7CLyvR/tested-pokedex-miniature.jpg',
+      gifs: {
+        desktop: 'https://i.ibb.co/Fb6vZJH/tested-pokedex-desktop.gif',
+        mobile: 'https://i.ibb.co/HCqk37W/tested-pokedex-mobile.gif',
+      },
+      descriptions: {
+        short: 'Testando o pokedex com React Testing Library.',
+        long: {
+          paragraphs: {
+            1: 'Este é um projeto, presente a graduação da Trybe, que os alunos são responsáveis por realizar os testes.',
+            2: 'Para realizar os testes unitários e de integração, utilizei React Testing Library em conjunto com os matchers do Jest.'
+          },
+        },
+      },
+      technologies: ['React Testing Library', 'Jest'],
+      libraries: ['@testing-library/jest-dom', '@testing-library/react', '@testing-library/user-event'],
+      apis: [],
+    },
   },
 
   // projectName: {
   //   name: '',
   //   translation: '',
   //   path: '',
-  //   miniature: '',
   //   url: '',
   //   repository: '',
+  //   miniature: '',
   //   gifs: {
   //     desktop: '',
   //     mobile: '',
