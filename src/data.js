@@ -4,7 +4,7 @@ const projectsList = {
       name: 'Shopping Cart',
       translation: 'Carrinho de Compras',
       path: 'shopping-cart',
-      miniature: 'https://i.ibb.co/n35vBC6/shopping-cart-miniature.jpg',
+      miniature: 'https://i.ibb.co/7XZ5QrC/shopping-cart-miniature.jpg',
       url: 'https://matheusmartino97.github.io/12_sd-09-project-shopping-cart/',
       repository:
         'https://github.com/MatheusMartino97/12_sd-09-project-shopping-cart',
