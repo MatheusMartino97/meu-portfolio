@@ -131,7 +131,7 @@ const projectsList = {
           },
         },
       },
-      technologies: [],
+      technologies: ['HTML', 'CSS', 'JavaScript'],
       libraries: [],
       apis: [],
     },
