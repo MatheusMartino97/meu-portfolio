@@ -268,7 +268,7 @@ const projectsList = {
         long: {
           paragraphs: {
             1: 'Este foi um projeto que fiz por conta própria para treinar minhas habilidades com React e Redux. Tentei utilizar tudo o que eu vinha aprendendo na graduação da Trybe até então.',
-            2: 'Neste site, o usuário pode se cadastrar e informar se gosta de gatos ou cachorros. Quando fizer login, iram aparecer fotos aletórias do animal escolhido.',
+            2: 'Neste site, o usuário pode se cadastrar e informar se gosta de gatos ou cachorros. Quando fizer login, aparecerão fotos aletórias do animal escolhido.',
           },
         },
       },
