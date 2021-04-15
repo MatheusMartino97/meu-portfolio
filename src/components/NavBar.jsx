@@ -41,8 +41,8 @@ class NavBar extends Component {
         <div className="nav-links">
           <Link to="/">Home</Link>
           <Link to="/portfolio">Portfólio</Link>
-          <Link to="/curriculum">Currículo</Link>
-          <Link to="/services">Tecnologias</Link>
+          {/* <Link to="/curriculum">Currículo</Link>
+          <Link to="/services">Tecnologias</Link> */}
           <Link to="/contact">Contato</Link>
           <Link to="/about">Sobre</Link>
         </div>
@@ -55,8 +55,8 @@ class NavBar extends Component {
           <div className="dropdown-content">
             <Link to="/">Home</Link>
             <Link to="/portfolio">Portfólio</Link>
-            <Link to="/curriculum">Currículo</Link>
-            <Link to="/services">Tecnologias</Link>
+            {/* <Link to="/curriculum">Currículo</Link>
+            <Link to="/services">Tecnologias</Link> */}
             <Link to="/contact">Contato</Link>
             <Link to="/about">Sobre</Link>
           </div>
