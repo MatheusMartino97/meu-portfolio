@@ -6,7 +6,9 @@ class NavBar extends Component {
     return (
       <nav id="nav-bar">
         <div className="nav-name">
-          <h1>Matheus Martino do Amaral</h1>
+          <Link to="/">
+            <h1>Matheus Martino do Amaral</h1>
+          </Link>
         </div>
         <div className="nav-social-links">
           <a
