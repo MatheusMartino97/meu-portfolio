@@ -182,7 +182,7 @@ const projectsList = {
         long: {
           paragraphs: {
             1: 'O Trivia Game foi desenvolvido em grupo durante a minha formação na Trybe.',
-            2: 'Este projeto nos proporcionou bastante desenvoltura quando se trata de desenvolver com React e Redux. Além disso, também praticamos nossas soft-skills com nossos cologas de grupo.',
+            2: 'Este projeto nos proporcionou bastante desenvoltura quando se trata de desenvolver com React e Redux. Além disso, também praticamos nossas soft-skills com nossos colegas de grupo.',
             3: 'Utilizamos o Kanban para nos organizarmos e para tornar ágil a divisão de tarefas.'
           },
         },
