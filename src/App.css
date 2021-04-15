@@ -433,6 +433,19 @@ body {
   #home-page #nav-bar {
     background-color: #121f31;
   }
+  
+  #home-page .home-main section {
+    width: 90vw;
+    box-sizing: border-box;
+  }
+
+  #home-page .home-main .home-links {
+    flex-direction: column;
+  }
+
+  #home-page .home-main .home-links a {
+    margin: 5px;
+  }
 
   #project-page .gif-desktop img {
     width: 100%;
