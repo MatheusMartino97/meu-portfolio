@@ -500,6 +500,11 @@ body {
     width: 90vw;
     box-sizing: border-box;
   }
+
+  #contact-page section {
+    box-sizing: border-box;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 320px) {
