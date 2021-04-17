@@ -27,7 +27,7 @@ class Contact extends Component {
             </div>
             <div className="contact">
               <img
-                src="https://www.flaticon.com/svg/vstatic/svg/733/733585.svg?token=exp=1618188251~hmac=9887a3f7ceac0212b0953d55e440e5ce"
+                src="https://1.bp.blogspot.com/-FWQXX3VMLo8/XxFkxZp2UNI/AAAAAAAACTE/Ldql0DbCRqYNB89U2eEFGZSpe1YmPkNKACPcBGAYYCw/s400/whatsapp-logo-5.png"
                 alt="Whatsapp logo"
                 width="48px"
                 height="48px"
@@ -57,7 +57,25 @@ class Contact extends Component {
                 </a>
               </div>
             </div>
-            <div className="contact">
+            <div className="contact hidden">
+              <img
+                src="https://cdn4.iconfinder.com/data/icons/miu-square-gloss-social/60/github-square-gloss-social-media-512.png"
+                alt="Gmail logo"
+                width="48px"
+                height="48px"
+              />
+              <div className="info">
+                <em>MatheusMartino97</em>
+                <a
+                  href="https://github.com/MatheusMartino97/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Acesse meu GitHub
+                </a>
+              </div>
+            </div>
+            <div className="contact hidden">
               <img
                 src="https://image.flaticon.com/icons/png/512/174/174857.png"
                 alt="Gmail logo"
@@ -76,6 +94,7 @@ class Contact extends Component {
                 </a>
               </div>
             </div>
+
           </section>
         </main>
       </div>
