@@ -341,9 +341,9 @@ body {
   list-style: none;
 }
 
-#project-page ul li {
-  /* padding-left: 20px; */
-}
+/* #project-page ul li {
+  padding-left: 20px;
+} */
 
 @media screen and (max-width: 1024px) {
   #nav-bar {
