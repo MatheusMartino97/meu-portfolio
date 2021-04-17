@@ -59,7 +59,7 @@ class Project extends Component {
                   <ul>
                     <strong>APIs:</strong>
                     {apis.map((api) => (
-                      <li>{`* ${api};`}</li>
+                      <li>{`${api};`}</li>
                     ))}
                   </ul>
                 ) : null}
