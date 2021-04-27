@@ -39,7 +39,7 @@ class ProjectCard extends Component {
             Mais Informações
           </button>
         </div>
-        {shouldRedirect ? <Redirect to={ `/project/${path}` } /> : null}
+        {shouldRedirect ? <Redirect to={ `/projects/${path}` } /> : null}
       </div>
     );
   }

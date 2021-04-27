@@ -169,7 +169,7 @@ const projectsList = {
     triviaGame: {
       name: 'Trivia Game',
       translation: 'Jogo de Trivia',
-      path: 'trivia game',
+      path: 'trivia-game',
       url: 'https://matheusmartino97.github.io/20_sd-09-project-trivia-react-redux/#/',
       repository: 'https://github.com/MatheusMartino97/20_sd-09-project-trivia-react-redux',
       miniature: 'https://i.ibb.co/x8QTCct/trivia-game-miniature.jpg',

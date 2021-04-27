@@ -40,7 +40,7 @@ class NavBar extends Component {
         </div>
         <div className="nav-links">
           <Link to="/">Home</Link>
-          <Link to="/portfolio">Portfólio</Link>
+          <Link to="/projects">Projetos</Link>
           {/* <Link to="/curriculum">Currículo</Link>
           <Link to="/services">Tecnologias</Link> */}
           <Link to="/contact">Contato</Link>

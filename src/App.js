@@ -6,15 +6,15 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Project from './pages/Project';
-import Portfolio from './pages/Portfolio';
+import Projects from './pages/Projects';
 
 class App extends Component {
   render() {
     return (
         <Switch>
           <Route exact path="/" component={ Home } />
-          <Route path="/portfolio" component={ Portfolio }/>
-          <Route path="/project/:project" render={ (props) => <Project { ...props } /> } />
+          <Route path="/projects/:project" render={ (props) => <Project { ...props } /> } />
+          <Route path="/projects" component={ Projects }/>
           <Route path="/curriculum" />
           <Route path="/technologies" />
           <Route path="/contact" component={ Contact }/>
