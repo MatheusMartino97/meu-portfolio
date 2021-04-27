@@ -69,7 +69,6 @@ class Project extends Component {
               </Link>
             </div>
             <div className="links-container">
-              {/* <h2>Links</h2> */}
               <div className="links">
                 <a href={url} target="_blank" rel="noreferrer">
                   <button type="button">Acesse o site!</button>
@@ -77,9 +76,6 @@ class Project extends Component {
                 <a href={repository} target="_blank" rel="noreferrer">
                   <button type="button">Veja o repositório!</button>
                 </a>
-                {/* <Link to="/portfolio">
-                  <button type="button">Voltar para o portfólio</button>
-                </Link> */}
               </div>
             </div>
           </section>
