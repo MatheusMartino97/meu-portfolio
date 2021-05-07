@@ -7,6 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Project from './pages/Project';
 import Projects from './pages/Projects';
+import InDevelopment from './pages/InDevelopment';
 
 class App extends Component {
   render() {
@@ -15,8 +16,8 @@ class App extends Component {
           <Route exact path="/" component={ Home } />
           <Route path="/projects/:project" render={ (props) => <Project { ...props } /> } />
           <Route path="/projects" component={ Projects }/>
-          <Route path="/curriculum" />
-          <Route path="/technologies" />
+          <Route path="/curriculum" component={ InDevelopment } />
+          <Route path="/technologies" component={ InDevelopment } />
           <Route path="/contact" component={ Contact }/>
           <Route path="/about" component={ About } />
         </Switch>

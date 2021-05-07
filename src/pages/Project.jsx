@@ -64,7 +64,7 @@ class Project extends Component {
                   </ul>
                 ) : null}
               </div>
-              <Link to="/portfolio">
+              <Link to="/projects">
                 <button type="button">Voltar para o portfólio</button>
               </Link>
             </div>

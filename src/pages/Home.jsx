@@ -23,7 +23,7 @@ class Home extends Component {
             <h2>Sou desenvolvedor front-end júnior formado pela Trybe. <span id="pipe-bar" style={ { visibility: this.state.pipeVisibility } }>|</span></h2>
 
             <div className="home-links">
-              <Link to="/portfolio">
+              <Link to="/projects">
                 <button type="button">Veja meus projetos!</button>
               </Link>
               <Link to="/contact">
