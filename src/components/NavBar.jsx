@@ -56,10 +56,10 @@ function NavBar() {
           Currículo
         </Link>
         <Link
-          to="/technologies"
-          className={path === '/technologies' && 'selected-link'}
+          to="/skills"
+          className={path === '/skills' && 'selected-link'}
         >
-          Tecnologias
+          Habilidades
         </Link>
         <Link to="/contact" className={path === '/contact' && 'selected-link'}>
           Contato
@@ -78,7 +78,7 @@ function NavBar() {
           <Link to="/">Home</Link>
           <Link to="/projects">Portfólio</Link>
           <Link to="/curriculum">Currículo</Link>
-          <Link to="/services">Tecnologias</Link>
+          <Link to="/skills">Habilidades</Link>
           <Link to="/contact">Contato</Link>
           <Link to="/about">Sobre</Link>
         </div>

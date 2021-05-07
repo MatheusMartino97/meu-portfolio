@@ -87,6 +87,7 @@ body {
 #home-page .home-links button:hover {
   background-color: #67d3f3;
   color: #040a25;
+  box-shadow: 0 0 10px #67d3f3;
 }
 
 /* About page */
@@ -140,6 +141,13 @@ body {
 }
 
 #contact-page .contact .info a {
+  color: #67d3f3;
+  color: #d2d2d2;
+  text-decoration: underline #67d3f3;
+  transition: 0.5s;
+}
+
+#contact-page .contact .info a:hover {
   color: #67d3f3;
 }
 
@@ -198,6 +206,7 @@ body {
 .project-card button:hover {
   background-color: #67d3f3;
   color: #040a25;
+  box-shadow: 0 0 10px #67d3f3;
 }
 
 .project-card img {
@@ -314,6 +323,7 @@ body {
 #project-page button:hover {
   background-color: #67d3f3;
   color: #040a25;
+  box-shadow: 0 0 10px #67d3f3;
 }
 
 #project-page .gif-mobile img,
@@ -364,7 +374,12 @@ body {
 
 #in-development-page button:hover {
   background-color: #67d3f3;
+  box-shadow: 0 0 10px #67d3f3;
   color: #040a25;
+}
+
+#in-development-page .page-header {
+  width: 90vw;
 }
 
 @media screen and (max-width: 1024px) {
@@ -557,10 +572,16 @@ body {
 
   #project-page ul li {
     padding: 0;
-    /* font-size: small; */
     overflow: scroll;
     text-overflow: ellipsis;
     word-wrap: break-word;
+  }
+
+  #in-development-page .page-main {
+    width: 90vW;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
   }
 }
 

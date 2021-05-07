@@ -17,9 +17,10 @@ class App extends Component {
           <Route path="/projects/:project" render={ (props) => <Project { ...props } /> } />
           <Route path="/projects" component={ Projects }/>
           <Route path="/curriculum" component={ InDevelopment } />
-          <Route path="/technologies" component={ InDevelopment } />
+          <Route path="/skills" component={ InDevelopment } />
           <Route path="/contact" component={ Contact }/>
           <Route path="/about" component={ About } />
+          <Route path="*" component={ InDevelopment }/>
         </Switch>
     );
   }
