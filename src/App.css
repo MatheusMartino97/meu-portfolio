@@ -36,6 +36,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation: showContent 0.5s ease-in-out 1;
+}
+
+@keyframes showContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .page-main {
