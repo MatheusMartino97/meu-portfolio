@@ -280,6 +280,31 @@ const projectsList = {
           'https://aws.random.cat/meow',
         ],
       },
+
+      movieLibraryCRUD: {
+        name: 'Movie Library CRUD',
+        translation: 'Catálogo de Filmes CRUD',
+        path: 'movie-library-crud',
+        url: 'https://matheusmartino97.github.io/16_sd-09-project-movie-card-library-crud/#/',
+        repository: 'https://github.com/MatheusMartino97/16_sd-09-project-movie-card-library-crud',
+        miniature: 'https://i.ibb.co/0qNCLds/movie-library-CRUD-miniature.jpg',
+        gifs: {
+          desktop: 'https://i.ibb.co/qdMPtFM/movie-library-CRUD-desktop.gif',
+          mobile: '',
+        },
+        descriptions: {
+          short: 'Um catálogo de cards com informações de filmes implementado com CRUD (Create, Read, Update, Delete)',
+          long: {
+            paragraphs: {
+              1: 'Este foi um projeto do módulo de Front-End da Trybe onde o desafio era desenvolver uma aplicação implementando CRUD.',
+              2: 'Além disso, pude desenvolver minhas habilidades com ciclo de vida dos componentes React, props.children e como utilizá-la, a criação de rotas e links com BrowserRouter, Switch, Route, Link e Redirect.'
+            },
+          },
+        },
+        technologies: ['React'],
+        libraries: ['react', 'react-router-dom'],
+        apis: [],
+      },
   
       testedPokedex: {
         name: 'Tested Pokedex',
@@ -320,7 +345,7 @@ const projectsList = {
           mobile: 'https://i.ibb.co/175hqYn/pokedex-mobile.gif',
         },
         descriptions: {
-          short: 'Um pokedex simples feito com react',
+          short: 'Um pokedex simples feito com react.',
           long: {
             paragraphs: {
               1: 'Este projeto foi um exercício da Trybe para os alunos praticarem a sintaxe do React.',
