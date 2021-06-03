@@ -281,6 +281,32 @@ const projectsList = {
         ],
       },
 
+      frontEndOnlineStore: {
+        name: 'Front-End Online Store',
+        translation: 'Loja Virtual Front-End',
+        path: 'front-end-online-store',
+        url: 'https://matheusmartino97.github.io/17_sd-09-project-frontend-online-store/#/',
+        repository: 'https://github.com/MatheusMartino97/17_sd-09-project-frontend-online-store',
+        miniature: 'https://i.ibb.co/bBsRbd8/front-end-online-store-miniature.jpg',
+        gifs: {
+          desktop: 'https://i.ibb.co/ckbj1V0/front-end-online-store-desktop.gif',
+          mobile: '',
+        },
+        descriptions: {
+          short: 'Front-end de uma loja virtual feito com React.',
+          long: {
+            paragraphs: {
+              1: 'Projeto em grupo feito no módulo sobre desenvolvimento Front-End durante a graduação da Trybe.',
+              2: 'Utilizamos o Kanban para organizarmos as divisões de tarefas e adotamos o SCRUM como metodologia ágil.',
+              3: 'Note que neste projeto nenhuma tecnologia foi utilizada para nos auxiliar com o problema do "Prop-drilling". O objetivo do projeto foi nos mostrar a importância que as ferramentas como Redux e ContextAPI têm quando se trata de desenvolvimento com React, e como seria complicado trabalhar sem elas.'
+            },
+          },
+        },
+        technologies: ['React'],
+        libraries: ['react', 'react-router-dom'],
+        apis: ['https://api.mercadolibre.com/sites/MLB/categories', 'https://api.mercadolibre.com/sites/MLB/search?category=$categoryId&q=$query', 'https://api.mercadolibre.com/items?ids=$itemId'],
+      },
+
       movieLibraryCRUD: {
         name: 'Movie Library CRUD',
         translation: 'Catálogo de Filmes CRUD',
@@ -293,7 +319,7 @@ const projectsList = {
           mobile: '',
         },
         descriptions: {
-          short: 'Um catálogo de cards com informações de filmes implementado com CRUD (Create, Read, Update, Delete)',
+          short: 'Um catálogo de cards com informações de filmes implementado com CRUD (Create, Read, Update, Delete).',
           long: {
             paragraphs: {
               1: 'Este foi um projeto do módulo de Front-End da Trybe onde o desafio era desenvolver uma aplicação implementando CRUD.',

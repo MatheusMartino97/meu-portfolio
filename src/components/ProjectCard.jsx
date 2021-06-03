@@ -27,7 +27,7 @@ class ProjectCard extends Component {
     return (
       <div className="project-card">
         <div className="card-miniature">
-          <img src={miniature} alt="To do list miniature" />
+          <img src={miniature} alt={ `${name} miniature` }/>
         </div>
         <div className="card-infos">
           <h3>{name}</h3>
