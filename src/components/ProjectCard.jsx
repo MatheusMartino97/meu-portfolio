@@ -11,7 +11,7 @@ class ProjectCard extends Component {
   }
 
   handleClick(projectInfo) {
-    localStorage.setItem('projectInfo', JSON.stringify(projectInfo));
+    sessionStorage.setItem('projectInfo', JSON.stringify(projectInfo));
 
     this.setState({
       shouldRedirect: true,

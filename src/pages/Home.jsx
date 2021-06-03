@@ -8,8 +8,18 @@ class Home extends Component {
     super();
 
     this.state = {
-      pipeVisibility: 'hidden',
+      pipeVisibility: '',
     };
+
+    this.pipeTimer = setInterval(() => {
+      const { pipeVisibility } = this.state;
+
+      if (pipeVisibility === 'hidden') {
+        this.setState({ pipeVisibility: '' })
+      } else {
+        this.setState({ pipeVisibility: 'hidden' })
+      }
+    }, 500)
   }
 
   render() {

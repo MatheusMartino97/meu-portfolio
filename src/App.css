@@ -63,14 +63,14 @@ body {
 
 /* Home page */
 
-#home-page .home-main {
+#home-page .home-main, #choose-page .choose-main {
   display: flex;
   height: calc(90vh - 86.813px);
   align-items: center;
   animation: showContent 0.5s ease-in-out 1;
 }
 
-#home-page .home-main section {
+#home-page .home-main section, #choose-page .choose-main section {
   background-color: #040a25;
   padding: 20px;
   border-radius: 5px;
@@ -78,17 +78,17 @@ body {
   box-shadow: 0 0 10px #67d3f3;
 }
 
-#home-page .home-links {
+#home-page .home-links, #choose-page .choose-links {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
 }
 
-#home-page .home-links button {
+#home-page .home-links button, #choose-page .choose-links button, .choose-stack-button {
   padding: 20px;
   text-align: center;
   border-radius: 5px;
-  width: 100%;
+  /* width: 100%; */
   cursor: pointer;
   border-style: none;
   transition: 0.5s;
@@ -97,10 +97,24 @@ body {
   color: #d2d2d2;
 }
 
-#home-page .home-links button:hover {
+#home-page .home-links button:hover, #choose-page .choose-links button:hover, .choose-stack-button:hover {
   background-color: #67d3f3;
   color: #040a25;
   box-shadow: 0 0 10px #67d3f3;
+}
+
+/* Choose page */
+
+#choose-page h1 {
+  text-align: center;
+}
+
+#choose-page button {
+  margin: 10px;
+}
+
+.choose-stack-button {
+  /* width: 200px; */
 }
 
 /* About page */
@@ -229,7 +243,7 @@ body {
 
 /* Portfolio page */
 
-#portfolio-page .page-main {
+.portfolio-page .page-main {
   width: 80%;
   flex-wrap: wrap;
   padding-top: 0;
@@ -237,18 +251,18 @@ body {
   flex-direction: column;
 }
 
-#portfolio-page .projects-grid {
+.portfolio-page .projects-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-#portfolio-page section {
+.portfolio-page section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#portfolio-page h2 {
+.portfolio-page h2 {
   /* border-left: 1px solid #D2D2D2;
   border-bottom: 1px solid #D2D2D2; */
   border: 1px solid #d2d2d2;
@@ -257,7 +271,7 @@ body {
   box-shadow: 1px 1px 10px #d2d2d2;
 }
 
-#portfolio-page section.projects-container {
+.portfolio-page section.projects-container {
   padding: 20px;
 }
 
@@ -483,19 +497,23 @@ body {
     width: 100%;
   }
 
-  #home-page .home-main section {
+  #home-page .home-main section, #choose-page .choose-main section {
     width: 90vw;
     box-sizing: border-box;
   }
 }
 
 @media screen and (max-width: 540px) {
-  #home-page .home-main .home-links {
+  #home-page .home-main .home-links, #choose-page .choose-main .choose-links {
     flex-direction: column;
   }
 
-  #home-page .home-main .home-links a {
+  #home-page .home-main .home-links a, #choose-page .choose-main .choose-links a {
     margin: 5px;
+  }
+
+  #home-page .home-main .home-links button {
+    width: 100%;
   }
 }
 
@@ -555,7 +573,7 @@ body {
     height: auto;
   } */
 
-  #home-page #nav-bar {
+  #home-page #nav-bar, #choose-page #nav-bar {
     background-color: #121f31;
   }
 
@@ -599,11 +617,11 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-  #portfolio-page .page-main {
+  .portfolio-page .page-main {
     margin: 0;
   }
 
-  #portfolio-page .page-main .projects-container {
+  .portfolio-page .page-main .projects-container {
     padding: 0;
   }
 

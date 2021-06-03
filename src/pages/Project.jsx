@@ -13,7 +13,7 @@ class Project extends Component {
       technologies,
       libraries,
       apis,
-    } = JSON.parse(localStorage.getItem('projectInfo'));
+    } = JSON.parse(sessionStorage.getItem('projectInfo'));
 
     return (
       <div id="project-page" className="page-content">
