@@ -1,37 +1,27 @@
-import React, { Component } from 'react';
+import React from 'react';
+import FrontEnd from '../components/FrontEnd';
+import BackEnd from '../components/BackEnd';
+import ChooseStack from '../components/ChooseStack';
 
-import NavBar from '../components/NavBar';
-import ProjectCard from '../components/ProjectCard';
+function Projects({ stack }) {
+  const pageToBeReturned = (stack) => {
+    switch(stack) {
+      case 'front':
+        return <FrontEnd />;
+      
+      case 'back':
+        return <BackEnd />;
 
-import projectsList from '../data';
-
-class Portfolio extends Component {
-  render() {
-    const { javascript, react } = projectsList;
-
-    return (
-      <div id="portfolio-page" className="page-content">
-        <NavBar />
-        <header className="page-header">
-          <h1>Portfólio</h1>
-        </header>
-        <main className="page-main">
-          <section className="projects-container">
-            <h2>React</h2>
-            <div className="projects-grid">
-            {Object.values(react).map((project) => <ProjectCard projectInfo={project} />)}
-            </div>
-          </section>
-          <section className="projects-container">
-            <h2>HTML, JavaScript, CSS</h2>
-            <div className="projects-grid">
-              {Object.values(javascript).map((project) => <ProjectCard projectInfo={project} />)}
-            </div>
-          </section>
-        </main>
-      </div>
-    );
+      default:
+        return <ChooseStack />;
+    }
   }
+
+  return(
+    <div>
+      { pageToBeReturned(stack) }
+    </div>
+  );
 }
 
-export default Portfolio;
+export default Projects;

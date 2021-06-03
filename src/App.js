@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Project from './pages/Project';
-import Projects from './pages/Projects';
+import ProjectsProvider from './context/ProjectsProvider';
 import InDevelopment from './pages/InDevelopment';
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={ Home } />
           <Route path="/projects/:project" render={ (props) => <Project { ...props } /> } />
-          <Route path="/projects" component={ Projects }/>
+          <Route path="/projects" component={ ProjectsProvider }/>
           <Route path="/curriculum" component={ InDevelopment } />
           <Route path="/skills" component={ InDevelopment } />
           <Route path="/contact" component={ Contact }/>
