@@ -26,9 +26,11 @@ class ProjectCard extends Component {
 
     return (
       <div className="project-card">
-        <div className="card-miniature">
-          <img src={miniature} alt={ `${name} miniature` }/>
-        </div>
+        {miniature && (
+          <div className="card-miniature">
+            <img src={miniature} alt={`${name} miniature`} />
+          </div>
+        )}
         <div className="card-infos">
           <h3>{name}</h3>
           <h4>{translation}</h4>
@@ -39,7 +41,7 @@ class ProjectCard extends Component {
             Mais Informações
           </button>
         </div>
-        {shouldRedirect ? <Redirect to={ `/projects/${path}` } /> : null}
+        {shouldRedirect ? <Redirect to={`/projects/${path}`} /> : null}
       </div>
     );
   }

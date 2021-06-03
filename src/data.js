@@ -473,7 +473,25 @@ const projectsList = {
     },
   },
 
-  backend: {},
+  backend: {
+    mySqlAllForOne: {
+      name: 'MySQL All For One',
+      translation: 'MySQL Todos Por Um',
+      path: 'mysql-all-for-one',
+      repository: 'https://github.com/MatheusMartino97/23_sd-09-mysql-all-for-one',
+      miniature: 'https://i.ibb.co/1vnk5r2/mysql.jpg',
+      descriptions: {
+        short: 'Queries para encontrar as informações esperadas pelos desafios.',
+        long: {
+          paragraphs: {
+            1: 'Primeiro projeto sobre sobre Back-End feito durante a graduação na Trybe.',
+            2: 'Pude praticar minha habilidades em gerar valores e selecionar colunas individualmente com SELECT; renomear e gerar colunas com AS; concatenar colunas e valores com CONCAT; remover dados duplicados em uma consulta com DISTINCT; contar resultados com COUNT; limitar resultados em uma consulta com LIMIT; pular resultados com OFFSET; ordenar com ORDER BY; filtrar com WHERE; utilizar operadores booleanos e relacionais em consultas; criar consultas dinâmicas com LIKE; consultar faixas de resultados com IN e BETWEEN; consultar datas; inserir, atualizar e deletar dados em tabelas com INSERT, UPDATE e DELETE.'
+          },
+        },
+      },
+      technologies: ['MySQL', 'MySQL Workbench'],
+    },
+  },
 };
 
 export default projectsList;
@@ -485,10 +503,10 @@ export default projectsList;
 //   url: '',
 //   repository: '',
 //   miniature: '',
-//   gifs: {
-//     desktop: '',
-//     mobile: '',
-//   },
+  // gifs: {
+  //   desktop: '',
+  //   mobile: '',
+  // },
 //   descriptions: {
 //     short: '',
 //     long: {
