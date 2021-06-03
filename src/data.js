@@ -6,7 +6,8 @@ const projectsList = {
         translation: 'Carrinho de Compras',
         path: 'shopping-cart',
         miniature: 'https://i.ibb.co/7XZ5QrC/shopping-cart-miniature.jpg',
-        url: 'https://matheusmartino97.github.io/12_sd-09-project-shopping-cart/',
+        url:
+          'https://matheusmartino97.github.io/12_sd-09-project-shopping-cart/',
         repository:
           'https://github.com/MatheusMartino97/12_sd-09-project-shopping-cart',
         gifs: {
@@ -27,7 +28,7 @@ const projectsList = {
         libraries: [],
         apis: ['https://api.mercadolibre.com/sites/MLB/search?q=$QUERY'],
       },
-  
+
       colorGuess: {
         name: 'Color Guess',
         translation: 'Adivinhe a Cor',
@@ -54,7 +55,7 @@ const projectsList = {
         libraries: [],
         apis: [],
       },
-  
+
       toDoList: {
         name: 'To Do List',
         translation: 'Lista de Tarefas',
@@ -81,7 +82,7 @@ const projectsList = {
         libraries: ['Bulma'],
         apis: [],
       },
-  
+
       pixelsArt: {
         name: 'Pixels Art',
         translation: 'Arte com Pixels',
@@ -108,7 +109,7 @@ const projectsList = {
         libraries: [],
         apis: [],
       },
-  
+
       memeGenerator: {
         name: 'Meme Generator',
         translation: 'Gerador de Memes',
@@ -136,7 +137,7 @@ const projectsList = {
         libraries: [],
         apis: [],
       },
-  
+
       misteryLetter: {
         name: 'Mistery Letter',
         translation: 'Carta Misteriosa',
@@ -165,14 +166,70 @@ const projectsList = {
         apis: [],
       },
     },
-  
+
     react: {
+      recipesApp: {
+        name: 'Recipes App',
+        translation: 'Aplicativo de Receitas',
+        path: 'recipes-app',
+        url:
+          'https://matheusmartino97.github.io/22_sd-09-project-recipes-app/#/',
+        repository:
+          'https://github.com/MatheusMartino97/22_sd-09-project-recipes-app',
+        miniature: 'https://i.ibb.co/jyL7LBM/recipes-app-miniature.jpg',
+        gifs: {
+          desktop: 'https://i.ibb.co/S3dpSGM/recipes-app-desktop.gif',
+          mobile: 'https://i.ibb.co/p101VKn/recipes-app-mobile.gif',
+        },
+        descriptions: {
+          short: 'Aplicativo de receitas feito com React e Redux.',
+          long: {
+            paragraphs: {
+              1: 'Projeto em grupo realizado no módulo sobre desenvolvimento Fron-End durante a graduação na Trybe.',
+              2: 'Este projeto consiste em um app de receitas desenvolvido com React. Utilizamos Redux para gerenciar o estado global da aplicação.',
+              3: 'Durante o desenvolvimento pude aprimorar meus conhecimentos sobre os React Hooks useState e useEffect, assim como me habituar ainda mais com trabalho em equipe seguindo metodologias ágeis.',
+              4: 'Nós alunos fomos responsáveis por definir o escopo de cada tarefa, assim como o nível de prioridade e como seriam distribuidas.',
+              5: ''
+            },
+          },
+        },
+        technologies: ['React', 'Redux', 'Bootstrap'],
+        libraries: [
+          'react',
+          'react-router-dom',
+          'redux',
+          'redux-thunk',
+          'react-redux',
+          'redux-devtools-extension',
+          'bootstrap',
+          'react-bootstrap',
+          'prop-types',
+          'react-multi-carousel',
+        ],
+        apis: [
+          'https://www.themealdb.com/api/json/v1/1/list.php?a=list',
+          'https://www.themealdb.com/api/json/v1/1/filter.php?a=$area',
+          'https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list',
+          'https://www.themealdb.com/api/json/v1/1/list.php?c=list',
+          'https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=$category',
+          'https://www.themealdb.com/api/json/v1/1/filter.php?c=$category',
+          'https://www.themealdb.com/api/json/v1/1/list.php?i=list',
+          'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list',
+          'https://www.themealdb.com/api/json/v1/1/search.php?s=',
+          'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=',
+          'https://www.themealdb.com/api/json/v1/1/lookup.php?i=$id',
+          'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=$id',
+        ],
+      },
+
       triviaGame: {
         name: 'Trivia Game',
         translation: 'Jogo de Trivia',
         path: 'trivia-game',
-        url: 'https://matheusmartino97.github.io/20_sd-09-project-trivia-react-redux/#/',
-        repository: 'https://github.com/MatheusMartino97/20_sd-09-project-trivia-react-redux',
+        url:
+          'https://matheusmartino97.github.io/20_sd-09-project-trivia-react-redux/#/',
+        repository:
+          'https://github.com/MatheusMartino97/20_sd-09-project-trivia-react-redux',
         miniature: 'https://i.ibb.co/x8QTCct/trivia-game-miniature.jpg',
         gifs: {
           desktop: 'https://i.ibb.co/XYxjD6S/trivia-game-desktop.gif',
@@ -184,20 +241,32 @@ const projectsList = {
             paragraphs: {
               1: 'O Trivia Game foi desenvolvido em grupo durante a minha formação na Trybe.',
               2: 'Este projeto nos proporcionou bastante desenvoltura quando se trata de desenvolver com React e Redux. Além disso, também praticamos nossas soft-skills com nossos colegas de grupo.',
-              3: 'Utilizamos o Kanban para nos organizarmos e para tornar ágil a divisão de tarefas.'
+              3: 'Utilizamos o Kanban para nos organizarmos e para tornar ágil a divisão de tarefas.',
             },
           },
         },
         technologies: ['React', 'Redux'],
-        libraries: ['react', 'react-router-dom', 'react-redux', 'redux', 'redux-thunk', 'crypto-js', 'emoji-dictionary'],
-        apis: ['https://opentdb.com/api_token.php?command=request', 'https://opentdb.com/api.php?amount=$QUANTITY&token=$TOKEN'],
+        libraries: [
+          'react',
+          'react-router-dom',
+          'react-redux',
+          'redux',
+          'redux-thunk',
+          'crypto-js',
+          'emoji-dictionary',
+        ],
+        apis: [
+          'https://opentdb.com/api_token.php?command=request',
+          'https://opentdb.com/api.php?amount=$QUANTITY&token=$TOKEN',
+        ],
       },
-  
+
       trybeWallet: {
         name: 'Trybe Wallet',
         translation: 'Carteira da Trybe',
         path: 'trybe-wallet',
-        url: 'https://matheusmartino97.github.io/19_sd-09-project-trybewallet/#/',
+        url:
+          'https://matheusmartino97.github.io/19_sd-09-project-trybewallet/#/',
         repository:
           'https://github.com/MatheusMartino97/19_sd-09-project-trybewallet',
         miniature: 'https://i.ibb.co/ccbL5Ft/trybe-wallet-miniature.jpg',
@@ -225,13 +294,14 @@ const projectsList = {
         ],
         apis: ['https://economia.awesomeapi.com.br/json/all'],
       },
-  
+
       jobSearch: {
         name: 'Job Search',
         translation: 'Busca de Empregos',
         path: 'job-search',
         url: 'https://matheusmartino97.github.io/job-search-react-redux/#/',
-        repository: 'https://github.com/MatheusMartino97/job-search-react-redux',
+        repository:
+          'https://github.com/MatheusMartino97/job-search-react-redux',
         miniature: 'https://i.ibb.co/KxZh9TM/job-search-miniature.jpg',
         gifs: {
           desktop: 'https://i.ibb.co/6JDvV45/job-search-desktop.gif',
@@ -250,12 +320,13 @@ const projectsList = {
         libraries: ['react', 'react-router-dom', 'redux', 'react-redux'],
         apis: ['https://documenter.getpostman.com/view/7929631/TWDZGFKK'],
       },
-  
+
       catsVsDogs: {
         name: 'Cats vs Dogs',
         translation: 'Gatos vs Gatos',
         path: 'cats-vs-dogs',
-        url: 'https://matheusmartino97.github.io/cat-vs-dog-customer-register/#/',
+        url:
+          'https://matheusmartino97.github.io/cat-vs-dog-customer-register/#/',
         repository:
           'https://github.com/MatheusMartino97/cat-vs-dog-customer-register',
         miniature: 'https://i.ibb.co/Q9QkcQy/cats-vs-dogs-miniature.jpg',
@@ -285,11 +356,15 @@ const projectsList = {
         name: 'Front-End Online Store',
         translation: 'Loja Virtual Front-End',
         path: 'front-end-online-store',
-        url: 'https://matheusmartino97.github.io/17_sd-09-project-frontend-online-store/#/',
-        repository: 'https://github.com/MatheusMartino97/17_sd-09-project-frontend-online-store',
-        miniature: 'https://i.ibb.co/bBsRbd8/front-end-online-store-miniature.jpg',
+        url:
+          'https://matheusmartino97.github.io/17_sd-09-project-frontend-online-store/#/',
+        repository:
+          'https://github.com/MatheusMartino97/17_sd-09-project-frontend-online-store',
+        miniature:
+          'https://i.ibb.co/bBsRbd8/front-end-online-store-miniature.jpg',
         gifs: {
-          desktop: 'https://i.ibb.co/ckbj1V0/front-end-online-store-desktop.gif',
+          desktop:
+            'https://i.ibb.co/ckbj1V0/front-end-online-store-desktop.gif',
           mobile: '',
         },
         descriptions: {
@@ -298,32 +373,39 @@ const projectsList = {
             paragraphs: {
               1: 'Projeto em grupo feito no módulo sobre desenvolvimento Front-End durante a graduação da Trybe.',
               2: 'Utilizamos o Kanban para organizarmos as divisões de tarefas e adotamos o SCRUM como metodologia ágil.',
-              3: 'Note que neste projeto nenhuma tecnologia foi utilizada para nos auxiliar com o problema do "Prop-drilling". O objetivo do projeto foi nos mostrar a importância que as ferramentas como Redux e ContextAPI têm quando se trata de desenvolvimento com React, e como seria complicado trabalhar sem elas.'
+              3: 'Note que neste projeto nenhuma tecnologia foi utilizada para nos auxiliar com o problema do "Prop-drilling". O objetivo do projeto foi nos mostrar a importância que as ferramentas como Redux e ContextAPI têm quando se trata de desenvolvimento com React, e como seria complicado trabalhar sem elas.',
             },
           },
         },
         technologies: ['React'],
         libraries: ['react', 'react-router-dom'],
-        apis: ['https://api.mercadolibre.com/sites/MLB/categories', 'https://api.mercadolibre.com/sites/MLB/search?category=$categoryId&q=$query', 'https://api.mercadolibre.com/items?ids=$itemId'],
+        apis: [
+          'https://api.mercadolibre.com/sites/MLB/categories',
+          'https://api.mercadolibre.com/sites/MLB/search?category=$categoryId&q=$query',
+          'https://api.mercadolibre.com/items?ids=$itemId',
+        ],
       },
 
       movieLibraryCRUD: {
         name: 'Movie Library CRUD',
         translation: 'Catálogo de Filmes CRUD',
         path: 'movie-library-crud',
-        url: 'https://matheusmartino97.github.io/16_sd-09-project-movie-card-library-crud/#/',
-        repository: 'https://github.com/MatheusMartino97/16_sd-09-project-movie-card-library-crud',
+        url:
+          'https://matheusmartino97.github.io/16_sd-09-project-movie-card-library-crud/#/',
+        repository:
+          'https://github.com/MatheusMartino97/16_sd-09-project-movie-card-library-crud',
         miniature: 'https://i.ibb.co/0qNCLds/movie-library-CRUD-miniature.jpg',
         gifs: {
           desktop: 'https://i.ibb.co/qdMPtFM/movie-library-CRUD-desktop.gif',
           mobile: '',
         },
         descriptions: {
-          short: 'Um catálogo de cards com informações de filmes implementado com CRUD (Create, Read, Update, Delete).',
+          short:
+            'Um catálogo de cards com informações de filmes implementado com CRUD (Create, Read, Update, Delete).',
           long: {
             paragraphs: {
               1: 'Este foi um projeto do módulo de Front-End da Trybe onde o desafio era desenvolver uma aplicação implementando CRUD.',
-              2: 'Além disso, pude desenvolver minhas habilidades com ciclo de vida dos componentes React, props.children e como utilizá-la, a criação de rotas e links com BrowserRouter, Switch, Route, Link e Redirect.'
+              2: 'Além disso, pude desenvolver minhas habilidades com ciclo de vida dos componentes React, props.children e como utilizá-la, a criação de rotas e links com BrowserRouter, Switch, Route, Link e Redirect.',
             },
           },
         },
@@ -331,7 +413,7 @@ const projectsList = {
         libraries: ['react', 'react-router-dom'],
         apis: [],
       },
-  
+
       testedPokedex: {
         name: 'Tested Pokedex',
         translation: 'Pokedex Testado',
@@ -350,15 +432,19 @@ const projectsList = {
           long: {
             paragraphs: {
               1: 'Este é um projeto, presente a graduação da Trybe, que os alunos são responsáveis por realizar os testes.',
-              2: 'Para realizar os testes unitários e de integração, utilizei React Testing Library em conjunto com os matchers do Jest.'
+              2: 'Para realizar os testes unitários e de integração, utilizei React Testing Library em conjunto com os matchers do Jest.',
             },
           },
         },
         technologies: ['React Testing Library', 'Jest'],
-        libraries: ['@testing-library/jest-dom', '@testing-library/react', '@testing-library/user-event'],
+        libraries: [
+          '@testing-library/jest-dom',
+          '@testing-library/react',
+          '@testing-library/user-event',
+        ],
         apis: [],
       },
-  
+
       pokedex: {
         name: 'Pokedex',
         translation: 'Pokedex',
@@ -387,33 +473,31 @@ const projectsList = {
     },
   },
 
-  backend: {
-    
-  }
-}
+  backend: {},
+};
 
 export default projectsList;
 
-  // projectName: {
-  //   name: '',
-  //   translation: '',
-  //   path: '',
-  //   url: '',
-  //   repository: '',
-  //   miniature: '',
-  //   gifs: {
-  //     desktop: '',
-  //     mobile: '',
-  //   },
-  //   descriptions: {
-  //     short: '',
-  //     long: {
-  //       paragraphs: {
-  //         1: '',
-  //       },
-  //     },
-  //   },
-  //   technologies: [],
-  //   libraries: [],
-  //   apis: [],
-  // },
+// projectName: {
+//   name: '',
+//   translation: '',
+//   path: '',
+//   url: '',
+//   repository: '',
+//   miniature: '',
+//   gifs: {
+//     desktop: '',
+//     mobile: '',
+//   },
+//   descriptions: {
+//     short: '',
+//     long: {
+//       paragraphs: {
+//         1: '',
+//       },
+//     },
+//   },
+//   technologies: [],
+//   libraries: [],
+//   apis: [],
+// },
