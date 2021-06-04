@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { connect } from 'react-redux';
-import updateTimerAction from '../Redux/actions';
+import updateTimerAction from '../redux/actions';
 
 function Timer({ updateTimer }) {
   useEffect(() => {
