@@ -22,20 +22,22 @@ class Project extends Component {
           <h1>{name}</h1>
         </header>
         <main className="page-main">
-          <section className="project-demonstrations">
-            {gifs.mobile && (
-              <div className="gif-mobile">
-                <h2>Mobile</h2>
-                <img src={gifs.mobile} alt="Mobile demonstration" />
-              </div>
-            )}
-            {gifs.desktop && (
-              <div className="gif-desktop">
-                <h2>Desktop</h2>
-                <img src={gifs.desktop} alt="Desktop demonstration" />
-              </div>
-            )}
-          </section>
+          {gifs && (
+            <section className="project-demonstrations">
+              {gifs.mobile && (
+                <div className="gif-mobile">
+                  <h2>Mobile</h2>
+                  <img src={gifs.mobile} alt="Mobile demonstration" />
+                </div>
+              )}
+              {gifs.desktop && (
+                <div className="gif-desktop">
+                  <h2>Desktop</h2>
+                  <img src={gifs.desktop} alt="Desktop demonstration" />
+                </div>
+              )}
+            </section>
+          )}
           <section className="project-info">
             <div className="coments">
               <h2>Sobre o projeto</h2>
@@ -43,28 +45,30 @@ class Project extends Component {
                 <p>{paragraph}</p>
               ))}
               <div>
-                <p>
-                  <strong>Tecnologias:</strong>
-                  {technologies.map((technologie) => (
-                    <em>{` ${technologie};`}</em>
-                  ))}
-                </p>
-                {libraries.length !== 0 ? (
+                {technologies && (
+                  <p>
+                    <strong>Tecnologias:</strong>
+                    {technologies.map((technologie) => (
+                      <em>{` ${technologie};`}</em>
+                    ))}
+                  </p>
+                )}
+                {libraries && (
                   <p>
                     <strong>Bibliotecas:</strong>
                     {libraries.map((library) => (
                       <em>{` ${library};`}</em>
                     ))}
                   </p>
-                ) : null}
-                {apis.length !== 0 ? (
+                ) }
+                {apis && (
                   <ul>
                     <strong>APIs:</strong>
                     {apis.map((api) => (
                       <li>{`${api};`}</li>
                     ))}
                   </ul>
-                ) : null}
+                ) }
               </div>
               <Link to="/projects">
                 <button type="button">Voltar para o portfólio</button>
@@ -72,9 +76,11 @@ class Project extends Component {
             </div>
             <div className="links-container">
               <div className="links">
-                <a href={url} target="_blank" rel="noreferrer">
-                  <button type="button">Acesse o site!</button>
-                </a>
+                {url && (
+                  <a href={url} target="_blank" rel="noreferrer">
+                    <button type="button">Acesse o site!</button>
+                  </a>
+                )}
                 <a href={repository} target="_blank" rel="noreferrer">
                   <button type="button">Veja o repositório!</button>
                 </a>

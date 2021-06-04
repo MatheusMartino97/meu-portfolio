@@ -45,7 +45,7 @@ function NavBar() {
         </Link>
         <Link
           to="/projects"
-          className={path === '/projects' && 'selected-link'}
+          className={path.includes('/projects') && 'selected-link'}
         >
           Projetos
         </Link>
