@@ -474,12 +474,48 @@ const projectsList = {
   },
 
   backend: {
+    mongodbDataflights: {
+      name: 'MongoDB Dataflights',
+      translation: 'MongoDB Informações de Vôos',
+      path: 'mongodb-dataflights',
+      repository: 'https://github.com/MatheusMartino97/26_sd-09-mongodb-dataflights',
+      miniature: 'https://i.ibb.co/7tG35nG/mongodb.jpg',
+      descriptions: {
+        short: 'Queries para consultar, deletar e contar documentos da coleção do projeto.',
+        long: {
+          paragraphs: {
+            1: 'Primeiro projeto sobre MongoDB e bancos de dados não relazionais no módulo de Back-End da graduação da Trybe.',
+            2: 'Com esse projeto fui capaz de buscar documentos na coleção do projeto; utilizar filtros de busca; deletar documentos conforme o filtro; contar documentos compreendidos nos filtros pedidos; inserir documentos no banco de dados.'
+          },
+        },
+      },
+      technologies: ['MongoDB'],
+    },
+
+    mySqlOneForAll: {
+      name: 'MySQL One For All',
+      translation: 'MySQL Um Por Todos',
+      path: 'mysql-one-for-all',
+      repository: 'https://github.com/MatheusMartino97/25_sd-09-mysql-one-for-all',
+      miniature: 'https://i.ibb.co/v15y9Q0/mysql-FIXED.jpg',
+      descriptions: {
+        short: 'Normalização de tabelas, criação de diagramas de relacionamentos e planejamento do modelo lógico de um banco de dados.',
+        long: {
+          paragraphs: {
+            1: 'Projeto sobre MySQL feito durante o módulo de Back-End na graduação da Trybe.',
+            2: 'Neste projeto fui capaz de criar o diagrama de relacionamentos e modelar um banco de dados identificando suas entidades, atributos e relacionamentos; aplicar a 1ª, 2ª e 3ª forma normal; criar e alterar tabelas; lidar com VIEWs; criar reações dinâmicas com TRIGGERS.'
+          },
+        },
+      },
+      technologies: ['MySQL', 'MySQL Workbench'],
+    },
+
     mySqlVocabularyBooster: {
       name: 'MySQL Vocabulary Booster',
       translation: 'Aprimorador de Vocabulário MySQL',
       path: 'mysql-vocabulary-booster',
       repository: 'https://github.com/MatheusMartino97/24_sd-09-mysql-vocabulary-booster',
-      miniature: 'https://i.ibb.co/1vnk5r2/mysql.jpg',
+      miniature: 'https://i.ibb.co/v15y9Q0/mysql-FIXED.jpg',
       descriptions: {
         short: 'Desafios que necessitam de queries mais elaboradas para serem resolvidos.',
         long: {
@@ -497,7 +533,7 @@ const projectsList = {
       translation: 'MySQL Todos Por Um',
       path: 'mysql-all-for-one',
       repository: 'https://github.com/MatheusMartino97/23_sd-09-mysql-all-for-one',
-      miniature: 'https://i.ibb.co/1vnk5r2/mysql.jpg',
+      miniature: 'https://i.ibb.co/v15y9Q0/mysql-FIXED.jpg',
       descriptions: {
         short: 'Queries para encontrar as informações esperadas pelos desafios.',
         long: {
