@@ -1,36 +1,25 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
 import NavBar from '../components/NavBar';
+import { connect } from 'react-redux';
 
 class Home extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      pipeVisibility: '',
-    };
-
-    this.pipeTimer = setInterval(() => {
-      const { pipeVisibility } = this.state;
-
-      if (pipeVisibility === 'hidden') {
-        this.setState({ pipeVisibility: '' })
-      } else {
-        this.setState({ pipeVisibility: 'hidden' })
-      }
-    }, 500)
-  }
-
   render() {
+    const { timer } = this.props;
+
     return (
       <div id="home-page" className="page-content">
         <NavBar />
         <main className="home-main">
           <section>
-            <h1>{ '<Olá />' }</h1>
+            <h1>{'<Olá />'}</h1>
             <h2>Meu nome é Matheus.</h2>
-            <h2>Sou desenvolvedor front-end júnior formado pela Trybe. <span id="pipe-bar" style={ { visibility: this.state.pipeVisibility } }>|</span></h2>
+            <h2>
+              Sou desenvolvedor full-stack formado pela Trybe.{' '}
+              <span id="pipe-bar" style={{ visibility: timer || 'hidden' }}>
+                |
+              </span>
+            </h2>
 
             <div className="home-links">
               <Link to="/projects">
@@ -47,4 +36,8 @@ class Home extends Component {
   }
 }
 
-export default Home;
+const mapStateToProps = (state) => ({
+  timer: state.timer,
+});
+
+export default connect(mapStateToProps)(Home);
