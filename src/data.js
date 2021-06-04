@@ -474,6 +474,24 @@ const projectsList = {
   },
 
   backend: {
+    mySqlVocabularyBooster: {
+      name: 'MySQL Vocabulary Booster',
+      translation: 'Aprimorador de Vocabulário MySQL',
+      path: 'mysql-vocabulary-booster',
+      repository: 'https://github.com/MatheusMartino97/24_sd-09-mysql-vocabulary-booster',
+      miniature: 'https://i.ibb.co/1vnk5r2/mysql.jpg',
+      descriptions: {
+        short: 'Desafios que necessitam de queries mais elaboradas para serem resolvidos.',
+        long: {
+          paragraphs: {
+            1: 'Projeto sobre MySQL feito durante o módulo de Back-End na graduação da Trybe.',
+            2: 'Com estes desafios fui capaz de criar condicionais no SQL usando IF e CASE; manipular strings no SQL; usar diversar funções matemáticas do MySQL; extrair informações específicas sobre datas de uma tabela; utilizar funções de agregação como AVG, MIN, MAX, SUM e COUNT; exibir e filtrar dados de forma agrupada com GROUP BY e HAVING; utilizar INNER JOIN, LEFT JOIN, RIGHT JOIN para combinar dados de uma ou mais tabelas; utilizar SELF JOIN para fazer join de uma tabela com ela própria; utilizar SUBQUERIES; ciar queries mais eficientes através do EXISTS; montar blocor de código SQL reutilizáveis com STORED PROCEDURES e STORED FUNCTIONS.'
+          },
+        },
+      },
+      technologies: ['MySQL', 'MySQL Workbench'],
+    },
+
     mySqlAllForOne: {
       name: 'MySQL All For One',
       translation: 'MySQL Todos Por Um',
@@ -484,7 +502,7 @@ const projectsList = {
         short: 'Queries para encontrar as informações esperadas pelos desafios.',
         long: {
           paragraphs: {
-            1: 'Primeiro projeto sobre sobre Back-End feito durante a graduação na Trybe.',
+            1: 'Primeiro projeto sobre Back-End feito durante a graduação na Trybe.',
             2: 'Pude praticar minha habilidades em gerar valores e selecionar colunas individualmente com SELECT; renomear e gerar colunas com AS; concatenar colunas e valores com CONCAT; remover dados duplicados em uma consulta com DISTINCT; contar resultados com COUNT; limitar resultados em uma consulta com LIMIT; pular resultados com OFFSET; ordenar com ORDER BY; filtrar com WHERE; utilizar operadores booleanos e relacionais em consultas; criar consultas dinâmicas com LIKE; consultar faixas de resultados com IN e BETWEEN; consultar datas; inserir, atualizar e deletar dados em tabelas com INSERT, UPDATE e DELETE.'
           },
         },
@@ -503,10 +521,10 @@ export default projectsList;
 //   url: '',
 //   repository: '',
 //   miniature: '',
-  // gifs: {
-  //   desktop: '',
-  //   mobile: '',
-  // },
+//   gifs: {
+//     desktop: '',
+//     mobile: '',
+//   },
 //   descriptions: {
 //     short: '',
 //     long: {
