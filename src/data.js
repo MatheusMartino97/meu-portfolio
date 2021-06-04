@@ -189,7 +189,6 @@ const projectsList = {
               2: 'Este projeto consiste em um app de receitas desenvolvido com React. Utilizamos Redux para gerenciar o estado global da aplicação.',
               3: 'Durante o desenvolvimento pude aprimorar meus conhecimentos sobre os React Hooks useState e useEffect, assim como me habituar ainda mais com trabalho em equipe seguindo metodologias ágeis.',
               4: 'Nós alunos fomos responsáveis por definir o escopo de cada tarefa, assim como o nível de prioridade e como seriam distribuidas.',
-              5: ''
             },
           },
         },
