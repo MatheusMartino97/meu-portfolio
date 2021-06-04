@@ -456,7 +456,7 @@ const projectsList = {
           mobile: 'https://i.ibb.co/175hqYn/pokedex-mobile.gif',
         },
         descriptions: {
-          short: 'Um pokedex simples feito com react.',
+          short: 'Um pokedex simples feito com React.',
           long: {
             paragraphs: {
               1: 'Este projeto foi um exercício da Trybe para os alunos praticarem a sintaxe do React.',
