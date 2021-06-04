@@ -24,7 +24,9 @@ function ProjectsProvider() {
     }
   }
 
-  const contextValue = { chooseTheStack }
+  const contextValue = { 
+    chooseTheStack,
+  }
 
   return(
     <projectsContext.Provider value={ contextValue }>

@@ -1,18 +1,10 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 import projectsContext from '../context/projectsContext';
 import NavBar from './NavBar';
+import { connect } from 'react-redux';
 
-function ChooseStack() {
+function ChooseStack({ timer }) {
   const { chooseTheStack } = useContext(projectsContext);
-  const [usePipeVisibility, setPipeVisibility] = useState('');
-
-  // setInterval(() => {
-  //   if (usePipeVisibility === 'hidden') {
-  //     setPipeVisibility('');
-  //   } else {
-  //     setPipeVisibility('hidden');
-  //   }
-  // }, 500);
 
   return (
     <div id="choose-page" className="page-content">
@@ -21,7 +13,7 @@ function ChooseStack() {
         <section>
           <h1>
             Escolha uma Stack.{' '}
-            <span style={{ visibility: usePipeVisibility }}>|</span>
+            <span style={{ visibility: timer || 'hidden' }}>|</span>
           </h1>
 
           <div className="choose-links">
@@ -48,4 +40,8 @@ function ChooseStack() {
   );
 }
 
-export default ChooseStack;
+const mapStateToProps = (state) => ({
+  timer: state.timer,
+});
+
+export default connect(mapStateToProps)(ChooseStack);

@@ -4,11 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter as BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './Redux/store';
+import Timer from './components/Timer';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  <Provider store={ store }>
+    <BrowserRouter>
+      <App />
+      <Timer />
+    </BrowserRouter>
+  </Provider>,
 
   document.getElementById('root')
 );
