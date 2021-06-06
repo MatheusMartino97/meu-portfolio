@@ -177,7 +177,7 @@ const projectsList = {
         miniature: 'https://i.ibb.co/3FXX7cy/to-do-list-material-ui-miniature.jpg',
         gifs: {
           desktop: 'https://i.ibb.co/LhH03Gb/to-do-list-material-ui-desktop.gif',
-          mobile: '',
+          mobile: 'https://i.ibb.co/bK1K4bX/to-do-list-material-ui-mobile.gif',
         },
         descriptions: {
           short: 'Lista de tarefas utilizando Material UI.',
