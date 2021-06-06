@@ -60,7 +60,7 @@ class Project extends Component {
                       <em>{` ${library};`}</em>
                     ))}
                   </p>
-                ) }
+                )}
                 {apis && (
                   <ul>
                     <strong>APIs:</strong>
@@ -68,7 +68,7 @@ class Project extends Component {
                       <li>{`${api};`}</li>
                     ))}
                   </ul>
-                ) }
+                )}
               </div>
               <Link to="/projects">
                 <button type="button">Voltar para o portfólio</button>

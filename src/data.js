@@ -183,7 +183,7 @@ const projectsList = {
           short: 'Lista de tarefas utilizando Material UI.',
           long: {
             paragraphs: {
-              1: 'Decidi revisitar o projeto <a href="https://matheusmartino97.github.io/04_sd-09-project-todo-list/">To Do List</a> que eu havia feito na Trybe, mas dessa vez utilizando React, Router-DOM e Material UI.',
+              1: 'Decidi revisitar o projeto To Do List que eu havia feito na Trybe, mas dessa vez desenvolvi uma lista de tarefas utilizando React, Router-DOM e Material UI.',
             },
           },
         },
