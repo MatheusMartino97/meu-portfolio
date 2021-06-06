@@ -7,7 +7,8 @@ function NavBar() {
   return (
     <nav id="nav-bar">
       <div className="nav-name">
-        <Link to="/">
+        <Link to="/" className="link-logo">
+          <img src="https://i.ibb.co/fvBXzL9/logo-nav-bar.png" alt="sasas" />
           <h1>Matheus Martino do Amaral</h1>
         </Link>
       </div>
@@ -55,12 +56,12 @@ function NavBar() {
         >
           Currículo
         </Link>
-        <Link
+        {/* <Link
           to="/skills"
           className={path === '/skills' && 'selected-link'}
         >
           Habilidades
-        </Link>
+        </Link> */}
         <Link to="/contact" className={path === '/contact' && 'selected-link'}>
           Contato
         </Link>
@@ -78,7 +79,7 @@ function NavBar() {
           <Link to="/">Home</Link>
           <Link to="/projects">Portfólio</Link>
           <Link to="/curriculum">Currículo</Link>
-          <Link to="/skills">Habilidades</Link>
+          {/* <Link to="/skills">Habilidades</Link> */}
           <Link to="/contact">Contato</Link>
           <Link to="/about">Sobre</Link>
         </div>
