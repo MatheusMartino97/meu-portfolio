@@ -168,6 +168,29 @@ const projectsList = {
     },
 
     react: {
+      toDoListMaterialUI: {
+        name: 'To Do List Material UI',
+        translation: 'Lista de tarefas com Material UI',
+        path: 'to-do-list-material-ui',
+        url: 'https://matheusmartino97.github.io/to-do-list-material-ui/#/',
+        repository: 'https://github.com/MatheusMartino97/to-do-list-material-ui',
+        miniature: 'https://i.ibb.co/3FXX7cy/to-do-list-material-ui-miniature.jpg',
+        gifs: {
+          desktop: 'https://i.ibb.co/LhH03Gb/to-do-list-material-ui-desktop.gif',
+          mobile: '',
+        },
+        descriptions: {
+          short: 'Lista de tarefas utilizando Material UI.',
+          long: {
+            paragraphs: {
+              1: 'Decidi revisitar o projeto <a href="https://matheusmartino97.github.io/04_sd-09-project-todo-list/">To Do List</a> que eu havia feito na Trybe, mas dessa vez utilizando React, Router-DOM e Material UI.',
+            },
+          },
+        },
+        technologies: ['React', 'Material UI'],
+        libraries: ['react', 'react-router-dom', '@material-ui/core', '@material-ui/icons'],
+      },
+      
       recipesApp: {
         name: 'Recipes App',
         translation: 'Aplicativo de Receitas',
