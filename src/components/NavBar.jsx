@@ -9,7 +9,7 @@ function NavBar() {
       <div className="nav-name">
         <Link to="/" className="link-logo">
           <img src="https://i.ibb.co/fvBXzL9/logo-nav-bar.png" alt="sasas" />
-          <h1>Matheus Martino do Amaral</h1>
+          <h1>Matheus Martino</h1>
         </Link>
       </div>
       <div className="nav-social-links">

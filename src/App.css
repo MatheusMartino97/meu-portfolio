@@ -12,6 +12,7 @@ body {
   background-size: cover;
   margin-bottom: 20px;
   background-attachment: fixed;
+  font-family: 'Comfortaa', sans-serif
 }
 
 /* All pages */
@@ -62,12 +63,12 @@ body {
 }
 
 /* Home page */
-
 #home-page .home-main, #choose-page .choose-main {
   display: flex;
   height: calc(90vh - 86.813px);
   align-items: center;
   animation: showContent 0.5s ease-in-out 1;
+  font-family: 'Comfortaa', sans-serif;
 }
 
 #home-page .home-main section, #choose-page .choose-main section {
