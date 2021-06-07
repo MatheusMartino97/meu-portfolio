@@ -23,7 +23,7 @@ function BackEnd() {
             ))}
           </div>
         </section>
-        <button className="choose-stack-button" onClick={ () => { chooseTheStack('front') } }>Ver projetos de Front-End</button>
+        <button className="choose-stack-button" onClick={ () => { chooseTheStack('frontend') } }>Ver projetos de Front-End</button>
       </main>
     </div>
   );

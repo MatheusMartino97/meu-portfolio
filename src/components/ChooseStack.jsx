@@ -20,7 +20,7 @@ function ChooseStack({ timer }) {
             <button
               type="button"
               onClick={() => {
-                chooseTheStack('front');
+                chooseTheStack('frontend');
               }}
             >
               Front-End
@@ -28,7 +28,7 @@ function ChooseStack({ timer }) {
             <button
               type="button"
               onClick={() => {
-                chooseTheStack('back');
+                chooseTheStack('backend');
               }}
             >
               Back-End
