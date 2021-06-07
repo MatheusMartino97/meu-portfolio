@@ -8,6 +8,7 @@ function FrontEnd() {
   const { frontend } = projectsList;
   const arrayOfProjects = Object.values(frontend);
   const [useFilteredProjects, setFilteredProjects] = useState(arrayOfProjects);
+  const [useIsOnFocus, setIsOnFocus] = useState(false);
   const { chooseTheStack } = useContext(projectsContext);
 
   const handleChange = ({ target: { value } }) => {
@@ -43,13 +44,22 @@ function FrontEnd() {
       </header>
       <main className="page-main">
         <section className="projects-container">
-          <div className="filter-container">
-            <input type="text" onChange={(event) => handleChange(event)} />
-          </div>
-          <div className="projects-grid">
-            {useFilteredProjects.map((project) => (
-              <ProjectCard projectInfo={project} />
-            ))}
+          <div className="projects-wrapper">
+            <div id="filter-container" className={useIsOnFocus && 'focus'}>
+              <input
+                type="text"
+                onFocus={() => setIsOnFocus(true)}
+                onBlur={() => setIsOnFocus(false)}
+                onChange={(event) => handleChange(event)}
+                placeholder="Pequise por título, descrição, tecnologias..."
+              />
+              <i class="material-icons">search</i>
+            </div>
+            <div className="projects-grid">
+              {useFilteredProjects.map((project) => (
+                <ProjectCard projectInfo={project} />
+              ))}
+            </div>
           </div>
         </section>
         <button

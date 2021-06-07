@@ -254,7 +254,7 @@ body {
 .portfolio-page .projects-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .portfolio-page section {
   display: flex;
@@ -262,13 +262,35 @@ body {
   align-items: center;
 }
 
-.portfolio-page h2 {
+.portfolio-page .projects-wrapper {
+  width: 85%;
+}
+
+#filter-container {
   /* border-left: 1px solid #D2D2D2;
   border-bottom: 1px solid #D2D2D2; */
   border: 1px solid #d2d2d2;
   border-radius: 5px;
   padding: 20px;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.focus {
   box-shadow: 1px 1px 10px #d2d2d2;
+}
+
+#filter-container input {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: #d2d2d2;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: large;
 }
 
 .portfolio-page section.projects-container {
