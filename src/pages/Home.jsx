@@ -15,7 +15,7 @@ class Home extends Component {
             <h1>{'<Olá />'}</h1>
             <h2>Meu nome é Matheus.</h2>
             <h2>
-              Sou desenvolvedor full-stack formado pela Trybe.{' '}
+              Sou desenvolvedor de softwares full-stack.{' '}
               <span id="pipe-bar" style={{ visibility: timer || 'hidden' }}>
                 |
               </span>
