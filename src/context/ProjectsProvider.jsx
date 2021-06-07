@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import projectsContext from './projectsContext';
-import FrontEnd from '../components/FrontEnd';
-import BackEnd from '../components/BackEnd';
+import ProjectsFront from '../components/ProjectsFront';
+import ProjectsBack from '../components/ProjectsBack';
 import ChooseStack from '../components/ChooseStack';
 
 function ProjectsProvider() {
@@ -9,28 +9,28 @@ function ProjectsProvider() {
 
   const chooseTheStack = (stack) => {
     setStack(stack);
-  }
+  };
 
   const pageToBeReturned = (stack) => {
-    switch(stack) {
-      case 'front':
-        return <FrontEnd />;
-      
-      case 'back':
-        return <BackEnd />;
+    switch (stack) {
+      case 'frontend':
+        return <ProjectsFront stack={stack} />;
+
+      case 'backend':
+        return <ProjectsBack stack={stack} />;
 
       default:
         return <ChooseStack />;
     }
-  }
+  };
 
-  const contextValue = { 
+  const contextValue = {
     chooseTheStack,
-  }
+  };
 
-  return(
-    <projectsContext.Provider value={ contextValue }>
-      { pageToBeReturned(useStack) }
+  return (
+    <projectsContext.Provider value={contextValue}>
+      {pageToBeReturned(useStack)}
     </projectsContext.Provider>
   );
 }

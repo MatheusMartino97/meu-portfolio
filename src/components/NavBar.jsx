@@ -41,31 +41,31 @@ function NavBar() {
         </a>
       </div>
       <div className="nav-links">
-        <Link to="/" className={path === '/' && 'selected-link'}>
+        <Link to="/" className={path === '/' ? 'selected-link' : undefined}>
           Home
         </Link>
         <Link
           to="/projects"
-          className={path.includes('/projects') && 'selected-link'}
+          className={path.includes('/projects') ? 'selected-link' : undefined}
         >
           Projetos
         </Link>
         <Link
           to="/curriculum"
-          className={path === '/curriculum' && 'selected-link'}
+          className={path === '/curriculum' ? 'selected-link' : undefined}
         >
           Currículo
         </Link>
         {/* <Link
           to="/skills"
-          className={path === '/skills' && 'selected-link'}
+          className={path === '/skills' ? 'selected-link' : undefined}
         >
           Habilidades
         </Link> */}
-        <Link to="/contact" className={path === '/contact' && 'selected-link'}>
+        <Link to="/contact" className={path === '/contact' ? 'selected-link' : undefined}>
           Contato
         </Link>
-        <Link to="/about" className={path === '/about' && 'selected-link'}>
+        <Link to="/about" className={path === '/about' ? 'selected-link' : undefined}>
           Sobre
         </Link>
       </div>
