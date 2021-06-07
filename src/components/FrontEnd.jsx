@@ -1,12 +1,39 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import NavBar from '../components/NavBar';
 import ProjectCard from '../components/ProjectCard';
 import projectsList from '../data';
 import projectsContext from '../context/projectsContext';
 
 function FrontEnd() {
-  const { frontend: { javascript, react } } = projectsList;
+  const { frontend } = projectsList;
+  const arrayOfProjects = Object.values(frontend);
+  const [useFilteredProjects, setFilteredProjects] = useState(arrayOfProjects);
   const { chooseTheStack } = useContext(projectsContext);
+
+  const handleChange = ({ target: { value } }) => {
+    const filteredProjects = arrayOfProjects.filter(
+      ({
+        name,
+        translation,
+        descriptions: {
+          short,
+          long: { paragraphs },
+        },
+        technologies,
+      }) => {
+        const longDescription = Object.values(paragraphs).join(' ');
+        if (name.toLowerCase().includes(value.toLowerCase())) return true;
+        if (translation.toLowerCase().includes(value.toLowerCase()))
+          return true;
+        if (short.toLowerCase().includes(value.toLowerCase())) return true;
+        if (longDescription.toLowerCase().includes(value.toLowerCase()))
+          return true;
+        if (technologies.includes(value.toLowerCase())) return true;
+      }
+    );
+
+    setFilteredProjects(filteredProjects);
+  };
 
   return (
     <div className="portfolio-page page-content">
@@ -16,22 +43,23 @@ function FrontEnd() {
       </header>
       <main className="page-main">
         <section className="projects-container">
-          <h2>React</h2>
+          <div className="filter-container">
+            <input type="text" onChange={(event) => handleChange(event)} />
+          </div>
           <div className="projects-grid">
-            {Object.values(react).map((project) => (
+            {useFilteredProjects.map((project) => (
               <ProjectCard projectInfo={project} />
             ))}
           </div>
         </section>
-        <section className="projects-container">
-          <h2>HTML, JavaScript, CSS</h2>
-          <div className="projects-grid">
-            {Object.values(javascript).map((project) => (
-              <ProjectCard projectInfo={project} />
-            ))}
-          </div>
-        </section>
-        <button className="choose-stack-button" onClick={ () => { chooseTheStack('back') } }>Ver projetos de Back-End</button>
+        <button
+          className="choose-stack-button"
+          onClick={() => {
+            chooseTheStack('back');
+          }}
+        >
+          Ver projetos de Back-End
+        </button>
       </main>
     </div>
   );
