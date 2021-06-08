@@ -132,8 +132,21 @@ body {
   margin-bottom: 20px;
 }
 
+#about-page .skills-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #about-page .page-main .picture {
   width: 33%;
+}
+
+#about-page .skills-title {
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  padding: 0 20px;
+  margin-bottom: 20px;
 }
 
 #about-page .page-main .profile-picture {
@@ -150,7 +163,63 @@ body {
   background-color: #354e7c;
   padding: 20px;
   width: 66%;
-  height: 10%;
+}
+
+#about-page .skill .text {
+  border-radius: 0;
+}
+
+#about-page .skill {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 5px;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.top-left {
+  border-top-left-radius: 5px !important;
+}
+
+.top-right {
+  border-top-right-radius: 5px !important;
+}
+
+.bottom-right {
+  border-bottom-right-radius: 5px !important;
+}
+
+.bottom-left {
+  border-bottom-left-radius: 5px !important;
+}
+
+#about-page .skill .text p {
+  overflow: scroll;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+#about-page .skill .picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #67d2f38a;
+}
+
+#about-page #filter-container {
+  margin-bottom: 20px;
+}
+
+#about-page .skill-image {
+  height: 100%;
+  max-height: 90px;
 }
 
 #about-page .page-main .text p {
@@ -291,8 +360,6 @@ body {
 }
 
 #filter-container {
-  /* border-left: 1px solid #D2D2D2;
-  border-bottom: 1px solid #D2D2D2; */
   border: 1px solid #d2d2d2;
   border-radius: 5px;
   width: 100%;
@@ -493,6 +560,10 @@ body {
     display: none;
   }
 
+  #about-page .skill .picture {
+    display: flex;
+  }
+
   #about-page .profile-picture img {
     width: 100%;
   }
@@ -500,8 +571,11 @@ body {
   #about-page .page-main .text {
     box-sizing: border-box;
     width: 100%;
-    border-radius: 5px;
   }
+
+  /* #about-page .skill .text {
+    border-radius: 0 5px 5px 0;
+  } */
 
   #contact-page .hidden {
     display: flex;
@@ -579,6 +653,20 @@ body {
 
   .portfolio-page #filter-container.short-filter {
     display: flex;
+  }
+
+  #about-page .skill .text {
+    display: none;
+  }
+
+  #about-page .skill {
+    justify-content: center;
+  }
+
+  #about-page .skill .picture{
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
   }
 }
 

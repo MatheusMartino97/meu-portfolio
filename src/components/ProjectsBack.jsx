@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import NavBar from './NavBar';
 import ProjectCard from './ProjectCard';
-import projectsList from '../data';
+import { projectsList } from '../data';
 import projectsContext from '../context/projectsContext';
 
 function ProjectsBack({ stack }) {
@@ -52,9 +52,9 @@ function ProjectsBack({ stack }) {
       <main className="page-main">
         <section className="projects-container">
           <div className="projects-wrapper">
-            <div
+          <div
               id="filter-container"
-              className={useIsOnFocus ? 'focus' : undefined}
+              className={`${useIsOnFocus ? 'focus' : undefined} long-filter`}
             >
               <input
                 type="text"
@@ -62,6 +62,19 @@ function ProjectsBack({ stack }) {
                 onBlur={() => setIsOnFocus(false)}
                 onChange={(event) => handleChange(event)}
                 placeholder="Pequise por título, descrição, tecnologias..."
+              />
+              <i className="material-icons">search</i>
+            </div>
+            <div
+              id="filter-container"
+              className={`${useIsOnFocus ? 'focus' : undefined} short-filter`}
+            >
+              <input
+                type="text"
+                onFocus={() => setIsOnFocus(true)}
+                onBlur={() => setIsOnFocus(false)}
+                onChange={(event) => handleChange(event)}
+                placeholder="Filtrar projetos"
               />
               <i className="material-icons">search</i>
             </div>

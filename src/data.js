@@ -1,4 +1,4 @@
-const projectsList = {
+export const projectsList = {
   frontend: {
     toDoListMaterialUI: {
       name: 'To Do List Material UI',
@@ -554,8 +554,58 @@ const projectsList = {
   },
 };
 
-export default projectsList;
-
+export const skills = [
+  {
+    skill: 'HTML5',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
+    description: 'Linguagem de marcação de texto amplamente utilizada na construção de páginas na Web.'
+  },
+  {
+    skill: 'CSS3',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
+    description: 'Linguagem de estilização que define a apresentação e layout dos elementos de uma página na Web.',
+  },
+  {
+    skill: 'JavaScript',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+    description: 'Linguagem de programação utilizada para a criação de conteúdos interativos e dinâmicos para a Web que se atualizam em tempo de execução.',
+  },
+  {
+    skill: 'Jest',
+    logo: 'https://camo.githubusercontent.com/ae61b0ddad90a6f9be866adec7dbca2dcca1819e3204f07916d6f34ae058b4c9/68747470733a2f2f7777772e6c6561726e73746f7279626f6f6b2e636f6d2f696e74726f2d746f2d73746f7279626f6f6b2f6c6f676f2d6a6573742e706e67',
+    description: 'Framework de teste em JavaScript projetado para garantir a correção de qualquer código JavaScript.',
+  },
+  {
+    skill: 'React',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
+    description: 'Uma biblioteca JavaScript para criar interfaces de usuário dinâmicas implementando componentes reutilizaveis.'
+  },
+  {
+    skill: 'React Router Dom',
+    logo: 'https://camo.githubusercontent.com/bb743ede87c7763c66f77840f607ae4ef1b778e7fef4bc9accbb84a4e023639e/68747470733a2f2f7365656b6c6f676f2e636f6d2f696d616765732f522f72656163742d726f757465722d6c6f676f2d414235424642363338462d7365656b6c6f676f2e636f6d2e706e67',
+    description: 'O React Router é a biblioteca padrão de roteamento do React que mantém a interface do usuário em sincronia com o valor atual da URL acessada.',
+  },
+  {
+    skill: 'React Testing Library',
+    logo: 'https://camo.githubusercontent.com/aa85cea585880ae694b4fe8dde116d092b8907d6351c71fcd76f00f7586fad72/68747470733a2f2f74657374696e672d6c6962726172792e636f6d2f696d672f6f63746f7075732d313238783132382e706e67',
+    description: 'Um conjunto de utilitários que permitem testar componentes React sem depender dos detalhes de implementação.',
+  },
+  {
+    skill: 'Redux',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
+    description: 'Redux é uma biblioteca feita para gerenciar estados em uma aplicação, facilitando o compartilhamento de estados entre componentes React.',
+  },
+  {
+    skill: 'MySQL',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
+    description: 'O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface.',
+  },
+  {
+    skill: 'MongoDB',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
+    description: 'MongoDB é um software de banco de dados orientado a documentos livre, de código aberto e multiplataforma.',
+  },
+]
 // projectName: {
 //   name: '',
 //   translation: '',
@@ -578,4 +628,10 @@ export default projectsList;
 //   technologies: [],
 //   libraries: [],
 //   apis: [],
+// },
+
+// {
+//   skill: '',
+//   logo: '',
+//   description: '',
 // },

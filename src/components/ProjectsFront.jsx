@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import NavBar from './NavBar';
 import ProjectCard from './ProjectCard';
-import projectsList from '../data';
+import { projectsList } from '../data';
 import projectsContext from '../context/projectsContext';
 
 function ProjectsFront({ stack }) {
@@ -74,7 +74,7 @@ function ProjectsFront({ stack }) {
                 onFocus={() => setIsOnFocus(true)}
                 onBlur={() => setIsOnFocus(false)}
                 onChange={(event) => handleChange(event)}
-                placeholder="Pequisar"
+                placeholder="Filtrar projetos"
               />
               <i className="material-icons">search</i>
             </div>
