@@ -596,6 +596,11 @@ export const skills = [
     description: 'Redux é uma biblioteca feita para gerenciar estados em uma aplicação, facilitando o compartilhamento de estados entre componentes React.',
   },
   {
+    skill: 'Material UI',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg',
+    description: 'O Material UI é uma biblioteca de componentes React para um desenvolvimento ágil e fácil.',
+  },
+  {
     skill: 'MySQL',
     logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
     description: 'O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface.',
