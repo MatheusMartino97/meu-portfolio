@@ -249,6 +249,14 @@ body {
 
 /* Portfolio page */
 
+.portfolio-page #filter-container.long-filter {
+  display: flex;
+}
+
+.portfolio-page #filter-container.short-filter {
+  display: none;
+}
+
 .portfolio-page .page-main {
   width: 80%;
   flex-wrap: wrap;
@@ -278,13 +286,13 @@ body {
   border-bottom: 1px solid #D2D2D2; */
   border: 1px solid #d2d2d2;
   border-radius: 5px;
-  padding: 20px;
   width: 100%;
   display: flex;
   box-sizing: border-box;
   padding: 0 20px;
   height: 50px;
   align-items: center;
+  min-width: 256px;
 }
 
 .focus {
@@ -305,7 +313,7 @@ body {
 }
 
 .portfolio-page section.projects-container {
-  padding: 20px;
+  padding: 20px 0;
 }
 
 /* Project page */
@@ -492,6 +500,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .portfolio-page .projects-wrapper {
+    width: 100%;
+  }
+
   #project-page .gif-desktop img {
     width: 100%;
     height: auto;
@@ -547,6 +559,14 @@ body {
 
   #home-page .home-main .home-links button {
     width: 100%;
+  }
+
+  .portfolio-page #filter-container.long-filter {
+    display: none;
+  }
+
+  .portfolio-page #filter-container.short-filter {
+    display: flex;
   }
 }
 
@@ -659,9 +679,9 @@ body {
     margin: 0;
   }
 
-  .portfolio-page .page-main .projects-container {
+  /* .portfolio-page .page-main .projects-container {
     padding: 0;
-  }
+  } */
 
   #nav-bar .nav-name h1 {
     font-size: medium;

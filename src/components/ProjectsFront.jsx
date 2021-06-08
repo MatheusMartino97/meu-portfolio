@@ -50,7 +50,8 @@ function ProjectsFront({ stack }) {
           <div className="projects-wrapper">
             <div
               id="filter-container"
-              className={useIsOnFocus ? 'focus' : undefined}
+              className={`${useIsOnFocus ? 'focus' : undefined} long-filter`}
+
             >
               <input
                 type="text"
@@ -58,6 +59,19 @@ function ProjectsFront({ stack }) {
                 onBlur={() => setIsOnFocus(false)}
                 onChange={(event) => handleChange(event)}
                 placeholder="Pequise por título, descrição, tecnologias..."
+              />
+              <i className="material-icons">search</i>
+            </div>
+            <div
+              id="filter-container"
+              className={`${useIsOnFocus ? 'focus' : undefined} short-filter`}
+            >
+              <input
+                type="text"
+                onFocus={() => setIsOnFocus(true)}
+                onBlur={() => setIsOnFocus(false)}
+                onChange={(event) => handleChange(event)}
+                placeholder="Pequisar"
               />
               <i className="material-icons">search</i>
             </div>
@@ -69,18 +83,19 @@ function ProjectsFront({ stack }) {
               </div>
             </div>
             <button
-          className="choose-stack-button"
-          onClick={() => {
-            chooseTheStack(stack === 'frontend' ? 'backend' : 'frontend');
-            setFilteredProjects(arrayOfProjects);
-            window.scrollTo(0, 0)
-          }}
-        >
-          {`Ver projetos de ${stack === 'frontend' ? 'Back-End' : 'Front-End'}`}
-        </button>
+              className="choose-stack-button"
+              onClick={() => {
+                chooseTheStack(stack === 'frontend' ? 'backend' : 'frontend');
+                setFilteredProjects(arrayOfProjects);
+                window.scrollTo(0, 0);
+              }}
+            >
+              {`Ver projetos de ${
+                stack === 'frontend' ? 'Back-End' : 'Front-End'
+              }`}
+            </button>
           </div>
         </section>
-
       </main>
     </div>
   );
