@@ -581,14 +581,14 @@ export const skills = [
     description: 'Uma biblioteca JavaScript para criar interfaces de usuário dinâmicas implementando componentes reutilizaveis.'
   },
   {
+    skill: 'Material UI',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg',
+    description: 'O Material UI é uma biblioteca de componentes React para um desenvolvimento ágil e fácil.',
+  },
+  {
     skill: 'React Router Dom',
     logo: 'https://camo.githubusercontent.com/bb743ede87c7763c66f77840f607ae4ef1b778e7fef4bc9accbb84a4e023639e/68747470733a2f2f7365656b6c6f676f2e636f6d2f696d616765732f522f72656163742d726f757465722d6c6f676f2d414235424642363338462d7365656b6c6f676f2e636f6d2e706e67',
     description: 'O React Router é a biblioteca padrão de roteamento do React que mantém a interface do usuário em sincronia com o valor atual da URL acessada.',
-  },
-  {
-    skill: 'React Testing Library',
-    logo: 'https://camo.githubusercontent.com/aa85cea585880ae694b4fe8dde116d092b8907d6351c71fcd76f00f7586fad72/68747470733a2f2f74657374696e672d6c6962726172792e636f6d2f696d672f6f63746f7075732d313238783132382e706e67',
-    description: 'Um conjunto de utilitários que permitem testar componentes React sem depender dos detalhes de implementação.',
   },
   {
     skill: 'Redux',
@@ -596,9 +596,9 @@ export const skills = [
     description: 'Redux é uma biblioteca feita para gerenciar estados em uma aplicação, facilitando o compartilhamento de estados entre componentes React.',
   },
   {
-    skill: 'Material UI',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg',
-    description: 'O Material UI é uma biblioteca de componentes React para um desenvolvimento ágil e fácil.',
+    skill: 'React Testing Library',
+    logo: 'https://camo.githubusercontent.com/aa85cea585880ae694b4fe8dde116d092b8907d6351c71fcd76f00f7586fad72/68747470733a2f2f74657374696e672d6c6962726172792e636f6d2f696d672f6f63746f7075732d313238783132382e706e67',
+    description: 'Um conjunto de utilitários que permitem testar componentes React sem depender dos detalhes de implementação.',
   },
   {
     skill: 'MySQL',
