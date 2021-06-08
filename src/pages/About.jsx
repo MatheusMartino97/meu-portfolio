@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import NavBar from '../components/NavBar';
-import { ReactJs } from '@icons-pack/react-simple-icons';
 
 class About extends Component {
   render() {
