@@ -8,7 +8,7 @@ function BackEnd() {
   const { backend } = projectsList;
   const { chooseTheStack } = useContext(projectsContext);
 
-  return(
+  return (
     <div className="portfolio-page page-content">
       <NavBar />
       <header className="page-header">
@@ -23,7 +23,14 @@ function BackEnd() {
             ))}
           </div>
         </section>
-        <button className="choose-stack-button" onClick={ () => { chooseTheStack('frontend') } }>Ver projetos de Front-End</button>
+        <button
+          className="choose-stack-button"
+          onClick={() => {
+            chooseTheStack('frontend');
+          }}
+        >
+          Ver projetos de Front-End
+        </button>
       </main>
     </div>
   );

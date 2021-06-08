@@ -62,10 +62,16 @@ function NavBar() {
         >
           Habilidades
         </Link> */}
-        <Link to="/contact" className={path === '/contact' ? 'selected-link' : undefined}>
+        <Link
+          to="/contact"
+          className={path === '/contact' ? 'selected-link' : undefined}
+        >
           Contato
         </Link>
-        <Link to="/about" className={path === '/about' ? 'selected-link' : undefined}>
+        <Link
+          to="/about"
+          className={path === '/about' ? 'selected-link' : undefined}
+        >
           Sobre
         </Link>
       </div>

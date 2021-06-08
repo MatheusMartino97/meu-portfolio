@@ -19,7 +19,7 @@ const projectsList = {
           },
         },
       },
-      technologies: ['react', 'material ui'],
+      technologies: ['React', 'Material UI'],
       libraries: ['react', 'react-router-dom', '@material-ui/core', '@material-ui/icons'],
     },
     
@@ -47,7 +47,7 @@ const projectsList = {
           },
         },
       },
-      technologies: ['react', 'redux', 'bootstrap'],
+      technologies: ['React', 'Redux', 'Bootstrap'],
       libraries: [
         'react',
         'react-router-dom',
@@ -99,7 +99,7 @@ const projectsList = {
           },
         },
       },
-      technologies: ['react', 'redux'],
+      technologies: ['React', 'Redux'],
       libraries: [
         'react',
         'react-router-dom',
@@ -137,7 +137,7 @@ const projectsList = {
           },
         },
       },
-      technologies: ['react', 'redux'],
+      technologies: ['React', 'Redux'],
       libraries: [
         'react',
         'react-router-dom',
@@ -170,7 +170,7 @@ const projectsList = {
           },
         },
       },
-      technologies: ['react', 'redux'],
+      technologies: ['React', 'Redux'],
       libraries: ['react', 'react-router-dom', 'redux', 'react-redux'],
       apis: ['https://documenter.getpostman.com/view/7929631/TWDZGFKK'],
     },
@@ -198,7 +198,7 @@ const projectsList = {
           },
         },
       },
-      technologies: ['react', 'redux'],
+      technologies: ['React', 'Redux'],
       libraries: ['react', 'react-router-dom', 'redux', 'react-redux'],
       apis: [
         'https://dog.ceo/api/breeds/image/random',
@@ -231,7 +231,7 @@ const projectsList = {
           },
         },
       },
-      technologies: ['react'],
+      technologies: ['React'],
       libraries: ['react', 'react-router-dom'],
       apis: [
         'https://api.mercadolibre.com/sites/MLB/categories',
@@ -263,9 +263,8 @@ const projectsList = {
           },
         },
       },
-      technologies: ['react'],
+      technologies: ['React'],
       libraries: ['react', 'react-router-dom'],
-      apis: [],
     },
 
     testedPokedex: {
@@ -290,13 +289,13 @@ const projectsList = {
           },
         },
       },
-      technologies: ['react testing library', 'jest'],
+      technologies: ['React Testing Library', 'Jest'],
       libraries: [
         '@testing-library/jest-dom',
         '@testing-library/react',
         '@testing-library/user-event',
       ],
-      apis: [],
+      apis: ['react', 'testing', 'library', 'react testing '],
     },
 
     pokedex: {
@@ -320,10 +319,10 @@ const projectsList = {
           },
         },
       },
-      technologies: ['react'],
+      technologies: ['React'],
       libraries: ['react'],
-      apis: [],
     },
+
     shoppingCard: {
       name: 'Shopping Cart',
       translation: 'Carrinho de Compras',
@@ -347,8 +346,7 @@ const projectsList = {
           },
         },
       },
-      technologies: ['html', 'css', 'javascript'],
-      libraries: [],
+      technologies: ['HTML', 'CSS', 'JavaScript'],
       apis: ['https://api.mercadolibre.com/sites/MLB/search?q=$QUERY'],
     },
 
@@ -374,9 +372,7 @@ const projectsList = {
           },
         },
       },
-      technologies: ['html', 'css', 'javascript'],
-      libraries: [],
-      apis: [],
+      technologies: ['HTML', 'CSS', 'JavaScript'],
     },
 
     toDoList: {
@@ -401,9 +397,8 @@ const projectsList = {
           },
         },
       },
-      technologies: ['html', 'css', 'javascript'],
+      technologies: ['HTML', 'CSS', 'JavaScript'],
       libraries: ['bulma'],
-      apis: [],
     },
 
     pixelsArt: {
@@ -428,9 +423,7 @@ const projectsList = {
           },
         },
       },
-      technologies: ['html', 'css', 'javascript'],
-      libraries: [],
-      apis: [],
+      technologies: ['HTML', 'CSS', 'JavaScript'],
     },
 
     memeGenerator: {
@@ -456,9 +449,7 @@ const projectsList = {
           },
         },
       },
-      technologies: ['html', 'css', 'javascript'],
-      libraries: [],
-      apis: [],
+      technologies: ['HTML', 'CSS', 'JavaScript'],
     },
 
     misteryLetter: {
@@ -484,9 +475,7 @@ const projectsList = {
           },
         },
       },
-      technologies: ['html', 'css', 'javascript'],
-      libraries: [],
-      apis: [],
+      technologies: ['HTML', 'CSS', 'JavaScript'],
     },
   },
 

@@ -5,13 +5,11 @@ import projectsList from '../data';
 import projectsContext from '../context/projectsContext';
 
 function ProjectsFront({ stack }) {
-  console.log(stack);
   const arrayOfProjects = Object.values(projectsList[stack]);
   const [useFilteredProjects, setFilteredProjects] = useState(arrayOfProjects);
   const [useIsOnFocus, setIsOnFocus] = useState(false);
   const { chooseTheStack } = useContext(projectsContext);
 
-  console.log(useFilteredProjects);
   const handleChange = ({ target: { value } }) => {
     const filteredProjects = arrayOfProjects.filter(
       ({
@@ -30,7 +28,13 @@ function ProjectsFront({ stack }) {
         if (short.toLowerCase().includes(value.toLowerCase())) return true;
         if (longDescription.toLowerCase().includes(value.toLowerCase()))
           return true;
-        if (technologies.includes(value.toLowerCase())) return true;
+        if (
+          technologies
+            .join(' ')
+            .toLowerCase()
+            .includes(value.toLowerCase())
+        )
+          return true;
 
         return false;
       }
@@ -51,7 +55,6 @@ function ProjectsFront({ stack }) {
             <div
               id="filter-container"
               className={`${useIsOnFocus ? 'focus' : undefined} long-filter`}
-
             >
               <input
                 type="text"

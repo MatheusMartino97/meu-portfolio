@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import NavBar from '../components/NavBar'
+import NavBar from '../components/NavBar';
+import { ReactJs } from '@icons-pack/react-simple-icons';
 
 class About extends Component {
   render() {
@@ -36,6 +37,12 @@ class About extends Component {
               muito por bons relacionamentos.
             </p>
           </section>
+        </main>
+        <main className="page-main">
+          <section className="picture">
+            <div className="profile-picture"></div>
+          </section>
+          <section className="skills"></section>
         </main>
       </div>
     );

@@ -5,7 +5,6 @@ import projectsList from '../data';
 import projectsContext from '../context/projectsContext';
 
 function ProjectsBack({ stack }) {
-  console.log(stack);
   const arrayOfProjects = Object.values(projectsList[stack]);
   const [useFilteredProjects, setFilteredProjects] = useState(arrayOfProjects);
   const [useIsOnFocus, setIsOnFocus] = useState(false);
@@ -29,7 +28,13 @@ function ProjectsBack({ stack }) {
         if (short.toLowerCase().includes(value.toLowerCase())) return true;
         if (longDescription.toLowerCase().includes(value.toLowerCase()))
           return true;
-        if (technologies.includes(value.toLowerCase())) return true;
+        if (
+          technologies
+            .join(' ')
+            .toLowerCase()
+            .includes(value.toLowerCase())
+        )
+          return true;
 
         return false;
       }

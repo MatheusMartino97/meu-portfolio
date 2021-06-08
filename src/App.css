@@ -12,7 +12,7 @@ body {
   background-size: cover;
   margin-bottom: 20px;
   background-attachment: fixed;
-  font-family: 'Comfortaa', sans-serif
+  font-family: 'Comfortaa', sans-serif;
 }
 
 /* All pages */
@@ -40,7 +40,6 @@ body {
   justify-content: center;
 }
 
-
 .page-main {
   border: 1px solid white;
   display: flex;
@@ -63,7 +62,8 @@ body {
 }
 
 /* Home page */
-#home-page .home-main, #choose-page .choose-main {
+#home-page .home-main,
+#choose-page .choose-main {
   display: flex;
   height: calc(90vh - 86.813px);
   align-items: center;
@@ -71,7 +71,8 @@ body {
   font-family: 'Comfortaa', sans-serif;
 }
 
-#home-page .home-main section, #choose-page .choose-main section {
+#home-page .home-main section,
+#choose-page .choose-main section {
   background-color: #040a25;
   padding: 20px;
   border-radius: 5px;
@@ -79,13 +80,16 @@ body {
   box-shadow: 0 0 10px #67d3f3;
 }
 
-#home-page .home-links, #choose-page .choose-links {
+#home-page .home-links,
+#choose-page .choose-links {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
 }
 
-#home-page .home-links button, #choose-page .choose-links button, .choose-stack-button {
+#home-page .home-links button,
+#choose-page .choose-links button,
+.choose-stack-button {
   padding: 20px;
   text-align: center;
   border-radius: 5px;
@@ -103,7 +107,9 @@ body {
   margin-top: 20px;
 }
 
-#home-page .home-links button:hover, #choose-page .choose-links button:hover, .choose-stack-button:hover {
+#home-page .home-links button:hover,
+#choose-page .choose-links button:hover,
+.choose-stack-button:hover {
   background-color: #67d3f3;
   color: #040a25;
   box-shadow: 0 0 10px #67d3f3;
@@ -119,14 +125,11 @@ body {
   margin: 10px;
 }
 
-/* .choose-stack-button {
-  width: 200px;
-} */
-
 /* About page */
 
 #about-page .page-main {
   width: 80%;
+  margin-bottom: 20px;
 }
 
 #about-page .page-main .picture {
@@ -548,18 +551,21 @@ body {
     width: 100%;
   }
 
-  #home-page .home-main section, #choose-page .choose-main section {
+  #home-page .home-main section,
+  #choose-page .choose-main section {
     width: 90vw;
     box-sizing: border-box;
   }
 }
 
 @media screen and (max-width: 540px) {
-  #home-page .home-main .home-links, #choose-page .choose-main .choose-links {
+  #home-page .home-main .home-links,
+  #choose-page .choose-main .choose-links {
     flex-direction: column;
   }
 
-  #home-page .home-main .home-links a, #choose-page .choose-main .choose-links a {
+  #home-page .home-main .home-links a,
+  #choose-page .choose-main .choose-links a {
     margin: 5px;
   }
 
@@ -636,7 +642,8 @@ body {
     width: 25%;
   }
 
-  #home-page #nav-bar, #choose-page #nav-bar {
+  #home-page #nav-bar,
+  #choose-page #nav-bar {
     background-color: #121f31;
   }
 
@@ -660,7 +667,6 @@ body {
   }
 
   #contact-page .contact .info {
-
     align-items: center;
   }
 
@@ -672,7 +678,7 @@ body {
   }
 
   #in-development-page .page-main {
-    width: 90vW;
+    width: 90vw;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;

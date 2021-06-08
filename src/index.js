@@ -9,7 +9,7 @@ import store from './redux/store';
 import Timer from './components/Timer';
 
 ReactDOM.render(
-  <Provider store={ store }>
+  <Provider store={store}>
     <BrowserRouter>
       <App />
       <Timer />
