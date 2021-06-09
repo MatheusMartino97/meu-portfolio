@@ -138,7 +138,7 @@ body {
   align-items: center;
 }
 
-#about-page .page-main .picture {
+#about-page .page-main .picture-about {
   width: 33%;
 }
 
@@ -158,15 +158,15 @@ body {
   background-size: cover;
 }
 
-#about-page .page-main .text {
+#about-page .page-main .text-about {
   border-radius: 0 5px 5px 0;
   background-color: #354e7c;
-  padding: 20px;
   width: 66%;
+  padding: 20px;
 }
 
 #about-page .skill .text {
-  border-radius: 0;
+  background-color: #354e7c;
 }
 
 #about-page .skill {
@@ -200,10 +200,90 @@ body {
   border-bottom-left-radius: 5px !important;
 }
 
-#about-page .skill .text p {
-  overflow: scroll;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
+.first {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.last {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+@media screen and (min-width: 540px) {
+  .hide-show-container {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+  }
+
+  .hide-show-container:hover p {
+    opacity: 1 !important;
+  }
+
+  .hide-show-container:hover .hidden-card {
+    opacity: 1;
+    width: 50%;
+    padding: 0 20px;
+  }
+
+  .hide-show-container:hover .visible-card {
+    width: 50%;
+  }
+
+  .hide-show-container.row:hover .visible-card {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  .hide-show-container.row-reverse:hover .visible-card {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+
+  .visible-card {
+    width: 100%;
+    transition: 1s;
+    border-radius: 5px;
+  }
+
+  .hidden-card {
+    width: 0;
+    transition: 1s;
+    padding: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 948px) {
+  .hide-show-container:hover .hidden-card {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hide-show-container:hover .hidden-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .hide-show-container:hover .hidden-card {
+    width: 125%;
+  }
+}
+
+@media screen and (max-width: 632px) {
+  .hide-show-container {
+    height: 120px !important;
+  }
+}
+
+@media screen and (max-width: 558px) {
+  .hide-show-container {
+    height: 130px !important;
+  }
 }
 
 #about-page .skill .picture {
@@ -211,6 +291,20 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #95afb88a;
+  box-sizing: border-box;
+}
+
+#about-page .skill .text {
+  box-sizing: border-box;
+}
+
+#about-page .skill .text p {
+  overflow: scroll;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  text-align: justify;
+  opacity: 0;
+  transition: 2s;
 }
 
 #about-page #filter-container {
@@ -220,10 +314,6 @@ body {
 #about-page .skill-image {
   height: 100%;
   max-height: 90px;
-}
-
-#about-page .page-main .text p {
-  text-align: justify;
 }
 
 /* Contact page */
@@ -560,6 +650,12 @@ body {
     display: none;
   }
 
+  #about-page .page-main .text-about {
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
   #about-page .skill .picture {
     display: flex;
   }
@@ -567,15 +663,6 @@ body {
   #about-page .profile-picture img {
     width: 100%;
   }
-
-  #about-page .page-main .text {
-    box-sizing: border-box;
-    width: 100%;
-  }
-
-  /* #about-page .skill .text {
-    border-radius: 0 5px 5px 0;
-  } */
 
   #contact-page .hidden {
     display: flex;
@@ -663,7 +750,7 @@ body {
     justify-content: center;
   }
 
-  #about-page .skill .picture{
+  #about-page .skill .picture {
     border-radius: 5px;
     width: 100%;
     padding: 20px;

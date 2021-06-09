@@ -23,10 +23,10 @@ export default function About() {
         <h1>Sobre</h1>
       </header>
       <main className="page-main">
-        <section className="picture">
+        <section className="picture picture-about">
           <div className="profile-picture"></div>
         </section>
-        <section className="text">
+        <section className="text text-about">
           <h2>Um pouco sobre mim...</h2>
           <p>
             Gosto muito de comunicação e trabalhar em equipe. Sou apaixonado por
@@ -70,10 +70,10 @@ export default function About() {
         {useFilteredProjects.map(({ skill, logo, description }, index) => (
           <div
             key={skill}
-            className={`skill ${index % 2 === 0 ? 'row' : 'row-reverse'}`}
+            className={`skill hide-show-container ${index % 2 === 0 ? 'row' : 'row-reverse'}`}
           >
             <section
-              className={`picture ${
+              className={`picture visible-card ${
                 index % 2 === 0
                   ? 'top-left bottom-left'
                   : 'top-right bottom-right'
@@ -86,7 +86,7 @@ export default function About() {
               />
             </section>
             <section
-              className={`text ${
+              className={`text hidden-card ${
                 index % 2 === 0
                   ? 'top-right bottom-right'
                   : 'top-left bottom-left'
