@@ -210,18 +210,6 @@ body {
   border-bottom-left-radius: 5px;
 }
 
-@media screen and (max-width: 948px) and (min-width: 540px) {
-  .hide-show-container:hover .hidden-card {
-    width: 75% !important;
-  }
-}
-
-@media screen and (max-width: 768px) and (min-width: 540px) {
-  .hide-show-container {
-    height: 150px !important;
-  }
-}
-
 @media screen and (min-width: 540px) {
   .hide-show-container {
     display: flex;
@@ -265,6 +253,36 @@ body {
     padding: 0;
     opacity: 0;
     overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 948px) {
+  .hide-show-container:hover .hidden-card {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hide-show-container:hover .hidden-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .hide-show-container:hover .hidden-card {
+    width: 125%;
+  }
+}
+
+@media screen and (max-width: 632px) {
+  .hide-show-container {
+    height: 120px !important;
+  }
+}
+
+@media screen and (max-width: 558px) {
+  .hide-show-container {
+    height: 130px !important;
   }
 }
 
@@ -630,6 +648,12 @@ body {
 
   #about-page .picture {
     display: none;
+  }
+
+  #about-page .page-main .text-about {
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   #about-page .skill .picture {
