@@ -9,7 +9,7 @@ export default function About() {
   const handleChange = ({ target: { value } }) => {
     const filteredProjects = skills.filter(({ skill, description }) => {
       if (skill.toLowerCase().includes(value.toLowerCase())) return true;
-      if (description.toLowerCase().includes(value.toLowerCase())) return true;
+      // if (description.toLowerCase().includes(value.toLowerCase())) return true;
       return false;
     });
 
