@@ -12,6 +12,7 @@ function InDevelopment() {
       <main className="page-main">
         <section>
           <img
+            className="in-development-picture"
             src="https://static.wixstatic.com/media/dd2b36_5d33a7f2a8a34933bc5dd293929652d0~mv2.gif"
             alt="In development"
           />

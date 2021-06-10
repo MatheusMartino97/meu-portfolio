@@ -18,6 +18,10 @@ body {
 
 /* All pages */
 
+.not-found-picture, .in-development-picture {
+  width: 160px;
+}
+
 .page-header {
   text-align: center;
 }

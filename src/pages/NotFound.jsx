@@ -11,11 +11,12 @@ function NotFound() {
       </header>
       <main className="page-main">
         <section>
+        <lottie-player className="not-found-picture" src="https://assets7.lottiefiles.com/packages/lf20_Cu88f9.json"  background="transparent" style={{ height: 200, width: 160 }} speed="1" loop autoplay></lottie-player>
           {/* <img
-            src="https://i.ibb.co/18CKDG3/page-not-found.gif"
-            alt="Not Found"
+            className="not-found-picture"
+            src="https://i.ibb.co/vXSG0hV/k6cz2b5s-unscreen.gif"
+            alt="In development"
           /> */}
-          <lottie-player src="https://matheusmartino97.github.io/portfolio/#/page-not-found.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
           <Link to="/">
             <button type="button">Voltar para a Home</button>
           </Link>
