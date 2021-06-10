@@ -557,12 +557,12 @@ export const projectsList = {
 export const skills = [
   {
     skill: 'HTML5',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg',
     description: 'Linguagem de marcação de texto amplamente utilizada na construção de páginas na Web.'
   },
   {
     skill: 'CSS3',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg',
     description: 'Linguagem de estilização que define a apresentação e layout dos elementos de uma página na Web.',
   },
   {
@@ -572,12 +572,12 @@ export const skills = [
   },
   {
     skill: 'Jest',
-    logo: 'https://camo.githubusercontent.com/ae61b0ddad90a6f9be866adec7dbca2dcca1819e3204f07916d6f34ae058b4c9/68747470733a2f2f7777772e6c6561726e73746f7279626f6f6b2e636f6d2f696e74726f2d746f2d73746f7279626f6f6b2f6c6f676f2d6a6573742e706e67',
+    logo: 'https://i.ibb.co/3sSDC6P/jest.png',
     description: 'Framework de teste em JavaScript projetado para garantir a correção de qualquer código JavaScript.',
   },
   {
     skill: 'React',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg',
     description: 'Uma biblioteca JavaScript para criar interfaces de usuário dinâmicas implementando componentes reutilizaveis.'
   },
   {
@@ -602,13 +602,43 @@ export const skills = [
   },
   {
     skill: 'MySQL',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg',
     description: 'O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface.',
   },
   {
     skill: 'MongoDB',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg',
     description: 'MongoDB é um software de banco de dados orientado a documentos livre, de código aberto e multiplataforma.',
+  },
+  {
+    skill: 'Bash',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg',
+    description: 'Interpretador de comandos, um entre os diversos tradutores entre o usuário e o sistema operacional conhecidos como shell.',
+  },
+  {
+    skill: 'Git',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg',
+    description: 'O Git é um sistema open-source de controle de versão utilizado pela grande maioria dos desenvolvedores atualmente.',
+  },
+  {
+    skill: 'GitHub',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg',
+    description: 'GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git.',
+  },
+  {
+    skill: 'Linux',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg',
+    description: 'Sistemas operacionais Unix-Like que utilizam o Kernel Linux.',
+  },
+  {
+    skill: 'Ubuntu',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/ubuntu/ubuntu-plain.svg',
+    description: 'Ubuntu é um sistema operacional de código aberto, construído a partir do núcleo Linux, baseado no Debian e utiliza GNOME como ambiente de desktop.',
+  },
+  {
+    skill: 'Bootstrap',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain.svg',
+    description: 'Bootstrap é um framework web com código-fonte aberto para desenvolvimento de componentes de interface e front-end para sites e aplicações web usando HTML, CSS e JavaScript.'
   },
 ]
 // projectName: {

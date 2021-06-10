@@ -67,35 +67,44 @@ export default function About() {
           />
           <i className="material-icons">search</i>
         </div>
-        {useFilteredProjects.map(({ skill, logo, description }, index) => (
-          <div
-            key={skill}
-            className={`skill hide-show-container ${index % 2 === 0 ? 'row' : 'row-reverse'}`}
-          >
-            <section
-              className={`picture visible-card ${
-                index % 2 === 0
-                  ? 'top-left bottom-left'
-                  : 'top-right bottom-right'
+        {useFilteredProjects
+          .sort((skillA, skillB) => {
+            if (skillA.skill > skillB.skill) return 1;
+            if (skillA.skill < skillB.skill) return -1;
+            return 0;
+          })
+          .map(({ skill, logo, description }, index) => (
+            <div
+              key={skill}
+              className={`skill hide-show-container ${
+                index % 2 === 0 ? 'row' : 'row-reverse'
               }`}
             >
-              <img
-                className="skill-image top-left top-right bottom-right bottom-left"
-                src={logo}
-                alt={`${skill} logo`}
-              />
-            </section>
-            <section
-              className={`text hidden-card ${
-                index % 2 === 0
-                  ? 'top-right bottom-right'
-                  : 'top-left bottom-left'
-              }`}
-            >
-              <p>{description}</p>
-            </section>
-          </div>
-        ))}
+              <section
+                className={`picture visible-card ${
+                  index % 2 === 0
+                    ? 'top-left bottom-left'
+                    : 'top-right bottom-right'
+                }`}
+              >
+                <img
+                  className="skill-image top-left top-right bottom-right bottom-left"
+                  src={logo}
+                  alt={`${skill} logo`}
+                />
+              </section>
+              <section
+                className={`text hidden-card ${
+                  index % 2 === 0
+                    ? 'top-right bottom-right'
+                    : 'top-left bottom-left'
+                }`}
+              >
+                <h6>{skill}</h6>
+                <p>{description}</p>
+              </section>
+            </div>
+          ))}
       </main>
     </div>
   );

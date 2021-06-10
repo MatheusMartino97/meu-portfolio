@@ -13,6 +13,7 @@ body {
   margin-bottom: 20px;
   background-attachment: fixed;
   font-family: 'Comfortaa', sans-serif;
+  overflow-x: scroll;
 }
 
 /* All pages */
@@ -221,6 +222,15 @@ body {
     opacity: 1 !important;
   }
 
+  .hide-show-container h6 {
+    opacity: 0;
+    transition: 10s;
+  }
+
+  .hide-show-container:hover h6 {
+    opacity: 1;
+  }
+
   .hide-show-container:hover .hidden-card {
     opacity: 1;
     width: 50%;
@@ -253,6 +263,13 @@ body {
     padding: 0;
     opacity: 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hidden-card h6, .hidden-card p {
+    margin: 5px 0 1px 0;
   }
 }
 
@@ -274,7 +291,7 @@ body {
   }
 }
 
-@media screen and (max-width: 632px) {
+@media screen and (max-width: 636px) {
   .hide-show-container {
     height: 120px !important;
   }
@@ -286,12 +303,22 @@ body {
   }
 }
 
+.hide-show-container.row:hover .picture {
+  border-right: 1px solid #121f31;
+}
+
+.hide-show-container.row-reverse:hover .picture {
+  border-left: 1px solid #121f31;
+}
+
 #about-page .skill .picture {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #95afb88a;
+  /* background-color: #95afb88a; */
+  background-color: #708090;
   box-sizing: border-box;
+  transition: 1s;
 }
 
 #about-page .skill .text {
