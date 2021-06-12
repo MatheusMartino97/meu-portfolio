@@ -651,7 +651,7 @@ export const skills = [
     description: 'TypeScript é um superconjunto de JavaScript desenvolvido pela Microsoft que adiciona tipagem e alguns outros recursos a linguagem.',
   },
   {
-    skill: 'Compass',
+    skill: 'MongoDB Compass',
     logo: 'https://i.ibb.co/vZcVDXs/mongodb-compass.png',
     description: 'O MongoDB Compass analisa os documentos e exibe estruturas sofisticadas dentro das coleções por meio de uma GUI intuitiva.'
   },
