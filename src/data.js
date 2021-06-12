@@ -657,7 +657,7 @@ export const skills = [
   },
   {
     skill: 'MySQL Workbench',
-    logo: 'https://i.ibb.co/7YYDKTm/2969121-middle.png',
+    logo: 'https://i.ibb.co/P51zLS5/my-sql-workbench.png',
     description: 'O MySQL Workbench é uma ferramenta visual de design de banco de dados que integra desenvolvimento, administração, design, criação e manutenção de SQL.'
   }
 ]
