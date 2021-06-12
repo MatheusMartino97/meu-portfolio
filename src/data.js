@@ -654,6 +654,11 @@ export const skills = [
     skill: 'Compass',
     logo: 'https://i.ibb.co/vZcVDXs/mongodb-compass.png',
     description: 'O MongoDB Compass analisa os documentos e exibe estruturas sofisticadas dentro das coleções por meio de uma GUI intuitiva.'
+  },
+  {
+    skill: 'MySQL Workbench',
+    logo: 'https://i.ibb.co/7YYDKTm/2969121-middle.png',
+    description: 'O MySQL Workbench é uma ferramenta visual de design de banco de dados que integra desenvolvimento, administração, design, criação e manutenção de SQL.'
   }
 ]
 // projectName: {
