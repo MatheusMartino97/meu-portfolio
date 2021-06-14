@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Project from './pages/Project';
 import ProjectsProvider from './context/ProjectsProvider';
 import InDevelopment from './pages/InDevelopment';
+import NotFound from './pages/NotFound';
 
 class App extends Component {
   render() {
@@ -23,7 +24,7 @@ class App extends Component {
         <Route path="/skills" component={InDevelopment} />
         <Route path="/contact" component={Contact} />
         <Route path="/about" component={About} />
-        <Route path="*" component={InDevelopment} />
+        <Route path="*" component={NotFound} />
       </Switch>
     );
   }

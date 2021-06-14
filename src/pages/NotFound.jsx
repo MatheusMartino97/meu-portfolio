@@ -2,21 +2,21 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 
-function InDevelopment() {
+function NotFound() {
   return (
     <div id="in-development-page">
       <NavBar />
       <header className="page-header">
-        <h1>Página em construção!</h1>
+        <h1>Página não encontrada!</h1>
       </header>
       <main className="page-main">
         <section>
-          <img
-            className="in-development-picture"
-            src="https://static.wixstatic.com/media/dd2b36_5d33a7f2a8a34933bc5dd293929652d0~mv2.gif"
+        <lottie-player className="not-found-picture" src="https://assets7.lottiefiles.com/packages/lf20_Cu88f9.json"  background="transparent" style={{ height: 200, width: 160 }} speed="1" loop autoplay></lottie-player>
+          {/* <img
+            className="not-found-picture"
+            src="https://i.ibb.co/vXSG0hV/k6cz2b5s-unscreen.gif"
             alt="In development"
-          />
-          {/* <img src="https://i.ibb.co/rGJbRWP/in-development.gif" alt="" /> */}
+          /> */}
           <Link to="/">
             <button type="button">Voltar para a Home</button>
           </Link>
@@ -26,4 +26,4 @@ function InDevelopment() {
   );
 }
 
-export default InDevelopment;
+export default NotFound;
