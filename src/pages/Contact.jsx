@@ -61,7 +61,7 @@ class Contact extends Component {
                 </a>
               </div>
             </div>
-            <div className="contact hidden">
+            <div className="contact">
               <img
                 src="https://cdn4.iconfinder.com/data/icons/miu-square-gloss-social/60/github-square-gloss-social-media-512.png"
                 alt="Gmail logo"
@@ -79,7 +79,7 @@ class Contact extends Component {
                 </a>
               </div>
             </div>
-            <div className="contact hidden">
+            <div className="contact">
               <img
                 src="https://image.flaticon.com/icons/png/512/174/174857.png"
                 alt="Gmail logo"
