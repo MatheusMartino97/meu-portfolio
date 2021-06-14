@@ -317,6 +317,13 @@ body {
 }
 
 /* Contact page */
+#contact-page .contact-image-link {
+  border-bottom: 1px solid transparent;
+}
+
+#contact-page .contact-image-link:hover {
+  border-bottom: 1px solid #67d3f3;
+}
 
 #contact-page .contact {
   display: flex;
