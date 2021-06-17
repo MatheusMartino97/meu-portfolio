@@ -694,8 +694,19 @@ export const skills = [
     skill: 'MySQL Workbench',
     logo: 'https://i.ibb.co/P51zLS5/my-sql-workbench.png',
     description: 'O MySQL Workbench é uma ferramenta visual de design de banco de dados que integra desenvolvimento, administração, design, criação e manutenção de SQL.'
-  }
+  },
+  {
+    skill: 'Node.js',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg',
+    description: 'Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.',
+  },
+  {
+    skill: 'Node Package Manager',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg',
+    description: 'Node Package Manager (npm) é o gerenciador de pacotes padrão para o ambiente de tempo de execução JavaScript Node.js.',
+  },
 ]
+
 // projectName: {
 //   name: '',
 //   translation: '',
