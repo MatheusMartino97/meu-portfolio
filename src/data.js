@@ -480,6 +480,41 @@ export const projectsList = {
   },
 
   backend: {
+    mongodbAggregations: {
+      name: 'MongoDB Aggregations',
+      translation: '"Aggregations" no MongoDB',
+      path: 'mongodb-aggregations',
+      repository: 'https://github.com/MatheusMartino97/28_sd-09-mongodb-aggregations',
+      miniature: 'https://i.ibb.co/7tG35nG/mongodb.jpg',
+      descriptions: {
+        short: 'Desafios onde foi possível praticar com os diversos operadores e estágios do aggregation pipeline.',
+        long: {
+          paragraphs: {
+            1: 'Neste projeto foi utilizado vários datasets, de forma que foi possível praticar em vários cenários a execução buscas complexas no banco MongoDB, assim como a utilização dos operadores de aggregation para fazer uma pipeline.',
+          },
+        },
+      },
+      technologies: ['MongoDB', 'MongoDB for VS Code'],
+    },
+
+    mongodbCommerce: {
+      name: 'MongoDB Commerce',
+      translation: 'Comércio com MongoDB',
+      path: 'mongodb-commerce',
+      repository: 'https://github.com/MatheusMartino97/27_sd-09-mongodb-commerce',
+      miniature: 'https://i.ibb.co/7tG35nG/mongodb.jpg',
+      descriptions: {
+        short: 'Uma série de desafios com diferentes níveis de complexidade.',
+        long: {
+          paragraphs: {
+            1: 'O objetivo do projeto é trabalhar com o banco de dados commerce, que contém dados do cardápio do McDonald\'s, como ingredientes, valores nutricionais e dados fictícios de vendas.',
+            2: 'Durante o desenvolvimento fui capaz de utilizar o método updateOne() e updateMany(); utilizar os operadores $set, $mul, $inc, $min, $max e $currentDate; renomear e remover campos; incorporar dados aos documentos através de arrays; utilizar os operadores $pop, $pull e $push; utilizar o operador $addToSet; utilizar os operadores $each, $slice e $sort; utilizar o operador $all para filtrar documentos; utilizar o operador $elemMatch para filtrar documentos; utilizar o operador $size para filtrar documentos pelo tamanho de arrays; utilizar o operador $expr para criar expressões de agregação; utilizar expressões regulares e o operador $regex para buscar documentos; utilizar o índice textual e o operador $text; utilizar o operador $mod.'
+          },
+        },
+      },
+      technologies: ['MongoDB', 'MongoDB for VS Code'],
+    },
+
     mongodbDataflights: {
       name: 'MongoDB Dataflights',
       translation: 'MongoDB Informações de Vôos',
@@ -495,7 +530,7 @@ export const projectsList = {
           },
         },
       },
-      technologies: ['mongodb'],
+      technologies: ['MongoDB', 'MongoDB for VS Code'],
     },
 
     mySqlOneForAll: {
@@ -513,7 +548,7 @@ export const projectsList = {
           },
         },
       },
-      technologies: ['mysql', 'mysql workbench'],
+      technologies: ['MySQL', 'MySQL Workbench'],
     },
 
     mySqlVocabularyBooster: {
@@ -531,7 +566,7 @@ export const projectsList = {
           },
         },
       },
-      technologies: ['mysql', 'mysql workbench'],
+      technologies: ['MySQL', 'MySQL Workbench'],
     },
 
     mySqlAllForOne: {
@@ -549,7 +584,7 @@ export const projectsList = {
           },
         },
       },
-      technologies: ['mysql', 'mysql workbench'],
+      technologies: ['MySQL', 'MySQL Workbench'],
     },
   },
 };
