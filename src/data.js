@@ -673,7 +673,7 @@ export const skills = [
   {
     skill: 'Bootstrap',
     logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain.svg',
-    description: 'Bootstrap é um framework web com código-fonte aberto para desenvolvimento de componentes de interface e front-end para sites e aplicações web usando HTML, CSS e JavaScript.'
+    description: 'Um framework web open-source para de interface e front-end para aplicações web usando HTML, CSS e JavaScript.'
   },
   {
     skill: 'Visual Studio Code (VS Code)',
@@ -704,6 +704,21 @@ export const skills = [
     skill: 'Node Package Manager',
     logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg',
     description: 'Node Package Manager (npm) é o gerenciador de pacotes padrão para o ambiente de tempo de execução JavaScript Node.js.',
+  },
+  {
+    skill: 'Mocha',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mocha/mocha-plain.svg',
+    description: 'Um framework de teste JavaScript, que possibilita a cobertura dos testes tanto no back-end quanto no front-end.',
+  },
+  {
+    skill: 'Chai',
+    logo: 'https://avatars.githubusercontent.com/u/1515293?s=200&v=4',
+    description: 'Chai visa ser uma forma expressiva e facilmente acessível para escrever asserções para o projeto de testes JavaScript.',
+  },
+  {
+    skill: 'Sinon',
+    logo: 'https://sinonjs.org/assets/images/logo.png',
+    description: 'Um pacote open-source que fornece diversas funcionalidades (como mocks, spies e stubs) que facilitam os nossos testes no JavaScript.',
   },
 ]
 
