@@ -720,6 +720,11 @@ export const skills = [
     logo: 'https://sinonjs.org/assets/images/logo.png',
     description: 'Um pacote open-source que fornece diversas funcionalidades (como mocks, spies e stubs) que facilitam os nossos testes no JavaScript.',
   },
+  {
+    skill: 'Express',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg',
+    description: 'Um framework para Node.js que fornece recursos mínimos para construção de servidores web.',
+  },
 ]
 
 // projectName: {
