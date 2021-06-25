@@ -350,31 +350,6 @@ export const projectsList = {
       apis: ['https://api.mercadolibre.com/sites/MLB/search?q=$QUERY'],
     },
 
-    colorGuess: {
-      name: 'Color Guess',
-      translation: 'Adivinhe a Cor',
-      path: 'color-guess',
-      miniature: 'https://i.ibb.co/1sZZd3t/color-guess-miniature.jpg',
-      url: 'https://matheusmartino97.github.io/06_sd-09-project-color-guess/',
-      repository:
-        'https://github.com/MatheusMartino97/06_sd-09-project-color-guess',
-      gifs: {
-        desktop: 'https://i.ibb.co/T8WLDr8/color-guess-desktop.gif',
-        mobile: '',
-      },
-      descriptions: {
-        short:
-          'Jogo onde se deve acertar qual é a cor correspondente com o valor RGB.',
-        long: {
-          paragraphs: {
-            1: 'Durante o desenvolvimento deste projeto pude treinar e entender melhor como funcionam implementações de regras de negócio básicas.',
-            2: 'Este foi o primeiro projeto em que tive contato com números aleatórios no JavaScript. Aprendi a gerá-los e a manipulá-los para que tenham o formato desejado.',
-          },
-        },
-      },
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-    },
-
     toDoList: {
       name: 'To Do List',
       translation: 'Lista de Tarefas',
@@ -399,6 +374,31 @@ export const projectsList = {
       },
       technologies: ['HTML', 'CSS', 'JavaScript'],
       libraries: ['bulma'],
+    },
+
+    colorGuess: {
+      name: 'Color Guess',
+      translation: 'Adivinhe a Cor',
+      path: 'color-guess',
+      miniature: 'https://i.ibb.co/1sZZd3t/color-guess-miniature.jpg',
+      url: 'https://matheusmartino97.github.io/06_sd-09-project-color-guess/',
+      repository:
+        'https://github.com/MatheusMartino97/06_sd-09-project-color-guess',
+      gifs: {
+        desktop: 'https://i.ibb.co/T8WLDr8/color-guess-desktop.gif',
+        mobile: '',
+      },
+      descriptions: {
+        short:
+          'Jogo onde se deve acertar qual é a cor correspondente com o valor RGB.',
+        long: {
+          paragraphs: {
+            1: 'Durante o desenvolvimento deste projeto pude treinar e entender melhor como funcionam implementações de regras de negócio básicas.',
+            2: 'Este foi o primeiro projeto em que tive contato com números aleatórios no JavaScript. Aprendi a gerá-los e a manipulá-los para que tenham o formato desejado.',
+          },
+        },
+      },
+      technologies: ['HTML', 'CSS', 'JavaScript'],
     },
 
     pixelsArt: {
@@ -485,7 +485,7 @@ export const projectsList = {
       translation: '"Aggregations" no MongoDB',
       path: 'mongodb-aggregations',
       repository: 'https://github.com/MatheusMartino97/28_sd-09-mongodb-aggregations',
-      miniature: 'https://i.ibb.co/7tG35nG/mongodb.jpg',
+      miniature: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
       descriptions: {
         short: 'Desafios onde foi possível praticar com os diversos operadores e estágios do aggregation pipeline.',
         long: {
@@ -502,7 +502,7 @@ export const projectsList = {
       translation: 'Comércio com MongoDB',
       path: 'mongodb-commerce',
       repository: 'https://github.com/MatheusMartino97/27_sd-09-mongodb-commerce',
-      miniature: 'https://i.ibb.co/7tG35nG/mongodb.jpg',
+      miniature: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
       descriptions: {
         short: 'Uma série de desafios com diferentes níveis de complexidade.',
         long: {
@@ -520,7 +520,7 @@ export const projectsList = {
       translation: 'MongoDB Informações de Vôos',
       path: 'mongodb-dataflights',
       repository: 'https://github.com/MatheusMartino97/26_sd-09-mongodb-dataflights',
-      miniature: 'https://i.ibb.co/7tG35nG/mongodb.jpg',
+      miniature: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
       descriptions: {
         short: 'Queries para consultar, deletar e contar documentos da coleção do projeto.',
         long: {
@@ -538,7 +538,7 @@ export const projectsList = {
       translation: 'MySQL Um Por Todos',
       path: 'mysql-one-for-all',
       repository: 'https://github.com/MatheusMartino97/25_sd-09-mysql-one-for-all',
-      miniature: 'https://i.ibb.co/v15y9Q0/mysql-FIXED.jpg',
+      miniature: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
       descriptions: {
         short: 'Normalização de tabelas, criação de diagramas de relacionamentos e planejamento do modelo lógico de um banco de dados.',
         long: {
@@ -556,7 +556,7 @@ export const projectsList = {
       translation: 'Aprimorador de Vocabulário MySQL',
       path: 'mysql-vocabulary-booster',
       repository: 'https://github.com/MatheusMartino97/24_sd-09-mysql-vocabulary-booster',
-      miniature: 'https://i.ibb.co/v15y9Q0/mysql-FIXED.jpg',
+      miniature: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
       descriptions: {
         short: 'Desafios que necessitam de queries mais elaboradas para serem resolvidos.',
         long: {
@@ -574,7 +574,7 @@ export const projectsList = {
       translation: 'MySQL Todos Por Um',
       path: 'mysql-all-for-one',
       repository: 'https://github.com/MatheusMartino97/23_sd-09-mysql-all-for-one',
-      miniature: 'https://i.ibb.co/v15y9Q0/mysql-FIXED.jpg',
+      miniature: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
       descriptions: {
         short: 'Queries para encontrar as informações esperadas pelos desafios.',
         long: {

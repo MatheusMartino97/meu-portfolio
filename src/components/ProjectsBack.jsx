@@ -44,7 +44,7 @@ function ProjectsBack({ stack }) {
   };
 
   return (
-    <div className="portfolio-page page-content">
+    <div className="portfolio-page page-content backend">
       <NavBar />
       <header className="page-header">
         <h1>{stack === 'frontend' ? 'Front-End' : 'Back-End'}</h1>

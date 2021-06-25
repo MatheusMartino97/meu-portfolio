@@ -436,6 +436,10 @@ body {
   width: 100%;
 }
 
+.backend .project-card .card-miniature {
+  background-color: #d2d2d2;
+}
+
 .project-card .card-infos {
   padding: 0 20px 20px 20px;
 }
@@ -462,6 +466,8 @@ body {
 .project-card img {
   width: 100%;
   border-radius: 5px 5px 0 0;
+  height: 20vh;
+  min-height: 100px;
 }
 
 /* Portfolio page */
