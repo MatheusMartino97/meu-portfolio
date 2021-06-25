@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+
 import NavBar from '../components/NavBar';
 import { skills } from '../data';
 
-export default function About() {
+function About({ timer }) {
   const [useFilteredProjects, setFilteredProjects] = useState(skills);
   const [useIsOnFocus, setIsOnFocus] = useState(false);
 
   const handleChange = ({ target: { value } }) => {
-    const filteredProjects = skills.filter(({ skill, /* description */ }) => {
+    const filteredProjects = skills.filter(({ skill /* description */ }) => {
       if (skill.toLowerCase().includes(value.toLowerCase())) return true;
       // if (description.toLowerCase().includes(value.toLowerCase())) return true;
       return false;
@@ -48,6 +51,15 @@ export default function About() {
             Portanto, valorizo imensamente as soft-skills, pois prezo muito por
             bons relacionamentos.
           </p>
+          <h3>
+            <span className={`arrow ${!timer ? 'up' : undefined}`}>
+              <ArrowDownwardIcon />
+            </span>{' '}
+            Veja minhas habilidades e competências abaixo{' '}
+            <span className={`arrow ${timer ? 'up' : undefined}`}>
+              <ArrowDownwardIcon />
+            </span>{' '}
+          </h3>
         </section>
       </main>
       <main className="page-main skills-content">
@@ -109,3 +121,9 @@ export default function About() {
     </div>
   );
 }
+
+const mapStateToProps = (state) => ({
+  timer: state.timer,
+});
+
+export default connect(mapStateToProps)(About);

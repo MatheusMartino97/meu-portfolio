@@ -725,6 +725,11 @@ export const skills = [
     logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg',
     description: 'Um framework para Node.js que fornece recursos mínimos para construção de servidores web.',
   },
+  {
+    skill: 'Sass',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg',
+    description: 'Uma linguagem de extensão ao CSS que dá um controle mais profissional e dinâmico para suas folhas de estilo.',
+  },
 ]
 
 // projectName: {

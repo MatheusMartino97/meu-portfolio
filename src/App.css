@@ -18,7 +18,8 @@ body {
 
 /* All pages */
 
-.not-found-picture, .in-development-picture {
+.not-found-picture,
+.in-development-picture {
   width: 160px;
 }
 
@@ -131,6 +132,21 @@ body {
 }
 
 /* About page */
+
+#about-page .arrow {
+  position: relative;
+  transition: 1s;
+  top: 10px;
+  width: 100%;
+}
+
+#about-page .page-main h3 {
+  text-align: center;
+}
+
+#about-page .arrow.up {
+  top: -5px;
+}
 
 #about-page .page-main {
   width: 80%;
@@ -272,7 +288,8 @@ body {
     justify-content: center;
   }
 
-  .hidden-card h6, .hidden-card p {
+  .hidden-card h6,
+  .hidden-card p {
     margin: 5px 0 1px 0;
   }
 }
