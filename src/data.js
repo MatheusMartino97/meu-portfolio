@@ -6,7 +6,8 @@ export const projectsList = {
       path: 'to-do-list-material-ui',
       url: 'https://matheusmartino97.github.io/to-do-list-material-ui/#/',
       repository: 'https://github.com/MatheusMartino97/to-do-list-material-ui',
-      miniature: 'https://i.ibb.co/3FXX7cy/to-do-list-material-ui-miniature.jpg',
+      miniature:
+        'https://i.ibb.co/3FXX7cy/to-do-list-material-ui-miniature.jpg',
       gifs: {
         desktop: 'https://i.ibb.co/LhH03Gb/to-do-list-material-ui-desktop.gif',
         mobile: 'https://i.ibb.co/bK1K4bX/to-do-list-material-ui-mobile.gif',
@@ -20,15 +21,19 @@ export const projectsList = {
         },
       },
       technologies: ['React', 'Material UI'],
-      libraries: ['react', 'react-router-dom', '@material-ui/core', '@material-ui/icons'],
+      libraries: [
+        'react',
+        'react-router-dom',
+        '@material-ui/core',
+        '@material-ui/icons',
+      ],
     },
-    
+
     recipesApp: {
       name: 'Recipes App',
       translation: 'Aplicativo de Receitas',
       path: 'recipes-app',
-      url:
-        'https://matheusmartino97.github.io/22_sd-09-project-recipes-app/#/',
+      url: 'https://matheusmartino97.github.io/22_sd-09-project-recipes-app/#/',
       repository:
         'https://github.com/MatheusMartino97/22_sd-09-project-recipes-app',
       miniature: 'https://i.ibb.co/jyL7LBM/recipes-app-miniature.jpg',
@@ -119,8 +124,7 @@ export const projectsList = {
       name: 'Trybe Wallet',
       translation: 'Carteira da Trybe',
       path: 'trybe-wallet',
-      url:
-        'https://matheusmartino97.github.io/19_sd-09-project-trybewallet/#/',
+      url: 'https://matheusmartino97.github.io/19_sd-09-project-trybewallet/#/',
       repository:
         'https://github.com/MatheusMartino97/19_sd-09-project-trybewallet',
       miniature: 'https://i.ibb.co/ccbL5Ft/trybe-wallet-miniature.jpg',
@@ -154,8 +158,7 @@ export const projectsList = {
       translation: 'Busca de Empregos',
       path: 'job-search',
       url: 'https://matheusmartino97.github.io/job-search-react-redux/#/',
-      repository:
-        'https://github.com/MatheusMartino97/job-search-react-redux',
+      repository: 'https://github.com/MatheusMartino97/job-search-react-redux',
       miniature: 'https://i.ibb.co/KxZh9TM/job-search-miniature.jpg',
       gifs: {
         desktop: 'https://i.ibb.co/6JDvV45/job-search-desktop.gif',
@@ -179,8 +182,7 @@ export const projectsList = {
       name: 'Cats vs Dogs',
       translation: 'Gatos vs Gatos',
       path: 'cats-vs-dogs',
-      url:
-        'https://matheusmartino97.github.io/cat-vs-dog-customer-register/#/',
+      url: 'https://matheusmartino97.github.io/cat-vs-dog-customer-register/#/',
       repository:
         'https://github.com/MatheusMartino97/cat-vs-dog-customer-register',
       miniature: 'https://i.ibb.co/Q9QkcQy/cats-vs-dogs-miniature.jpg',
@@ -217,8 +219,7 @@ export const projectsList = {
       miniature:
         'https://i.ibb.co/bBsRbd8/front-end-online-store-miniature.jpg',
       gifs: {
-        desktop:
-          'https://i.ibb.co/ckbj1V0/front-end-online-store-desktop.gif',
+        desktop: 'https://i.ibb.co/ckbj1V0/front-end-online-store-desktop.gif',
         mobile: '',
       },
       descriptions: {
@@ -328,8 +329,7 @@ export const projectsList = {
       translation: 'Carrinho de Compras',
       path: 'shopping-cart',
       miniature: 'https://i.ibb.co/7XZ5QrC/shopping-cart-miniature.jpg',
-      url:
-        'https://matheusmartino97.github.io/12_sd-09-project-shopping-cart/',
+      url: 'https://matheusmartino97.github.io/12_sd-09-project-shopping-cart/',
       repository:
         'https://github.com/MatheusMartino97/12_sd-09-project-shopping-cart',
       gifs: {
@@ -480,14 +480,36 @@ export const projectsList = {
   },
 
   backend: {
+    talkerManager: {
+      name: 'Talker Manager',
+      translation: 'Gerenciador de Palestrantes',
+      path: 'talker-manager',
+      repository: 'https://github.com/MatheusMartino97/29_sd-09-project-talker-manager',
+      miniature: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg',
+      descriptions: {
+        short: 'Uma API de um CRUD (Create, Read, Update e Delete) de palestrantes.',
+        long: {
+          paragraphs: {
+            1: 'O primeiro projeto utilizando Express feito durante o módulo de Back-End da graduação na Trybe.',
+            2: 'Neste projeto, fui capaz de Realizar operações assíncronas utilizando callbacks; realizar operações assíncronas utilizando Promises; ler e escrever arquivos localmente com NodeJS; escrever meus próprios scripts que criam e consomem Promises; reescrever código que usa callbacks para que use Promises; realizar chamadas de funções de forma consciente; entender os conceitos básicos de como o JavaScript funciona; detectar e solucionar problemas no código de forma mais objetiva; entender a diferença entre execução síncrona e assíncrona; entender o que é o HTTP, o que é uma API e o que os dois têm a ver com o Express; escrever APIs utilizando Node e Express; entender a estrutura de uma aplicação Express e como organizar seu código; criar rotas e aplicar middlewares.'
+          },
+        },
+      },
+      technologies: ['Node.js', 'Express'],
+      libraries: ['express', 'express-rescue', 'crupto-js', 'body-parser', 'nodemon'],
+    },
+
     mongodbAggregations: {
       name: 'MongoDB Aggregations',
       translation: '"Aggregations" no MongoDB',
       path: 'mongodb-aggregations',
-      repository: 'https://github.com/MatheusMartino97/28_sd-09-mongodb-aggregations',
-      miniature: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
+      repository:
+        'https://github.com/MatheusMartino97/28_sd-09-mongodb-aggregations',
+      miniature:
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
       descriptions: {
-        short: 'Desafios onde foi possível praticar com os diversos operadores e estágios do aggregation pipeline.',
+        short:
+          'Desafios onde foi possível praticar com os diversos operadores e estágios do aggregation pipeline.',
         long: {
           paragraphs: {
             1: 'Neste projeto foi utilizado vários datasets, de forma que foi possível praticar em vários cenários a execução buscas complexas no banco MongoDB, assim como a utilização dos operadores de aggregation para fazer uma pipeline.',
@@ -501,14 +523,16 @@ export const projectsList = {
       name: 'MongoDB Commerce',
       translation: 'Comércio com MongoDB',
       path: 'mongodb-commerce',
-      repository: 'https://github.com/MatheusMartino97/27_sd-09-mongodb-commerce',
-      miniature: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
+      repository:
+        'https://github.com/MatheusMartino97/27_sd-09-mongodb-commerce',
+      miniature:
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
       descriptions: {
         short: 'Uma série de desafios com diferentes níveis de complexidade.',
         long: {
           paragraphs: {
-            1: 'O objetivo do projeto é trabalhar com o banco de dados commerce, que contém dados do cardápio do McDonald\'s, como ingredientes, valores nutricionais e dados fictícios de vendas.',
-            2: 'Durante o desenvolvimento fui capaz de utilizar o método updateOne() e updateMany(); utilizar os operadores $set, $mul, $inc, $min, $max e $currentDate; renomear e remover campos; incorporar dados aos documentos através de arrays; utilizar os operadores $pop, $pull e $push; utilizar o operador $addToSet; utilizar os operadores $each, $slice e $sort; utilizar o operador $all para filtrar documentos; utilizar o operador $elemMatch para filtrar documentos; utilizar o operador $size para filtrar documentos pelo tamanho de arrays; utilizar o operador $expr para criar expressões de agregação; utilizar expressões regulares e o operador $regex para buscar documentos; utilizar o índice textual e o operador $text; utilizar o operador $mod.'
+            1: "O objetivo do projeto é trabalhar com o banco de dados commerce, que contém dados do cardápio do McDonald's, como ingredientes, valores nutricionais e dados fictícios de vendas.",
+            2: 'Durante o desenvolvimento fui capaz de utilizar o método updateOne() e updateMany(); utilizar os operadores $set, $mul, $inc, $min, $max e $currentDate; renomear e remover campos; incorporar dados aos documentos através de arrays; utilizar os operadores $pop, $pull e $push; utilizar o operador $addToSet; utilizar os operadores $each, $slice e $sort; utilizar o operador $all para filtrar documentos; utilizar o operador $elemMatch para filtrar documentos; utilizar o operador $size para filtrar documentos pelo tamanho de arrays; utilizar o operador $expr para criar expressões de agregação; utilizar expressões regulares e o operador $regex para buscar documentos; utilizar o índice textual e o operador $text; utilizar o operador $mod.',
           },
         },
       },
@@ -519,14 +543,17 @@ export const projectsList = {
       name: 'MongoDB Dataflights',
       translation: 'MongoDB Informações de Vôos',
       path: 'mongodb-dataflights',
-      repository: 'https://github.com/MatheusMartino97/26_sd-09-mongodb-dataflights',
-      miniature: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
+      repository:
+        'https://github.com/MatheusMartino97/26_sd-09-mongodb-dataflights',
+      miniature:
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
       descriptions: {
-        short: 'Queries para consultar, deletar e contar documentos da coleção do projeto.',
+        short:
+          'Queries para consultar, deletar e contar documentos da coleção do projeto.',
         long: {
           paragraphs: {
             1: 'Primeiro projeto sobre MongoDB e bancos de dados não relazionais no módulo de Back-End da graduação da Trybe.',
-            2: 'Com esse projeto fui capaz de buscar documentos na coleção do projeto; utilizar filtros de busca; deletar documentos conforme o filtro; contar documentos compreendidos nos filtros pedidos; inserir documentos no banco de dados.'
+            2: 'Com esse projeto fui capaz de buscar documentos na coleção do projeto; utilizar filtros de busca; deletar documentos conforme o filtro; contar documentos compreendidos nos filtros pedidos; inserir documentos no banco de dados.',
           },
         },
       },
@@ -537,14 +564,17 @@ export const projectsList = {
       name: 'MySQL One For All',
       translation: 'MySQL Um Por Todos',
       path: 'mysql-one-for-all',
-      repository: 'https://github.com/MatheusMartino97/25_sd-09-mysql-one-for-all',
-      miniature: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
+      repository:
+        'https://github.com/MatheusMartino97/25_sd-09-mysql-one-for-all',
+      miniature:
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
       descriptions: {
-        short: 'Normalização de tabelas, criação de diagramas de relacionamentos e planejamento do modelo lógico de um banco de dados.',
+        short:
+          'Normalização de tabelas, criação de diagramas de relacionamentos e planejamento do modelo lógico de um banco de dados.',
         long: {
           paragraphs: {
             1: 'Projeto sobre MySQL feito durante o módulo de Back-End na graduação da Trybe.',
-            2: 'Neste projeto fui capaz de criar o diagrama de relacionamentos e modelar um banco de dados identificando suas entidades, atributos e relacionamentos; aplicar a 1ª, 2ª e 3ª forma normal; criar e alterar tabelas; lidar com VIEWs; criar reações dinâmicas com TRIGGERS.'
+            2: 'Neste projeto fui capaz de criar o diagrama de relacionamentos e modelar um banco de dados identificando suas entidades, atributos e relacionamentos; aplicar a 1ª, 2ª e 3ª forma normal; criar e alterar tabelas; lidar com VIEWs; criar reações dinâmicas com TRIGGERS.',
           },
         },
       },
@@ -555,14 +585,17 @@ export const projectsList = {
       name: 'MySQL Vocabulary Booster',
       translation: 'Aprimorador de Vocabulário MySQL',
       path: 'mysql-vocabulary-booster',
-      repository: 'https://github.com/MatheusMartino97/24_sd-09-mysql-vocabulary-booster',
-      miniature: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
+      repository:
+        'https://github.com/MatheusMartino97/24_sd-09-mysql-vocabulary-booster',
+      miniature:
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
       descriptions: {
-        short: 'Desafios que necessitam de queries mais elaboradas para serem resolvidos.',
+        short:
+          'Desafios que necessitam de queries mais elaboradas para serem resolvidos.',
         long: {
           paragraphs: {
             1: 'Projeto sobre MySQL feito durante o módulo de Back-End na graduação da Trybe.',
-            2: 'Com estes desafios fui capaz de criar condicionais no SQL usando IF e CASE; manipular strings no SQL; usar diversar funções matemáticas do MySQL; extrair informações específicas sobre datas de uma tabela; utilizar funções de agregação como AVG, MIN, MAX, SUM e COUNT; exibir e filtrar dados de forma agrupada com GROUP BY e HAVING; utilizar INNER JOIN, LEFT JOIN, RIGHT JOIN para combinar dados de uma ou mais tabelas; utilizar SELF JOIN para fazer join de uma tabela com ela própria; utilizar SUBQUERIES; ciar queries mais eficientes através do EXISTS; montar blocor de código SQL reutilizáveis com STORED PROCEDURES e STORED FUNCTIONS.'
+            2: 'Com estes desafios fui capaz de criar condicionais no SQL usando IF e CASE; manipular strings no SQL; usar diversar funções matemáticas do MySQL; extrair informações específicas sobre datas de uma tabela; utilizar funções de agregação como AVG, MIN, MAX, SUM e COUNT; exibir e filtrar dados de forma agrupada com GROUP BY e HAVING; utilizar INNER JOIN, LEFT JOIN, RIGHT JOIN para combinar dados de uma ou mais tabelas; utilizar SELF JOIN para fazer join de uma tabela com ela própria; utilizar SUBQUERIES; ciar queries mais eficientes através do EXISTS; montar blocor de código SQL reutilizáveis com STORED PROCEDURES e STORED FUNCTIONS.',
           },
         },
       },
@@ -573,14 +606,17 @@ export const projectsList = {
       name: 'MySQL All For One',
       translation: 'MySQL Todos Por Um',
       path: 'mysql-all-for-one',
-      repository: 'https://github.com/MatheusMartino97/23_sd-09-mysql-all-for-one',
-      miniature: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
+      repository:
+        'https://github.com/MatheusMartino97/23_sd-09-mysql-all-for-one',
+      miniature:
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
       descriptions: {
-        short: 'Queries para encontrar as informações esperadas pelos desafios.',
+        short:
+          'Queries para encontrar as informações esperadas pelos desafios.',
         long: {
           paragraphs: {
             1: 'Primeiro projeto sobre Back-End feito durante a graduação na Trybe.',
-            2: 'Pude praticar minha habilidades em gerar valores e selecionar colunas individualmente com SELECT; renomear e gerar colunas com AS; concatenar colunas e valores com CONCAT; remover dados duplicados em uma consulta com DISTINCT; contar resultados com COUNT; limitar resultados em uma consulta com LIMIT; pular resultados com OFFSET; ordenar com ORDER BY; filtrar com WHERE; utilizar operadores booleanos e relacionais em consultas; criar consultas dinâmicas com LIKE; consultar faixas de resultados com IN e BETWEEN; consultar datas; inserir, atualizar e deletar dados em tabelas com INSERT, UPDATE e DELETE.'
+            2: 'Pude praticar minha habilidades em gerar valores e selecionar colunas individualmente com SELECT; renomear e gerar colunas com AS; concatenar colunas e valores com CONCAT; remover dados duplicados em uma consulta com DISTINCT; contar resultados com COUNT; limitar resultados em uma consulta com LIMIT; pular resultados com OFFSET; ordenar com ORDER BY; filtrar com WHERE; utilizar operadores booleanos e relacionais em consultas; criar consultas dinâmicas com LIKE; consultar faixas de resultados com IN e BETWEEN; consultar datas; inserir, atualizar e deletar dados em tabelas com INSERT, UPDATE e DELETE.',
           },
         },
       },
@@ -592,145 +628,195 @@ export const projectsList = {
 export const skills = [
   {
     skill: 'HTML5',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg',
-    description: 'Linguagem de marcação de texto amplamente utilizada na construção de páginas na Web.'
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg',
+    description:
+      'Linguagem de marcação de texto amplamente utilizada na construção de páginas na Web.',
   },
   {
     skill: 'CSS3',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg',
-    description: 'Linguagem de estilização que define a apresentação e layout dos elementos de uma página na Web.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg',
+    description:
+      'Linguagem de estilização que define a apresentação e layout dos elementos de uma página na Web.',
   },
   {
     skill: 'JavaScript',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
-    description: 'Linguagem de programação utilizada para a criação de conteúdos interativos e dinâmicos para a Web que se atualizam em tempo de execução.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+    description:
+      'Linguagem de programação utilizada para a criação de conteúdos interativos e dinâmicos para a Web que se atualizam em tempo de execução.',
   },
   {
     skill: 'Jest',
     logo: 'https://i.ibb.co/3sSDC6P/jest.png',
-    description: 'Framework de teste em JavaScript projetado para garantir a correção de qualquer código JavaScript.',
+    description:
+      'Framework de teste em JavaScript projetado para garantir a correção de qualquer código JavaScript.',
   },
   {
     skill: 'React',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg',
-    description: 'Uma biblioteca JavaScript para criar interfaces de usuário dinâmicas implementando componentes reutilizaveis.'
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg',
+    description:
+      'Uma biblioteca JavaScript para criar interfaces de usuário dinâmicas implementando componentes reutilizaveis.',
   },
   {
     skill: 'Material UI',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg',
-    description: 'O Material UI é uma biblioteca de componentes React para um desenvolvimento ágil e fácil.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg',
+    description:
+      'O Material UI é uma biblioteca de componentes React para um desenvolvimento ágil e fácil.',
   },
   {
     skill: 'React Router Dom',
-    logo: 'https://camo.githubusercontent.com/bb743ede87c7763c66f77840f607ae4ef1b778e7fef4bc9accbb84a4e023639e/68747470733a2f2f7365656b6c6f676f2e636f6d2f696d616765732f522f72656163742d726f757465722d6c6f676f2d414235424642363338462d7365656b6c6f676f2e636f6d2e706e67',
-    description: 'O React Router é a biblioteca padrão de roteamento do React que mantém a interface do usuário em sincronia com o valor atual da URL acessada.',
+    logo:
+      'https://camo.githubusercontent.com/bb743ede87c7763c66f77840f607ae4ef1b778e7fef4bc9accbb84a4e023639e/68747470733a2f2f7365656b6c6f676f2e636f6d2f696d616765732f522f72656163742d726f757465722d6c6f676f2d414235424642363338462d7365656b6c6f676f2e636f6d2e706e67',
+    description:
+      'O React Router é a biblioteca padrão de roteamento do React que mantém a interface do usuário em sincronia com o valor atual da URL acessada.',
   },
   {
     skill: 'Redux',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
-    description: 'Redux é uma biblioteca feita para gerenciar estados em uma aplicação, facilitando o compartilhamento de estados entre componentes React.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
+    description:
+      'Redux é uma biblioteca feita para gerenciar estados em uma aplicação, facilitando o compartilhamento de estados entre componentes React.',
   },
   {
     skill: 'React Testing Library',
-    logo: 'https://camo.githubusercontent.com/aa85cea585880ae694b4fe8dde116d092b8907d6351c71fcd76f00f7586fad72/68747470733a2f2f74657374696e672d6c6962726172792e636f6d2f696d672f6f63746f7075732d313238783132382e706e67',
-    description: 'Um conjunto de utilitários que permitem testar componentes React sem depender dos detalhes de implementação.',
+    logo:
+      'https://camo.githubusercontent.com/aa85cea585880ae694b4fe8dde116d092b8907d6351c71fcd76f00f7586fad72/68747470733a2f2f74657374696e672d6c6962726172792e636f6d2f696d672f6f63746f7075732d313238783132382e706e67',
+    description:
+      'Um conjunto de utilitários que permitem testar componentes React sem depender dos detalhes de implementação.',
   },
   {
     skill: 'MySQL',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg',
-    description: 'O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg',
+    description:
+      'O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface.',
   },
   {
     skill: 'MongoDB',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg',
-    description: 'MongoDB é um software de banco de dados orientado a documentos livre, de código aberto e multiplataforma.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg',
+    description:
+      'MongoDB é um software de banco de dados orientado a documentos livre, de código aberto e multiplataforma.',
   },
   {
     skill: 'Bash',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg',
-    description: 'Interpretador de comandos, um entre os diversos tradutores entre o usuário e o sistema operacional conhecidos como shell.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg',
+    description:
+      'Interpretador de comandos, um entre os diversos tradutores entre o usuário e o sistema operacional conhecidos como shell.',
   },
   {
     skill: 'Git',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg',
-    description: 'O Git é um sistema open-source de controle de versão utilizado pela grande maioria dos desenvolvedores atualmente.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg',
+    description:
+      'O Git é um sistema open-source de controle de versão utilizado pela grande maioria dos desenvolvedores atualmente.',
   },
   {
     skill: 'GitHub',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg',
-    description: 'GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg',
+    description:
+      'GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git.',
   },
   {
     skill: 'Linux',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg',
     description: 'Sistemas operacionais Unix-Like que utilizam o Kernel Linux.',
   },
   {
     skill: 'Ubuntu',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/ubuntu/ubuntu-plain.svg',
-    description: 'Ubuntu é um sistema operacional de código aberto, construído a partir do núcleo Linux, baseado no Debian e utiliza GNOME como ambiente de desktop.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/ubuntu/ubuntu-plain.svg',
+    description:
+      'Ubuntu é um sistema operacional de código aberto, construído a partir do núcleo Linux, baseado no Debian e utiliza GNOME como ambiente de desktop.',
   },
   {
     skill: 'Bootstrap',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain.svg',
-    description: 'Um framework web open-source para de interface e front-end para aplicações web usando HTML, CSS e JavaScript.'
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain.svg',
+    description:
+      'Um framework web open-source para de interface e front-end para aplicações web usando HTML, CSS e JavaScript.',
   },
   {
     skill: 'Visual Studio Code (VS Code)',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg',
-    description: 'O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg',
+    description:
+      'O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS.',
   },
   {
     skill: 'TypeScript',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
-    description: 'TypeScript é um superconjunto de JavaScript desenvolvido pela Microsoft que adiciona tipagem e alguns outros recursos a linguagem.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
+    description:
+      'TypeScript é um superconjunto de JavaScript desenvolvido pela Microsoft que adiciona tipagem e alguns outros recursos a linguagem.',
   },
   {
     skill: 'MongoDB Compass',
     logo: 'https://i.ibb.co/vZcVDXs/mongodb-compass.png',
-    description: 'O MongoDB Compass analisa os documentos e exibe estruturas sofisticadas dentro das coleções por meio de uma GUI intuitiva.'
+    description:
+      'O MongoDB Compass analisa os documentos e exibe estruturas sofisticadas dentro das coleções por meio de uma GUI intuitiva.',
   },
   {
     skill: 'MySQL Workbench',
     logo: 'https://i.ibb.co/P51zLS5/my-sql-workbench.png',
-    description: 'O MySQL Workbench é uma ferramenta visual de design de banco de dados que integra desenvolvimento, administração, design, criação e manutenção de SQL.'
+    description:
+      'O MySQL Workbench é uma ferramenta visual de design de banco de dados que integra desenvolvimento, administração, design, criação e manutenção de SQL.',
   },
   {
     skill: 'Node.js',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg',
-    description: 'Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg',
+    description:
+      'Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.',
   },
   {
     skill: 'Node Package Manager',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg',
-    description: 'Node Package Manager (npm) é o gerenciador de pacotes padrão para o ambiente de tempo de execução JavaScript Node.js.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg',
+    description:
+      'Node Package Manager (npm) é o gerenciador de pacotes padrão para o ambiente de tempo de execução JavaScript Node.js.',
   },
   {
     skill: 'Mocha',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mocha/mocha-plain.svg',
-    description: 'Um framework de teste JavaScript, que possibilita a cobertura dos testes tanto no back-end quanto no front-end.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/mocha/mocha-plain.svg',
+    description:
+      'Um framework de teste JavaScript, que possibilita a cobertura dos testes tanto no back-end quanto no front-end.',
   },
   {
     skill: 'Chai',
     logo: 'https://avatars.githubusercontent.com/u/1515293?s=200&v=4',
-    description: 'Chai visa ser uma forma expressiva e facilmente acessível para escrever asserções para o projeto de testes JavaScript.',
+    description:
+      'Chai visa ser uma forma expressiva e facilmente acessível para escrever asserções para o projeto de testes JavaScript.',
   },
   {
     skill: 'Sinon',
     logo: 'https://sinonjs.org/assets/images/logo.png',
-    description: 'Um pacote open-source que fornece diversas funcionalidades (como mocks, spies e stubs) que facilitam os nossos testes no JavaScript.',
+    description:
+      'Um pacote open-source que fornece diversas funcionalidades (como mocks, spies e stubs) que facilitam os nossos testes no JavaScript.',
   },
   {
     skill: 'Express',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg',
-    description: 'Um framework para Node.js que fornece recursos mínimos para construção de servidores web.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg',
+    description:
+      'Um framework para Node.js que fornece recursos mínimos para construção de servidores web.',
   },
   {
     skill: 'Sass',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg',
-    description: 'Uma linguagem de extensão ao CSS que dá um controle mais profissional e dinâmico para suas folhas de estilo.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg',
+    description:
+      'Uma linguagem de extensão ao CSS que dá um controle mais profissional e dinâmico para suas folhas de estilo.',
   },
-]
+];
 
 // projectName: {
 //   name: '',
