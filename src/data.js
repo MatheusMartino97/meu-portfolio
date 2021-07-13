@@ -844,6 +844,11 @@ export const skills = [
     description:
       'Uma linguagem de extensão ao CSS que dá um controle mais profissional e dinâmico para suas folhas de estilo.',
   },
+  {
+    skill: 'JSON Web Token',
+    logo: 'https://i.ibb.co/XjvqGMT/JWT-logo.png',
+    description: 'O JSON Web Token (JWT) é um padrão da Internet para a criação de dados com assinatura opcional e/ou criptografia cujo payload contém o JSON que afirma algum número de declarações.',
+  },
 ];
 
 // projectName: {
