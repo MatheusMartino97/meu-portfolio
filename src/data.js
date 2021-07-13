@@ -480,23 +480,51 @@ export const projectsList = {
   },
 
   backend: {
+    storeManager: {
+      name: 'Store Manager',
+      translation: 'Gerenciador de Loja',
+      path: 'store-manager',
+      repository: 'https://github.com/MatheusMartino97/30_sd-09-store-manager',
+      miniature: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg',
+      descriptions: {
+        short: 'Esta RESTful API, construída utilizando a arquitetura MSC, trata-se de um sistema CRUD de gerenciamento de produtos e vendas.',
+        long: {
+          paragraphs: {
+            1: 'Este foi o primeiro projeto, que realizei durante a graduação na Trybe, onde tive contato com a arquitetura MSC (Models, Services e Controllers).',
+            2: 'Neste projeto, fui capaz de entender o funcionamento da camada de Model; delegar responsabilidades específicas para essa camada; conectar a aplicação com diferentes collections do bancos de dados; estruturar uma aplicação em camadas; delegar responsabilidades específicas para cada parte do seu app; melhorar manutenibilidade e reusabilidade do seu código; entender e aplicar os padrões REST; escrever assinaturas para APIs intuitivas e facilmente entendíveis.'
+          },
+        },
+      },
+      technologies: ['Node.js', 'Express', 'MongoDB'],
+      libraries: ['express', 'express-rescue', 'body-parser', 'dotenv', 'mongodb', 'nodemon', 'chai', 'mocha', 'sinon', 'mongodb-memory-server'],
+    },
+
     talkerManager: {
       name: 'Talker Manager',
       translation: 'Gerenciador de Palestrantes',
       path: 'talker-manager',
-      repository: 'https://github.com/MatheusMartino97/29_sd-09-project-talker-manager',
-      miniature: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg',
+      repository:
+        'https://github.com/MatheusMartino97/29_sd-09-project-talker-manager',
+      miniature:
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg',
       descriptions: {
-        short: 'Uma API de um CRUD (Create, Read, Update e Delete) de palestrantes.',
+        short:
+          'Uma API de um CRUD (Create, Read, Update e Delete) de palestrantes.',
         long: {
           paragraphs: {
             1: 'O primeiro projeto utilizando Express feito durante o módulo de Back-End da graduação na Trybe.',
-            2: 'Neste projeto, fui capaz de realizar operações assíncronas utilizando callbacks; realizar operações assíncronas utilizando Promises; ler e escrever arquivos localmente com NodeJS; escrever meus próprios scripts que criam e consomem Promises; reescrever código que usa callbacks para que use Promises; realizar chamadas de funções de forma consciente; entender os conceitos básicos de como o JavaScript funciona; detectar e solucionar problemas no código de forma mais objetiva; entender a diferença entre execução síncrona e assíncrona; entender o que é o HTTP, o que é uma API e o que os dois têm a ver com o Express; escrever APIs utilizando Node e Express; entender a estrutura de uma aplicação Express e como organizar seu código; criar rotas e aplicar middlewares.'
+            2: 'Neste projeto, fui capaz de realizar operações assíncronas utilizando callbacks; realizar operações assíncronas utilizando Promises; ler e escrever arquivos localmente com NodeJS; escrever meus próprios scripts que criam e consomem Promises; reescrever código que usa callbacks para que use Promises; realizar chamadas de funções de forma consciente; entender os conceitos básicos de como o JavaScript funciona; detectar e solucionar problemas no código de forma mais objetiva; entender a diferença entre execução síncrona e assíncrona; entender o que é o HTTP, o que é uma API e o que os dois têm a ver com o Express; escrever APIs utilizando Node e Express; entender a estrutura de uma aplicação Express e como organizar meu código; criar rotas e aplicar middlewares.',
           },
         },
       },
       technologies: ['Node.js', 'Express'],
-      libraries: ['express', 'express-rescue', 'crupto-js', 'body-parser', 'nodemon'],
+      libraries: [
+        'express',
+        'express-rescue',
+        'crypto-js',
+        'body-parser',
+        'nodemon',
+      ],
     },
 
     mongodbAggregations: {
