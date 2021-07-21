@@ -849,6 +849,11 @@ export const skills = [
     logo: 'https://i.ibb.co/XjvqGMT/JWT-logo.png',
     description: 'O JSON Web Token (JWT) é um padrão da Internet para a criação de dados com assinatura opcional e/ou criptografia cujo payload contém o JSON que afirma algum número de declarações.',
   },
+  {
+    skill: 'Heroku',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/heroku/heroku-original.svg',
+    description: 'A Heroku é uma plataforma nuvem que faz deploy de várias aplicações back-end seja para hospedagem, testes em produção ou escalar as suas aplicações.',
+  },
 ];
 
 // projectName: {
