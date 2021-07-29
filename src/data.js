@@ -851,9 +851,14 @@ export const skills = [
   },
   {
     skill: 'Heroku',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/heroku/heroku-original.svg',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/heroku/heroku-plain.svg',
     description: 'A Heroku é uma plataforma nuvem que faz deploy de várias aplicações back-end seja para hospedagem, testes em produção ou escalar as suas aplicações.',
   },
+  {
+    skill: 'Sequelize',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/sequelize/sequelize-original.svg',
+    description: 'O Sequelize é um ORM (Object-Relational Mapper) baseado em Promise para Node.js e io.js. Suporta vários dialetos e recursos a transação, relacionamentos, replicação de leitura e muito mais.',
+  },  
 ];
 
 // projectName: {
