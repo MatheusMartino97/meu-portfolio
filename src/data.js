@@ -1,5 +1,30 @@
 export const projectsList = {
   frontend: {
+    strangerThingsFrontEnd: {
+      name: 'Stranger Things',
+      translation: 'Projeto Stranger Things',
+      path: 'stranger-things-frontend',
+      url: 'https://matheusmartino97-pd.herokuapp.com/',
+      repository:
+        'https://github.com/MatheusMartino97/32_sd-09-stranger-things-frontend',
+      miniature: 'https://i.ibb.co/m96VnHC/miniature.jpg',
+      gifs: {
+        desktop: 'https://i.ibb.co/P9HLz78/desktop.gif',
+      },
+      descriptions: {
+        short: 'Um site que busca personagens da série Stranger Things.',
+        long: {
+          paragraphs: {
+            1: 'Neste projeto tive que construir tanto o front-end quanto o back-end de uma aplicação e publicá-los no Heroku.',
+            2: 'Fui capaz de publicar aplicações através do Heroku; visualizar logs das suas aplicações publicadas; monitorar suas aplicações publicadas; utilizar variáveis de ambiente dentro do Heroku; instalar, utilizar e aproveitar os principais recursos do PM2; fazer deploy no Heroku aproveitando recursos de um process manager.'
+          },
+        },
+      },
+      technologies: ['React', 'Heroku'],
+      libraries: ['react', 'axios', 'dotenv'],
+      apis: ['https://matheusmartino97-bd.herokuapp.com/', 'https://matheusmartino97-bk.herokuapp.com/'],
+    },
+
     toDoListMaterialUI: {
       name: 'To Do List Material UI',
       translation: 'Lista de tarefas com Material UI',
@@ -480,23 +505,70 @@ export const projectsList = {
   },
 
   backend: {
+    cookmaster: {
+      name: 'Cookmaster',
+      translation: 'Mestre Cuca',
+      path: 'cookmaster',
+      repository: 'https://github.com/MatheusMartino97/31_sd-09-cookmaster',
+      miniature:
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg',
+      descriptions: {
+        short:
+          'App desenvolvido com a arquitetura MSC onde é possível realizar o CRUD de pessoas usuárias e receitas.',
+        long: {
+          paragraphs: {
+            1: 'Este projeto é uma aplicação onde é possível fazer o cadastro e login de pessoas usuárias, onde apenas essas pessoas podem acessar, modificar e deletar as receitas que cadastraram.',
+            2: 'Nele fui capaz de entender o que há por dentro de um token de autenticação; gerar tokens a partir de informações como login e senha; autenticar rotas do Express, usando o token JWT; fazer upload de arquivos em APIs REST; salvar arquivos no servidor através de uma API REST; consultar arquivos do servidor através de uma api REST e realizar testes de integração.',
+          },
+        },
+      },
+      technologies: ['Node.js', 'Express', 'MongoDB'],
+      libraries: [
+        'express',
+        'dotenv',
+        'express-rescue',
+        'jsonwebtoken',
+        'mongodb',
+        'multer',
+        'chai',
+        'chai-http',
+        'mocha',
+        'sinon',
+        'mongodb-memory-server',
+        'nodemon',
+      ],
+    },
+
     storeManager: {
       name: 'Store Manager',
       translation: 'Gerenciador de Loja',
       path: 'store-manager',
       repository: 'https://github.com/MatheusMartino97/30_sd-09-store-manager',
-      miniature: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg',
+      miniature:
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg',
       descriptions: {
-        short: 'Esta RESTful API, construída utilizando a arquitetura MSC, trata-se de um sistema CRUD de gerenciamento de produtos e vendas.',
+        short:
+          'Esta RESTful API, construída utilizando a arquitetura MSC, trata-se de um sistema CRUD de gerenciamento de produtos e vendas.',
         long: {
           paragraphs: {
             1: 'Este foi o primeiro projeto, que realizei durante a graduação na Trybe, onde tive contato com a arquitetura MSC (Models, Services e Controllers).',
-            2: 'Neste projeto, fui capaz de entender o funcionamento da camada de Model; delegar responsabilidades específicas para essa camada; conectar a aplicação com diferentes collections do bancos de dados; estruturar uma aplicação em camadas; delegar responsabilidades específicas para cada parte do seu app; melhorar manutenibilidade e reusabilidade do seu código; entender e aplicar os padrões REST; escrever assinaturas para APIs intuitivas e facilmente entendíveis.'
+            2: 'Neste projeto, fui capaz de entender o funcionamento da camada de Model; delegar responsabilidades específicas para essa camada; conectar a aplicação com diferentes collections do bancos de dados; estruturar uma aplicação em camadas; delegar responsabilidades específicas para cada parte do seu app; melhorar manutenibilidade e reusabilidade do seu código; entender e aplicar os padrões REST; escrever assinaturas para APIs intuitivas e facilmente entendíveis.',
           },
         },
       },
       technologies: ['Node.js', 'Express', 'MongoDB'],
-      libraries: ['express', 'express-rescue', 'body-parser', 'dotenv', 'mongodb', 'nodemon', 'chai', 'mocha', 'sinon', 'mongodb-memory-server'],
+      libraries: [
+        'express',
+        'express-rescue',
+        'body-parser',
+        'dotenv',
+        'mongodb',
+        'nodemon',
+        'chai',
+        'mocha',
+        'sinon',
+        'mongodb-memory-server',
+      ],
     },
 
     talkerManager: {
@@ -847,18 +919,30 @@ export const skills = [
   {
     skill: 'JSON Web Token',
     logo: 'https://i.ibb.co/XjvqGMT/JWT-logo.png',
-    description: 'O JSON Web Token (JWT) é um padrão da Internet para a criação de dados com assinatura opcional e/ou criptografia cujo payload contém o JSON que afirma algum número de declarações.',
+    description:
+      'O JSON Web Token (JWT) é um padrão da Internet para a criação de dados com assinatura opcional e/ou criptografia cujo payload contém o JSON que afirma algum número de declarações.',
   },
   {
     skill: 'Heroku',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/heroku/heroku-plain.svg',
-    description: 'A Heroku é uma plataforma nuvem que faz deploy de várias aplicações back-end seja para hospedagem, testes em produção ou escalar as suas aplicações.',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/heroku/heroku-plain.svg',
+    description:
+      'A Heroku é uma plataforma nuvem que faz deploy de várias aplicações back-end seja para hospedagem, testes em produção ou escalar as suas aplicações.',
   },
   {
     skill: 'Sequelize',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/sequelize/sequelize-original.svg',
-    description: 'O Sequelize é um ORM (Object-Relational Mapper) baseado em Promise para Node.js e io.js. Suporta vários dialetos e recursos a transação, relacionamentos, replicação de leitura e muito mais.',
-  },  
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/sequelize/sequelize-original.svg',
+    description:
+      'O Sequelize é um ORM (Object-Relational Mapper) baseado em Promise para Node.js e io.js. Suporta vários dialetos e recursos a transação, relacionamentos, replicação de leitura e muito mais.',
+  },
+  {
+    skill: 'Socket.io',
+    logo:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/socketio/socketio-original.svg',
+    description:
+      'Socket.io é uma biblioteca JavaScript para aplicativos da web em tempo real. Permite comunicação bidirecional em tempo real entre clientes e servidores da Web.',
+  },
 ];
 
 // projectName: {
