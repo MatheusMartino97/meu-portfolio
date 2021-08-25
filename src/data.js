@@ -505,6 +505,25 @@ export const projectsList = {
   },
 
   backend: {
+    strangerThingsBackEnd: {
+      name: 'Stranger Things',
+      translation: 'Projeto Stranger Things',
+      path: 'stranger-things-backend',
+      repository: 'https://github.com/MatheusMartino97/32_sd-09-stranger-things-backend',
+      miniature: 'https://blog.4linux.com.br/wp-content/uploads/2018/01/Heroku.png',
+      descriptions: {
+        short: 'Um site que busca personagens da série Stranger Things.',
+        long: {
+          paragraphs: {
+            1: 'Neste projeto tive que construir tanto o front-end quanto o back-end de uma aplicação e publicá-los no Heroku.',
+            2: 'Fui capaz de publicar aplicações através do Heroku; visualizar logs das suas aplicações publicadas; monitorar suas aplicações publicadas; utilizar variáveis de ambiente dentro do Heroku; instalar, utilizar e aproveitar os principais recursos do PM2; fazer deploy no Heroku aproveitando recursos de um process manager.'
+          },
+        },
+      },
+      technologies: ['Express', 'Heroku'],
+      libraries: ['express', 'cors', 'dotenv', 'flipout', 'pm2', 'nodemon'],
+    },
+
     cookmaster: {
       name: 'Cookmaster',
       translation: 'Mestre Cuca',
